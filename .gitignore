@@ -12,4 +12,4 @@ vendor
 .ruby-version
 .terraform.lock.hcl
 terragrunt
-
+*-gen.tf
