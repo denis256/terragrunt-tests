@@ -1,7 +1,7 @@
 module "date" {
-  source = "git@github.com:denis256/terraform-test-module.git//modules/date?ref=v0.0.5"
+  source = "git@github.com:denis256/terraform-test-module.git//modules/date?ref=v0.0.7"
 }
 
-output "date" {
-  value = module.date
+output "instance_id" {
+  value = module.date.date
 }
