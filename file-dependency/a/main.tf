@@ -5,6 +5,7 @@ provider "aws" {
 
 data "aws_ssm_parameter" "k3s" {
   name = "test"
+  with_decryption = true
 }
 
 resource "local_file" "k3s_config" {
