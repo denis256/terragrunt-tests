@@ -3,6 +3,6 @@ output "hello" {
 }
 
 # Uncomment to fix
-#output "attribute" {
-#  value = "attribute"
-#}
+output "attribute" {
+  value = "attribute"
+}

@@ -1,5 +1,5 @@
 generate = {
-  test = {
+  gen = {
     path      = "variables.tf"
     if_exists = "overwrite"
     contents  = <<EOF

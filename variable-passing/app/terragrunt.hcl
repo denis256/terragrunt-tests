@@ -7,3 +7,16 @@ locals {
 inputs = {
   instance_id = local.common.locals.instance_id
 }
+
+
+terraform {
+  extra_arguments "plan" {
+    commands = [
+      "plan",
+    ]
+    arguments = [
+      "-out=${get_terragrunt_dir()}/plan.out"
+    ]
+  }
+}
+
