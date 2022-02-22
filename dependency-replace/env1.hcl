@@ -1,4 +1,4 @@
 locals {
-  module_path = ""
+  module_path = "../module2"
 
 }

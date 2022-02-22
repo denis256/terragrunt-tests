@@ -1,3 +1,3 @@
 locals {
-  v2 = run_cmd("echo", "module2")
+  v2 = run_cmd("echo", "***** module2  **** ")
 }
