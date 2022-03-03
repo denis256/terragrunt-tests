@@ -1,7 +1,7 @@
 
 variable "in_list" {
   # uncomment to fix
-  #type = list(string)
+  #type = set(string)
 
 }
 

@@ -1,0 +1,27 @@
+{
+  "DenyUnEncryptedObjectUploads": {
+    "actions": [
+      "s3:PutObject"
+    ],
+    "condition": {
+      "RequireSSE": {
+        "test": "StringNotEquals",
+        "values": [
+          "s3:x-amz-server-side-encryption"
+        ],
+        "variable": "aws:kms"
+      }
+    },
+    "effect": "Deny",
+    "keys": [
+      "",
+      "/*"
+    ],
+    "principals": {
+      "AWS": [
+        "*"
+      ]
+    }
+  },
+  "aaa": "bbb"
+}
