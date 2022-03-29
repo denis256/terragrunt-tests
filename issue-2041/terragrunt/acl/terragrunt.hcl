@@ -15,6 +15,7 @@ remote_state {
 
 dependency "network" {
   config_path = "../network"
+  mock_outputs_allowed_terraform_commands = ["plan"]
   mock_outputs = {
     answer = "1"
   }
