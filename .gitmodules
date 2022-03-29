@@ -1,0 +1,4 @@
+[submodule "generation-path-submodule/configs"]
+	path = generation-path-submodule/configs
+	url = git@github.com:denis256/test-terragrunt-configs.git
+    branch = v0.0.1
