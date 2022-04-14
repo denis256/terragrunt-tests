@@ -1,0 +1,31 @@
+❯ TERRAGRUNT_TFPATH=terraform_1.1.7 terragrunt run-all apply --terragrunt-log-level debug
+DEBU[0000] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0000] Setting download directory for module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a to /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a/.terragrunt-cache
+DEBU[0000] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0000] Setting download directory for module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b to /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b/.terragrunt-cache
+DEBU[0000] Stack at /home/denis/projects/gruntwork/terragrunt-tests/issue-2062:
+  => Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a (excluded: false, assume applied: false, dependencies: [/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b])
+  => Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b (excluded: false, assume applied: false, dependencies: [])
+INFO[0000] The stack at /home/denis/projects/gruntwork/terragrunt-tests/issue-2062 will be processed in the following order for command apply:
+Group 1
+- Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b
+
+Group 2
+- Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a
+
+Are you sure you want to run 'terragrunt apply' in each folder of the stack described above? (y/n) y
+DEBU[0001] Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b must wait for 0 dependencies to finish  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0001] Running module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b now  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0001] Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a must wait for 1 dependencies to finish  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0001] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0001] Running command: terraform_1.1.7 --version    prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0002] Terraform version: 1.1.7                      prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+ERRO[0002] Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b has finished with an error: The currently installed version of Terraform (1.1.7) is not compatible with the version Terragrunt requires (0.15.5).  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+ERRO[0002] Dependency /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b of module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a just finished with an error. Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a will have to return an error too.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+ERRO[0002] Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a has finished with an error: Cannot process module Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a (excluded: false, assume applied: false, dependencies: [/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]) because one of its dependencies, Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b (excluded: false, assume applied: false, dependencies: []), finished with an error: The currently installed version of Terraform (1.1.7) is not compatible with the version Terragrunt requires (0.15.5).  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+ERRO[0002] 2 errors occurred:
+        * Cannot process module Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a (excluded: false, assume applied: false, dependencies: [/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]) because one of its dependencies, Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b (excluded: false, assume applied: false, dependencies: []), finished with an error: The currently installed version of Terraform (1.1.7) is not compatible with the version Terragrunt requires (0.15.5).
+        * The currently installed version of Terraform (1.1.7) is not compatible with the version Terragrunt requires (0.15.5).
+
+ERRO[0002] Unable to determine underlying exit code, so Terragrunt will exit with error code 1
+

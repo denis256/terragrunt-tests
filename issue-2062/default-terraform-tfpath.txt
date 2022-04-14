@@ -1,0 +1,81 @@
+❯ TERRAGRUNT_TFPATH=terraform terragrunt run-all apply --terragrunt-log-level debug
+DEBU[0000] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0000] Setting download directory for module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a to /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a/.terragrunt-cache
+DEBU[0000] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0000] Setting download directory for module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b to /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b/.terragrunt-cache
+DEBU[0000] Stack at /home/denis/projects/gruntwork/terragrunt-tests/issue-2062:
+  => Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a (excluded: false, assume applied: false, dependencies: [/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b])
+  => Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b (excluded: false, assume applied: false, dependencies: [])
+INFO[0000] The stack at /home/denis/projects/gruntwork/terragrunt-tests/issue-2062 will be processed in the following order for command apply:
+Group 1
+- Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b
+
+Group 2
+- Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a
+
+Are you sure you want to run 'terragrunt apply' in each folder of the stack described above? (y/n) y
+DEBU[0001] Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a must wait for 1 dependencies to finish  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0001] Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b must wait for 0 dependencies to finish  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0001] Running module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b now  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0001] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0001] Running command: /home/denis/apps/terraform/terraform_0.15.5_linux_amd64 --version  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0002] Terraform version: 0.15.5                     prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0002] Reading Terragrunt config file at /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b/terragrunt.hcl  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0002] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0002] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0002] Running command: /home/denis/apps/terraform/terraform_0.15.5_linux_amd64 apply -auto-approve -input=false  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+local_file.file: Refreshing state... [id=fbd34a2b6e6a9fe8161f97dc435642609ac0bc29]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.
+
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+sensitive_file = "./module.txt"
+DEBU[0002] Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b has finished successfully!  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0002] Dependency /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b of module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a just finished successfully. Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a must wait on 0 more dependencies.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0002] Running module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a now  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0002] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0002] Running command: /home/denis/apps/terraform/terraform_1.1.7_linux_amd64 --version  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0003] Terraform version: 1.1.7                      prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0003] Reading Terragrunt config file at /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a/terragrunt.hcl  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0003] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0003] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0003] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Getting output of dependency /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b/terragrunt.hcl for config /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a/terragrunt.hcl  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0003] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Could not parse remote_state block from target config /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b/terragrunt.hcl  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0003] Falling back to terragrunt output.            prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+DEBU[0003] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Running command: /home/denis/apps/terraform/terraform_0.15.5_linux_amd64 --version  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Terraform version: 0.15.5                     prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Reading Terragrunt config file at /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b/terragrunt.hcl  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Did not find any locals block: skipping evaluation.  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Running command: /home/denis/apps/terraform/terraform_0.15.5_linux_amd64 output -json  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Retrieved output from /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b/terragrunt.hcl as json: {
+  "sensitive_file": {
+    "sensitive": false,
+    "type": "string",
+    "value": "./module.txt"
+  }
+}  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-b]
+DEBU[0003] Running command: /home/denis/apps/terraform/terraform_1.1.7_linux_amd64 apply -auto-approve -input=false  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
+local_file.file: Refreshing state... [id=7d1043473d55bfa90e8530d35801d4e381bc69f0]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.
+
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+sensitive_file = "./app.txt"
+DEBU[0004] Module /home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a has finished successfully!  prefix=[/home/denis/projects/gruntwork/terragrunt-tests/issue-2062/module-a]
