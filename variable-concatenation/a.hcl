@@ -1,3 +1,3 @@
-inputs {
+inputs = {
   value_a = "abc"
 }

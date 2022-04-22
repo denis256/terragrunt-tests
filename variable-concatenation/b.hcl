@@ -1,3 +1,3 @@
-inputs  {
-  value_b = "xyz"
+inputs = {
+  value_b = "123"
 }
