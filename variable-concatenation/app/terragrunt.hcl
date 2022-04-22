@@ -8,6 +8,7 @@ include "b" {
   expose = true
 }
 
-inputs = {
-  content = "${include.a.inputs.value_a}${include.b.inputs.value_b}"
-}
+inputs = merge (
+  include.a.inputs,
+  include.b.inputs,
+)

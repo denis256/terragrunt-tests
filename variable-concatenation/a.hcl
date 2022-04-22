@@ -1,3 +1,3 @@
 inputs = {
-  value_a = "abc"
+  value_a = "value from a"
 }
