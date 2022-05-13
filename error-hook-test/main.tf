@@ -7,7 +7,7 @@ resource "null_resource" "date" {
   }
 
   provisioner "local-exec" {
-    command = "echo 'azurerm_resource_group' && exit 1"
+    command = "cat /tmp/not-existing-file"
     interpreter = ["bash", "-c"]
   }
 }
