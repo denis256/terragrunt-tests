@@ -1,10 +1,10 @@
 
 provider "aws" {
-  region  = "us-east-1"
+  region = "us-east-1"
 }
 
 data "aws_ssm_parameter" "k3s" {
-  name = "test"
+  name            = "test"
   with_decryption = true
 }
 
@@ -15,6 +15,6 @@ resource "local_file" "k3s_config" {
 }
 
 output "config_file" {
-  value = local_file.k3s_config.filename
+  value     = local_file.k3s_config.filename
   sensitive = true
 }
