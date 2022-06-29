@@ -5,3 +5,10 @@ include {
 terraform {
   source = "../../modules//mod1"
 }
+
+dependency "mod2" {
+  config_path = "../../modules/mod2"
+  mock_outputs = {
+    qwe = "1123"
+  }
+}
