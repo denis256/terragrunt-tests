@@ -7,6 +7,7 @@ terraform {
     on_errors = [
       "azurerm_resource_group", # how to set regex statement
       ".*subscriptions.*resourceGroups.*test.*",
+      "No such file or directory",
      # ".*not-existing-file.*"
     ]
   }
