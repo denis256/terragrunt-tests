@@ -4,7 +4,7 @@
 # local file evaluation
 IS_RESTRICTED=1 terragrunt apply --terragrunt-log-level debug
 
-# failing decrypt
+# case of failing decryption 
 IS_RESTRICTED=0 terragrunt apply --terragrunt-log-level debug
 ```
 
