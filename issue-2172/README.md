@@ -1,10 +1,8 @@
-# issue-2173
+# issue-2172
 
 ```
-cd .ci/iam/
 terragrunt init --terragrunt-log-level debug
 terragrunt apply --terragrunt-log-level debug
-
 ```
 
-https://github.com/gruntwork-io/terragrunt/issues/2173
+https://github.com/gruntwork-io/terragrunt/issues/2172
