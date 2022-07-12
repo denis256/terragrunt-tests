@@ -1,0 +1,17 @@
+foo: you-can-put-anything-here
+sops:
+  kms: []
+  gcp_kms: []
+  azure_kv:
+    - vault_url: https://you-can-put-anything-here.vault.azure.net
+      name: you-can-put-anything-here
+      version: you-can-put-anything-here
+      created_at: "2022-01-01T00:00:00Z"
+      enc: you-can-put-anything-here
+  hc_vault: []
+  age: []
+  lastmodified: "2022-01-01T00:00:00Z"
+  mac: null
+  pgp: []
+  unencrypted_suffix: _unencrypted
+  version: 3.7.3
