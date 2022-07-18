@@ -1,0 +1,35 @@
+{
+  "dependencies": null,
+  "download_dir": "",
+  "generate": {
+    "provider": {
+      "comment_prefix": "# ",
+      "contents": "\nvariable \"aws_tags\" {\n   type = map\n}\n\nprovider \"aws\" {\n    region = \"us-east-1\"\n    profile = \"prod\"\n    default_tags {\n        tags = var.aws_tags\n    }\n}\n\n",
+      "disable_signature": false,
+      "if_exists": "overwrite_terragrunt",
+      "path": "provider.tf"
+    }
+  },
+  "iam_assume_role_duration": null,
+  "iam_assume_role_session_name": "",
+  "iam_role": "",
+  "inputs": {
+    "aws_tags": {
+      "test": "test"
+    }
+  },
+  "locals": {
+    "aws_profile": "prod",
+    "aws_region": "us-east-1",
+    "aws_tags": {
+      "test": "test"
+    }
+  },
+  "retry_max_attempts": null,
+  "retry_sleep_interval_sec": null,
+  "retryable_errors": null,
+  "skip": false,
+  "terraform_binary": "",
+  "terraform_version_constraint": "",
+  "terragrunt_version_constraint": ""
+}
