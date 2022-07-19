@@ -1,3 +1,3 @@
 dependencies {
-  paths = ["../d1", "../d2"]
+  paths = ["../d2"]
 }
