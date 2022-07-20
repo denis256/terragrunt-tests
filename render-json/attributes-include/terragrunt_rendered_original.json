@@ -1,0 +1,53 @@
+{
+  "dependencies": null,
+  "download_dir": "/tmp",
+  "generate": {
+    "provider1": {
+      "comment_prefix": "# ",
+      "contents": "# test\n",
+      "disable_signature": false,
+      "if_exists": "overwrite",
+      "path": "provider1.tf"
+    },
+    "provider2": {
+      "comment_prefix": "# ",
+      "contents": "# test\n",
+      "disable_signature": false,
+      "if_exists": "overwrite",
+      "path": "provider2.tf"
+    },
+    "provider3": {
+      "comment_prefix": "# ",
+      "contents": "# test\n",
+      "disable_signature": false,
+      "if_exists": "overwrite",
+      "path": "provider3.tf"
+    },
+    "provider666": {
+      "comment_prefix": "# ",
+      "contents": "# test\n",
+      "disable_signature": false,
+      "if_exists": "overwrite",
+      "path": "provider666.tf"
+    }
+  },
+  "iam_assume_role_duration": 14400,
+  "iam_assume_role_session_name": "qwe",
+  "iam_role": "arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME",
+  "inputs": {
+    "name": "us-east-1-bucket",
+    "region": "us-east-1"
+  },
+  "locals": null,
+  "prevent_destroy": true,
+  "retry_max_attempts": null,
+  "retry_sleep_interval_sec": null,
+  "retryable_errors": [
+    "(?s).*Error installing provider.*tcp.*connection reset by peer.*",
+    "(?s).*ssh_exchange_identification.*Connection closed by remote host.*"
+  ],
+  "skip": false,
+  "terraform_binary": "/home/ubuntu/.tfenv/bin/terraform",
+  "terraform_version_constraint": "\u003e= 0.11",
+  "terragrunt_version_constraint": ""
+}

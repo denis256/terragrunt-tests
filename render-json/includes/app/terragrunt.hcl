@@ -8,7 +8,7 @@ include "inputs" {
 
 include "locals" {
   path   = "./locals.hcl"
-  expose = true
+  #expose = true
 }
 
 include "generate" {

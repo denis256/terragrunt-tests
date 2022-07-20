@@ -73,9 +73,7 @@
     "value": false
   },
   "terraform": {
-    "metadata": {
-      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/app/terragrunt.hcl"
-    },
+    "metadata": null,
     "value": null
   },
   "terraform_binary": {
