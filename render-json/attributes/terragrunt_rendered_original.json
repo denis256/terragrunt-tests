@@ -1,0 +1,26 @@
+{
+  "dependencies": null,
+  "download_dir": "/tmp",
+  "generate": {},
+  "iam_assume_role_duration": 14400,
+  "iam_assume_role_session_name": "qwe",
+  "iam_role": "arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME",
+  "inputs": {
+    "name": "us-east-1-bucket",
+    "region": "us-east-1"
+  },
+  "locals": {
+    "aws_region": "us-east-1"
+  },
+  "prevent_destroy": true,
+  "retry_max_attempts": null,
+  "retry_sleep_interval_sec": null,
+  "retryable_errors": [
+    "(?s).*Error installing provider.*tcp.*connection reset by peer.*",
+    "(?s).*ssh_exchange_identification.*Connection closed by remote host.*"
+  ],
+  "skip": true,
+  "terraform_binary": "/home/ubuntu/.tfenv/bin/terraform",
+  "terraform_version_constraint": "\u003e= 0.11",
+  "terragrunt_version_constraint": ""
+}

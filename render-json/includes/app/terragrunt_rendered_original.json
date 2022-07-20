@@ -1,7 +1,15 @@
 {
   "dependencies": null,
   "download_dir": "",
-  "generate": {},
+  "generate": {
+    "provider": {
+      "comment_prefix": "# ",
+      "contents": "# test\n",
+      "disable_signature": false,
+      "if_exists": "overwrite",
+      "path": "provider.tf"
+    }
+  },
   "iam_assume_role_duration": null,
   "iam_assume_role_session_name": "",
   "iam_role": "",
