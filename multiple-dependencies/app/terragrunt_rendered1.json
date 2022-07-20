@@ -1,0 +1,71 @@
+{
+  "dependencies": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/multiple-dependencies/app/terragrunt.hcl"
+    },
+    "value": {}
+  },
+  "dependency": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/multiple-dependencies/app/terragrunt.hcl"
+    },
+    "value": {}
+  },
+  "download_dir": {
+    "metadata": null,
+    "value": {}
+  },
+  "generate": {
+    "metadata": null,
+    "value": {}
+  },
+  "iam_assume_role_duration": {
+    "metadata": null,
+    "value": {}
+  },
+  "iam_assume_role_session_name": {
+    "metadata": null,
+    "value": {}
+  },
+  "iam_role": {
+    "metadata": null,
+    "value": {}
+  },
+  "inputs": {
+    "pass": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/multiple-dependencies/app/terragrunt.hcl"
+      },
+      "value": "password file 666"
+    }
+  },
+  "locals": {},
+  "retry_max_attempts": {
+    "metadata": null,
+    "value": {}
+  },
+  "retry_sleep_interval_sec": {
+    "metadata": null,
+    "value": {}
+  },
+  "retryable_errors": {
+    "metadata": null,
+    "value": {}
+  },
+  "skip": {
+    "metadata": null,
+    "value": {}
+  },
+  "terraform_binary": {
+    "metadata": null,
+    "value": {}
+  },
+  "terraform_version_constraint": {
+    "metadata": null,
+    "value": {}
+  },
+  "terragrunt_version_constraint": {
+    "metadata": null,
+    "value": {}
+  }
+}
