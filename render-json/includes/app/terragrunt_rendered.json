@@ -1,0 +1,86 @@
+{
+  "download_dir": {
+    "metadata": null,
+    "value": ""
+  },
+  "generate": {
+    "provider": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/app/generate.hcl"
+      },
+      "value": {
+        "CommentPrefix": "# ",
+        "Contents": "# test\n",
+        "DisableSignature": false,
+        "IfExists": 2,
+        "IfExistsStr": "overwrite",
+        "Path": "provider.tf"
+      }
+    }
+  },
+  "iam_assume_role_duration": {
+    "metadata": null,
+    "value": null
+  },
+  "iam_assume_role_session_name": {
+    "metadata": null,
+    "value": ""
+  },
+  "iam_role": {
+    "metadata": null,
+    "value": ""
+  },
+  "inputs": {
+    "qwe": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/app/inputs.hcl"
+      },
+      "value": "123"
+    }
+  },
+  "locals": {},
+  "remote_state": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/common/common.hcl"
+    },
+    "value": {
+      "Backend": "s3",
+      "Config": {
+        "bucket": "mybucket",
+        "key": "path/to/my/key",
+        "region": "us-east-1"
+      },
+      "DisableDependencyOptimization": false,
+      "DisableInit": false,
+      "Generate": null
+    }
+  },
+  "retry_max_attempts": {
+    "metadata": null,
+    "value": null
+  },
+  "retry_sleep_interval_sec": {
+    "metadata": null,
+    "value": null
+  },
+  "retryable_errors": {
+    "metadata": null,
+    "value": null
+  },
+  "skip": {
+    "metadata": null,
+    "value": false
+  },
+  "terraform_binary": {
+    "metadata": null,
+    "value": ""
+  },
+  "terraform_version_constraint": {
+    "metadata": null,
+    "value": ""
+  },
+  "terragrunt_version_constraint": {
+    "metadata": null,
+    "value": ""
+  }
+}

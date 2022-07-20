@@ -1,3 +1,6 @@
+include "common" {
+  path   = "../common/common.hcl"
+}
 
 include "inputs" {
   path   = "./inputs.hcl"
@@ -10,5 +13,4 @@ include "locals" {
 
 include "generate" {
   path   = "./generate.hcl"
-  //merge_strategy = "deep"
 }
