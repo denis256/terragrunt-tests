@@ -1,4 +1,5 @@
 {
+  "dependency": {},
   "download_dir": {
     "metadata": null,
     "value": ""
@@ -70,6 +71,12 @@
   "skip": {
     "metadata": null,
     "value": false
+  },
+  "terraform": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/app/terragrunt.hcl"
+    },
+    "value": null
   },
   "terraform_binary": {
     "metadata": null,

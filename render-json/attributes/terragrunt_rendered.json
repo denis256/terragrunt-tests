@@ -52,6 +52,10 @@
     },
     "value": true
   },
+  "remote_state": {
+    "metadata": null,
+    "value": null
+  },
   "retry_max_attempts": {
     "metadata": null,
     "value": null
@@ -74,6 +78,10 @@
       "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes/terragrunt.hcl"
     },
     "value": true
+  },
+  "terraform": {
+    "metadata": null,
+    "value": null
   },
   "terraform_binary": {
     "metadata": {

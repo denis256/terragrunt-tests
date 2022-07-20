@@ -1,19 +1,4 @@
 {
-  "dependencies": [
-    {
-      "metadata": {
-        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/dependencies/app/include.hcl"
-      },
-      "value": "../d2"
-    },
-    {
-      "metadata": {
-        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/dependencies/app/terragrunt.hcl"
-      },
-      "value": "../d1"
-    }
-  ],
-  "dependency": {},
   "download_dir": {
     "metadata": null,
     "value": ""
@@ -31,14 +16,7 @@
     "metadata": null,
     "value": ""
   },
-  "inputs": {
-    "test_input": {
-      "metadata": {
-        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/dependencies/app/include.hcl"
-      },
-      "value": "test_value"
-    }
-  },
+  "inputs": {},
   "locals": {},
   "remote_state": {
     "metadata": null,
@@ -61,8 +39,17 @@
     "value": false
   },
   "terraform": {
-    "metadata": null,
-    "value": null
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/terraform-simple/terragrunt.hcl"
+    },
+    "value": {
+      "AfterHooks": null,
+      "BeforeHooks": null,
+      "ErrorHooks": null,
+      "ExtraArgs": null,
+      "IncludeInCopy": null,
+      "Source": "git::git@github.com:denis256/terraform-test-module.git//modules/test-file?ref=v0.0.4"
+    }
   },
   "terraform_binary": {
     "metadata": null,
