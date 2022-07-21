@@ -45,7 +45,14 @@
       "value": "123"
     }
   },
-  "locals": {},
+  "locals": {
+    "abc": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/app/terragrunt.hcl"
+      },
+      "value": "xyz"
+    }
+  },
   "remote_state": {
     "metadata": {
       "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/common/common.hcl"

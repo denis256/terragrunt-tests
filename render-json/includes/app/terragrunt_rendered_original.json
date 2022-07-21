@@ -14,9 +14,12 @@
   "iam_assume_role_session_name": "",
   "iam_role": "",
   "inputs": {
+    "content": "test",
     "qwe": "123"
   },
-  "locals": null,
+  "locals": {
+    "abc": "xyz"
+  },
   "remote_state": {
     "backend": "s3",
     "config": {

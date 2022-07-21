@@ -14,3 +14,7 @@ include "generate" {
   path   = "./generate.hcl"
 }
 
+locals {
+  abc = "xyz"
+
+}
