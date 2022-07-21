@@ -32,6 +32,12 @@
     "value": ""
   },
   "inputs": {
+    "content": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/app/locals.hcl"
+      },
+      "value": "test"
+    },
     "qwe": {
       "metadata": {
         "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/app/inputs.hcl"

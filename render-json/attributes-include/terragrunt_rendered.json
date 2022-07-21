@@ -1,1 +1,149 @@
-{"dependency":{},"download_dir":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":"/tmp"},"generate":{"provider1":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate.hcl"},"value":{"CommentPrefix":"# ","Contents":"# test\n","DisableSignature":false,"IfExists":2,"IfExistsStr":"overwrite","Path":"provider1.tf"}},"provider2":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate2.hcl"},"value":{"CommentPrefix":"# ","Contents":"# test\n","DisableSignature":false,"IfExists":2,"IfExistsStr":"overwrite","Path":"provider2.tf"}},"provider3":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate2.hcl"},"value":{"CommentPrefix":"# ","Contents":"# test\n","DisableSignature":false,"IfExists":2,"IfExistsStr":"overwrite","Path":"provider3.tf"}},"provider666":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate.hcl"},"value":{"CommentPrefix":"# ","Contents":"# test\n","DisableSignature":false,"IfExists":2,"IfExistsStr":"overwrite","Path":"provider666.tf"}}},"iam_assume_role_duration":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":14400},"iam_assume_role_session_name":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":"qwe"},"iam_role":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":"arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME"},"inputs":{"name":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":"us-east-1-bucket"},"region":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":"us-east-1"}},"locals":{},"prevent_destroy":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":true},"remote_state":{"metadata":null,"value":null},"retry_max_attempts":{"metadata":null,"value":null},"retry_sleep_interval_sec":{"metadata":null,"value":null},"retryable_errors":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":["(?s).*Error installing provider.*tcp.*connection reset by peer.*","(?s).*ssh_exchange_identification.*Connection closed by remote host.*"]},"skip":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":false},"terraform":{"metadata":null,"value":null},"terraform_binary":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":"/home/ubuntu/.tfenv/bin/terraform"},"terraform_version_constraint":{"metadata":{"found_in_file":"/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"},"value":"\u003e= 0.11"},"terragrunt_version_constraint":{"metadata":null,"value":""}}
+{
+  "dependency": {},
+  "download_dir": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+    },
+    "value": "/tmp"
+  },
+  "generate": {
+    "provider1": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate.hcl"
+      },
+      "value": {
+        "CommentPrefix": "# ",
+        "Contents": "# test\n",
+        "DisableSignature": false,
+        "IfExists": 2,
+        "IfExistsStr": "overwrite",
+        "Path": "provider1.tf"
+      }
+    },
+    "provider2": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate2.hcl"
+      },
+      "value": {
+        "CommentPrefix": "# ",
+        "Contents": "# test\n",
+        "DisableSignature": false,
+        "IfExists": 2,
+        "IfExistsStr": "overwrite",
+        "Path": "provider2.tf"
+      }
+    },
+    "provider3": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate2.hcl"
+      },
+      "value": {
+        "CommentPrefix": "# ",
+        "Contents": "# test\n",
+        "DisableSignature": false,
+        "IfExists": 2,
+        "IfExistsStr": "overwrite",
+        "Path": "provider3.tf"
+      }
+    },
+    "provider666": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate.hcl"
+      },
+      "value": {
+        "CommentPrefix": "# ",
+        "Contents": "# test\n",
+        "DisableSignature": false,
+        "IfExists": 2,
+        "IfExistsStr": "overwrite",
+        "Path": "provider666.tf"
+      }
+    }
+  },
+  "iam_assume_role_duration": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+    },
+    "value": 14400
+  },
+  "iam_assume_role_session_name": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+    },
+    "value": "qwe"
+  },
+  "iam_role": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+    },
+    "value": "arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME"
+  },
+  "inputs": {
+    "name": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+      },
+      "value": "us-east-1-bucket"
+    },
+    "region": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+      },
+      "value": "us-east-1"
+    }
+  },
+  "locals": {},
+  "prevent_destroy": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+    },
+    "value": true
+  },
+  "remote_state": {
+    "metadata": null,
+    "value": null
+  },
+  "retry_max_attempts": {
+    "metadata": null,
+    "value": null
+  },
+  "retry_sleep_interval_sec": {
+    "metadata": null,
+    "value": null
+  },
+  "retryable_errors": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+    },
+    "value": [
+      "(?s).*Error installing provider.*tcp.*connection reset by peer.*",
+      "(?s).*ssh_exchange_identification.*Connection closed by remote host.*"
+    ]
+  },
+  "skip": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+    },
+    "value": false
+  },
+  "terraform": {
+    "metadata": null,
+    "value": null
+  },
+  "terraform_binary": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+    },
+    "value": "/home/ubuntu/.tfenv/bin/terraform"
+  },
+  "terraform_version_constraint": {
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
+    },
+    "value": "\u003e= 0.11"
+  },
+  "terragrunt_version_constraint": {
+    "metadata": null,
+    "value": ""
+  }
+}
