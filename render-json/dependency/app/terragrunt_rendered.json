@@ -5,14 +5,16 @@
         "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/dependency/app/terragrunt.hcl"
       },
       "value": {
-        "ConfigPath": "../dependency",
-        "MockOutputs": {},
-        "MockOutputsAllowedTerraformCommands": null,
-        "MockOutputsMergeStrategyWithState": null,
-        "MockOutputsMergeWithState": null,
-        "Name": "dep",
-        "RenderedOutputs": null,
-        "SkipOutputs": null
+        "config_path": "../dependency",
+        "mock_outputs": {
+          "test": "value"
+        },
+        "mock_outputs_allowed_terraform_commands": null,
+        "mock_outputs_merge_strategy_with_state": null,
+        "mock_outputs_merge_with_state": null,
+        "name": "dep",
+        "outputs": null,
+        "skip": null
       }
     },
     "dep2": {
@@ -20,14 +22,16 @@
         "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/dependency/app/terragrunt.hcl"
       },
       "value": {
-        "ConfigPath": "../dependency2",
-        "MockOutputs": {},
-        "MockOutputsAllowedTerraformCommands": null,
-        "MockOutputsMergeStrategyWithState": null,
-        "MockOutputsMergeWithState": null,
-        "Name": "dep2",
-        "RenderedOutputs": null,
-        "SkipOutputs": null
+        "config_path": "../dependency2",
+        "mock_outputs": {
+          "test": "value"
+        },
+        "mock_outputs_allowed_terraform_commands": null,
+        "mock_outputs_merge_strategy_with_state": null,
+        "mock_outputs_merge_with_state": null,
+        "name": "dep2",
+        "outputs": null,
+        "skip": null
       }
     }
   },
@@ -35,7 +39,6 @@
     "metadata": null,
     "value": ""
   },
-  "generate": {},
   "iam_assume_role_duration": {
     "metadata": null,
     "value": null
@@ -47,12 +50,6 @@
   "iam_role": {
     "metadata": null,
     "value": ""
-  },
-  "inputs": {},
-  "locals": {},
-  "remote_state": {
-    "metadata": null,
-    "value": null
   },
   "retry_max_attempts": {
     "metadata": null,

@@ -1,5 +1,4 @@
 {
-  "dependency": {},
   "download_dir": {
     "metadata": {
       "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
@@ -12,12 +11,11 @@
         "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate.hcl"
       },
       "value": {
-        "CommentPrefix": "# ",
-        "Contents": "# test\n",
-        "DisableSignature": false,
-        "IfExists": 2,
-        "IfExistsStr": "overwrite",
-        "Path": "provider1.tf"
+        "comment_prefix": "# ",
+        "contents": "# test\n",
+        "disable_signature": false,
+        "if_exists": "overwrite",
+        "path": "provider1.tf"
       }
     },
     "provider2": {
@@ -25,12 +23,11 @@
         "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate2.hcl"
       },
       "value": {
-        "CommentPrefix": "# ",
-        "Contents": "# test\n",
-        "DisableSignature": false,
-        "IfExists": 2,
-        "IfExistsStr": "overwrite",
-        "Path": "provider2.tf"
+        "comment_prefix": "# ",
+        "contents": "# test\n",
+        "disable_signature": false,
+        "if_exists": "overwrite",
+        "path": "provider2.tf"
       }
     },
     "provider3": {
@@ -38,12 +35,11 @@
         "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate2.hcl"
       },
       "value": {
-        "CommentPrefix": "# ",
-        "Contents": "# test\n",
-        "DisableSignature": false,
-        "IfExists": 2,
-        "IfExistsStr": "overwrite",
-        "Path": "provider3.tf"
+        "comment_prefix": "# ",
+        "contents": "# test\n",
+        "disable_signature": false,
+        "if_exists": "overwrite",
+        "path": "provider3.tf"
       }
     },
     "provider666": {
@@ -51,12 +47,11 @@
         "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/generate.hcl"
       },
       "value": {
-        "CommentPrefix": "# ",
-        "Contents": "# test\n",
-        "DisableSignature": false,
-        "IfExists": 2,
-        "IfExistsStr": "overwrite",
-        "Path": "provider666.tf"
+        "comment_prefix": "# ",
+        "contents": "# test\n",
+        "disable_signature": false,
+        "if_exists": "overwrite",
+        "path": "provider666.tf"
       }
     }
   },
@@ -92,16 +87,11 @@
       "value": "us-east-1"
     }
   },
-  "locals": {},
   "prevent_destroy": {
     "metadata": {
       "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
     },
     "value": true
-  },
-  "remote_state": {
-    "metadata": null,
-    "value": null
   },
   "retry_max_attempts": {
     "metadata": null,
@@ -125,10 +115,6 @@
       "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes-include/conf/conf.hcl"
     },
     "value": false
-  },
-  "terraform": {
-    "metadata": null,
-    "value": null
   },
   "terraform_binary": {
     "metadata": {

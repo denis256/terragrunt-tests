@@ -5,7 +5,6 @@
     },
     "value": "/tmp"
   },
-  "generate": {},
   "iam_assume_role_duration": {
     "metadata": {
       "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes/terragrunt.hcl"
@@ -25,6 +24,18 @@
     "value": "arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME"
   },
   "inputs": {
+    "app1": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes/terragrunt.hcl"
+      },
+      "value": {
+        "xyz": {
+          "bucket": "bucket1",
+          "name": "app1",
+          "type": "s3"
+        }
+      }
+    },
     "name": {
       "metadata": {
         "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes/terragrunt.hcl"
@@ -39,6 +50,17 @@
     }
   },
   "locals": {
+    "a": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes/terragrunt.hcl"
+      },
+      "value": {
+        "b": {
+          "c": "d",
+          "xyz": "abc"
+        }
+      }
+    },
     "aws_region": {
       "metadata": {
         "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes/terragrunt.hcl"
@@ -51,10 +73,6 @@
       "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes/terragrunt.hcl"
     },
     "value": true
-  },
-  "remote_state": {
-    "metadata": null,
-    "value": null
   },
   "retry_max_attempts": {
     "metadata": null,
@@ -78,10 +96,6 @@
       "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/attributes/terragrunt.hcl"
     },
     "value": true
-  },
-  "terraform": {
-    "metadata": null,
-    "value": null
   },
   "terraform_binary": {
     "metadata": {

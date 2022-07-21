@@ -3,7 +3,6 @@
     "metadata": null,
     "value": ""
   },
-  "generate": {},
   "iam_assume_role_duration": {
     "metadata": null,
     "value": null
@@ -15,12 +14,6 @@
   "iam_role": {
     "metadata": null,
     "value": ""
-  },
-  "inputs": {},
-  "locals": {},
-  "remote_state": {
-    "metadata": null,
-    "value": null
   },
   "retry_max_attempts": {
     "metadata": null,
@@ -43,12 +36,12 @@
       "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/terraform-simple/terragrunt.hcl"
     },
     "value": {
-      "AfterHooks": null,
-      "BeforeHooks": null,
-      "ErrorHooks": null,
-      "ExtraArgs": null,
-      "IncludeInCopy": null,
-      "Source": "git::git@github.com:denis256/terraform-test-module.git//modules/test-file?ref=v0.0.4"
+      "after_hook": {},
+      "before_hook": {},
+      "error_hook": {},
+      "extra_arguments": {},
+      "include_in_copy": null,
+      "source": "git::git@github.com:denis256/terraform-test-module.git//modules/test-file?ref=v0.0.4"
     }
   },
   "terraform_binary": {

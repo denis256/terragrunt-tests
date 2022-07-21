@@ -1,10 +1,24 @@
 locals {
   aws_region = "us-east-1"
+  a = {
+    b = {
+      c = "d"
+      xyz = "abc"
+    }
+  }
 }
 
 inputs = {
   region = local.aws_region
   name   = "${local.aws_region}-bucket"
+
+  app1 = {
+    xyz = {
+        name = "app1"
+        type = "s3"
+        bucket = "bucket1"
+    }
+  }
 }
 
 prevent_destroy = true

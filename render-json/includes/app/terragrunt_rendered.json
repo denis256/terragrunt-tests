@@ -1,5 +1,4 @@
 {
-  "dependency": {},
   "download_dir": {
     "metadata": null,
     "value": ""
@@ -10,12 +9,11 @@
         "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/app/generate.hcl"
       },
       "value": {
-        "CommentPrefix": "# ",
-        "Contents": "# test\n",
-        "DisableSignature": false,
-        "IfExists": 2,
-        "IfExistsStr": "overwrite",
-        "Path": "provider.tf"
+        "comment_prefix": "# ",
+        "contents": "# test\n",
+        "disable_signature": false,
+        "if_exists": "overwrite",
+        "path": "provider.tf"
       }
     }
   },
@@ -58,15 +56,15 @@
       "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/common/common.hcl"
     },
     "value": {
-      "Backend": "s3",
-      "Config": {
+      "backend": "s3",
+      "config": {
         "bucket": "mybucket",
         "key": "path/to/my/key",
         "region": "us-east-1"
       },
-      "DisableDependencyOptimization": false,
-      "DisableInit": false,
-      "Generate": null
+      "disable_dependency_optimization": false,
+      "disable_init": false,
+      "generate": null
     }
   },
   "retry_max_attempts": {
@@ -86,8 +84,17 @@
     "value": false
   },
   "terraform": {
-    "metadata": null,
-    "value": null
+    "metadata": {
+      "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/includes/app/terragrunt.hcl"
+    },
+    "value": {
+      "after_hook": {},
+      "before_hook": {},
+      "error_hook": {},
+      "extra_arguments": {},
+      "include_in_copy": null,
+      "source": "git::git@github.com:denis256/terraform-test-module.git//modules/test-file?ref=v0.0.4"
+    }
   },
   "terraform_binary": {
     "metadata": null,

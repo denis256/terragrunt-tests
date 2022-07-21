@@ -1,0 +1,4 @@
+
+output "x" {
+  value = "y"
+}

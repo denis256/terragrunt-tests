@@ -13,12 +13,10 @@
       "value": "../d1"
     }
   ],
-  "dependency": {},
   "download_dir": {
     "metadata": null,
     "value": ""
   },
-  "generate": {},
   "iam_assume_role_duration": {
     "metadata": null,
     "value": null
@@ -39,11 +37,6 @@
       "value": "test_value"
     }
   },
-  "locals": {},
-  "remote_state": {
-    "metadata": null,
-    "value": null
-  },
   "retry_max_attempts": {
     "metadata": null,
     "value": null
@@ -59,10 +52,6 @@
   "skip": {
     "metadata": null,
     "value": false
-  },
-  "terraform": {
-    "metadata": null,
-    "value": null
   },
   "terraform_binary": {
     "metadata": null,

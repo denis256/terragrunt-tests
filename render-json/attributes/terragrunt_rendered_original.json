@@ -6,10 +6,23 @@
   "iam_assume_role_session_name": "qwe",
   "iam_role": "arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME",
   "inputs": {
+    "app1": {
+      "xyz": {
+        "bucket": "bucket1",
+        "name": "app1",
+        "type": "s3"
+      }
+    },
     "name": "us-east-1-bucket",
     "region": "us-east-1"
   },
   "locals": {
+    "a": {
+      "b": {
+        "c": "d",
+        "xyz": "abc"
+      }
+    },
     "aws_region": "us-east-1"
   },
   "prevent_destroy": true,
