@@ -3,7 +3,6 @@ include "aws_configs" {
   expose = true
 }
 
-
 generate = {
   test = {
     path      = "providers.tf"
