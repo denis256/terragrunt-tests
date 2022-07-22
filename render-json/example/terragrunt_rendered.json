@@ -1,0 +1,62 @@
+{
+  "download_dir": {
+    "metadata": null,
+    "value": ""
+  },
+  "iam_assume_role_duration": {
+    "metadata": null,
+    "value": null
+  },
+  "iam_assume_role_session_name": {
+    "metadata": null,
+    "value": ""
+  },
+  "iam_role": {
+    "metadata": null,
+    "value": ""
+  },
+  "inputs": {
+    "aws_region": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/example/terragrunt.hcl"
+      },
+      "value": "us-east-1"
+    }
+  },
+  "locals": {
+    "aws_region": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/render-json/example/terragrunt.hcl"
+      },
+      "value": "us-east-1"
+    }
+  },
+  "retry_max_attempts": {
+    "metadata": null,
+    "value": null
+  },
+  "retry_sleep_interval_sec": {
+    "metadata": null,
+    "value": null
+  },
+  "retryable_errors": {
+    "metadata": null,
+    "value": null
+  },
+  "skip": {
+    "metadata": null,
+    "value": false
+  },
+  "terraform_binary": {
+    "metadata": null,
+    "value": ""
+  },
+  "terraform_version_constraint": {
+    "metadata": null,
+    "value": ""
+  },
+  "terragrunt_version_constraint": {
+    "metadata": null,
+    "value": ""
+  }
+}
