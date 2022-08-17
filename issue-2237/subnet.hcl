@@ -1,0 +1,3 @@
+locals {
+  subnet = "qwe"
+}
