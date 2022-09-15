@@ -1,5 +1,5 @@
 locals {
-  env_name = replace(path_relative_to_include(), "environments/", "")
+  env_name = split("/", path_relative_to_include())[0]
 }
 
 inputs = {
