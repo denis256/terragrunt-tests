@@ -1,11 +1,5 @@
-
-locals {
-  disable_outputs = true
-}
-
 include "unique_id" {
   path   = find_in_parent_folders("unique-id.hcl")
-  #expose = true
   merge_strategy = "deep"
 }
 
