@@ -1,9 +1,6 @@
-generate "provider" {
-  path = "provider.tf"
-  if_exists = "overwrite"
-  contents = <<EOF
-provider "aws" {
-  region = "eu-central-1"
+
+include "root" {
+  path = find_in_parent_folders()
 }
-EOF
-}
+
+#iam_role = "arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME"
