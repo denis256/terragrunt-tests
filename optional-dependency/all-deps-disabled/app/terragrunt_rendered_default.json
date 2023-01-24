@@ -16,7 +16,7 @@
     },
     "vpc": {
       "config_path": "../vpc",
-      "enabled": null,
+      "enabled": false,
       "mock_outputs": {
         "vpc_id": "vpc-12345678"
       },

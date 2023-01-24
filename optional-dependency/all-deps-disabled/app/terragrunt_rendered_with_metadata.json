@@ -2,7 +2,7 @@
   "dependency": {
     "db": {
       "metadata": {
-        "found_in_file": "/projects/gruntwork/terragrunt-tests/optional-dependency/app/terragrunt.hcl"
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/optional-dependency/all-deps-disabled/app/terragrunt.hcl"
       },
       "value": {
         "config_path": "../db",
@@ -20,11 +20,11 @@
     },
     "vpc": {
       "metadata": {
-        "found_in_file": "/projects/gruntwork/terragrunt-tests/optional-dependency/app/terragrunt.hcl"
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/optional-dependency/all-deps-disabled/app/terragrunt.hcl"
       },
       "value": {
         "config_path": "../vpc",
-        "enabled": null,
+        "enabled": false,
         "mock_outputs": {
           "vpc_id": "vpc-12345678"
         },
