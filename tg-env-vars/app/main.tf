@@ -1,2 +1,3 @@
-variable "work_dir" {}
-
+module "m1" {
+  source = "./module"
+}
