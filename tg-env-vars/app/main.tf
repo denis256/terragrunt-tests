@@ -1,0 +1,2 @@
+variable "work_dir" {}
+
