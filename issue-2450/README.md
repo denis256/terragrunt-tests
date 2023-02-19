@@ -1,0 +1,6 @@
+
+```
+cd demo
+terragrunt validate
+
+```
