@@ -3,7 +3,7 @@ terraform {
 
 
   before_hook "tflint" {
-    commands = ["apply", "plan"]
+    commands = ["apply", "plan", "verify"]
     execute  = ["tflint"]
   }
 
