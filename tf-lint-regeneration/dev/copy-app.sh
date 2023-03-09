@@ -6,7 +6,7 @@ mkdir apps
 #mkdir -p apps/app-0
 #cp terragrunt0.hcl apps/app-0/terragrunt.hcl
 
-for i in {1..50}
+for i in {1..100}
 do
    cp -Rfv template "apps/app-$i"
    # substitue app
