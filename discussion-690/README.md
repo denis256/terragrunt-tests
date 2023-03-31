@@ -2,7 +2,7 @@
 
 ```
 cd tg-modules/moda
-terragrunt run-all --terragrunt-source $(pwd)/../../services/  plan  --terragrunt-log-level debug
+terragrunt run-all --terragrunt-source $(pwd)/../../services/tf-service-modb  plan  --terragrunt-log-level debug
 ```
 
 References:
