@@ -1,0 +1,1 @@
+startswith1: true  startswith2: false endswith1: false endswith2: true

@@ -1,0 +1,1 @@
+ content: ./cluster_name.txt
