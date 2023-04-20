@@ -2,7 +2,7 @@ remote_state {
   backend = "s3"
   config = {
     encrypt = true
-    bucket = "s3-test-tg-2023-4"
+    bucket = "s3-test-tg-2023-21"
     key = "terraform.tfstate"
     region = "us-east-1"
     dynamodb_table = "s3-test-tg3"
