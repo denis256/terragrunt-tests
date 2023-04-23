@@ -10,6 +10,7 @@ locals {
 
 remote_state {
   backend = "s3"
+  // disable_dependency_optimization = false
   config = {
     dynamodb_table = local.terraform_state_dynamodb_table
     bucket         = local.terraform_state_s3_bucket
@@ -17,6 +18,7 @@ remote_state {
     profile        = local.terraform_config_profile
     key            = local.terraform_state_s3_key
     encrypt        = true
+
 
     s3_bucket_tags = {
       Name = "Terraform state storage"
