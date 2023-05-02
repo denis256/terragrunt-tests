@@ -1,5 +1,4 @@
 terraform {
-#  backend "s3" {}
 
   required_providers {
     aws = {
@@ -8,7 +7,6 @@ terraform {
     }
   }
 
-#  required_version = ">= 1.0.0"
 }
 
 module "ecs_service" {
