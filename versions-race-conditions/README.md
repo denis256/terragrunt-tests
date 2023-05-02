@@ -1,7 +1,10 @@
-# S3 config generation race conditions
+# Test for race conditions on downloading different terraform versions
 
+Execution:
 ```
-copy-template.sh - generate multiple dependency directories
+# generate multiple dependency directories
+copy-template.sh
 
 cd project
+terragrunt run-all plan
 ```
