@@ -8,3 +8,7 @@ copy-template.sh
 cd project
 terragrunt run-all plan
 ```
+
+```
+terragrunt init --terragrunt-parallelism 1  --terragrunt-log-level debug
+```
