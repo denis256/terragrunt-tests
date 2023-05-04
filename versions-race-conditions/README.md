@@ -9,6 +9,8 @@ cd project
 terragrunt run-all plan
 ```
 
+Single module test:
 ```
-terragrunt init --terragrunt-parallelism 1  --terragrunt-log-level debug
+cd project/app1
+terragrunt apply --terragrunt-log-level debug
 ```
