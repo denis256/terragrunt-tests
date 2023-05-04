@@ -1,22 +1,17 @@
 ---
 name: Bug report
-about: Create a bug report to help us improve.
+about: Create a bug report to help us improve Terragrunt.
 title: ''
 labels: bug
 assignees: ''
 
 ---
 
-<!--
-Have any questions? Check out the contributing docs at https://gruntwork.notion.site/Gruntwork-Coding-Methodology-02fdcd6e4b004e818553684760bf691e,
-or ask in this issue and a Gruntwork core maintainer will be happy to help :)
--->
-
 **Describe the bug**
 A clear and concise description of what the bug is.
 
 **To Reproduce**
-Steps to reproduce the behavior including the relevant Terraform/Terragrunt/Packer version number and any code snippets and module inputs you used.
+Steps to reproduce the behavior, code snippets and examples which can be used to reproduce the issue.
 
 ```hcl
 // paste code snippets here
@@ -28,6 +23,11 @@ A clear and concise description of what you expected to happen.
 **Nice to have**
 - [ ] Terminal output
 - [ ] Screenshots
+
+**Versions**
+- Terragrunt version:
+- Terraform version:
+- Environment details (Ubuntu 20.04, Windows 10, etc.):
 
 **Additional context**
 Add any other context about the problem here.
