@@ -8,3 +8,7 @@ terraform {
   }
 
 }
+
+output "output" {
+  value = "123"
+}
