@@ -7,4 +7,5 @@ locals {
 
 inputs = {
   environment = local.environment
+  pwd = local.pwd
 }
