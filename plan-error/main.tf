@@ -2,5 +2,5 @@ terraform {
 }
 
 provider "null" {
-  version = "~> 666.1"
+  version = "~> 2.1"
 }
