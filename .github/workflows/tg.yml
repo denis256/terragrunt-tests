@@ -8,10 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: 'Checkout'
+        uses: actions/checkout@master
+
       - name: Run Terragrunt Github Action
         uses: denis256/tg-gh-action@v0.0.3
         with:
           tf_version: '1.4.6'
           tg_version: '0.45.11'
-          tg_dir: 'issue-2569-2/environments/dev'
+          tg_dir: './issue-2569-2/environments/dev'
           tg_command: 'plan --terragrunt-non-interactive --terragrunt-log-level debug --terragrunt-debug'
