@@ -18,3 +18,6 @@ jobs:
           tg_version: '0.45.11'
           tg_dir: './issue-2569-2/environments/dev'
           tg_command: run-all plan --terragrunt-non-interactive --terragrunt-log-level debug --terragrunt-debug
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
