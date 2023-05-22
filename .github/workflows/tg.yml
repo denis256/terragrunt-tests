@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Run Terragrunt Github Action
-        uses: denis256/tg-gh-action@v0.0.3
+        uses: denis256/tg-gh-action@v0.0.4
         with:
           tf_version: '1.4.6'
           tg_version: '0.45.11'
