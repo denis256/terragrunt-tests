@@ -17,4 +17,4 @@ jobs:
           tf_version: '1.4.6'
           tg_version: '0.45.11'
           tg_dir: './issue-2569-2/environments/dev'
-          tg_command: 'run-all plan --terragrunt-non-interactive --terragrunt-log-level debug --terragrunt-debug'
+          tg_command: run-all plan --terragrunt-non-interactive --terragrunt-log-level debug --terragrunt-debug
