@@ -6,7 +6,7 @@ on:
 env:
   tf_version: 'v1.4.6'
   tg_version: 'v0.45.11'
-  tf_working_dir: 'issue-2569-2/environments/dev'
+  tg_dir: 'issue-2569-2/environments/dev'
   tg_command: 'plan --terragrunt-non-interactive --terragrunt-log-level debug --terragrunt-debug'
   
 jobs:
