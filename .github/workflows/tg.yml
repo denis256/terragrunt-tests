@@ -1,0 +1,17 @@
+name: Run terragrunt
+
+on:
+  workflow_dispatch:
+
+env:
+  tf_version: 'v1.4.6'
+  tg_version: 'v0.45.11'
+  tf_working_dir: '.'
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run Terragrunt Github Action
+        uses: denis256/tg-gh-action@v0.0.2
