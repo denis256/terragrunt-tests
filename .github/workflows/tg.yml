@@ -15,4 +15,4 @@ jobs:
 
     steps:
       - name: Run Terragrunt Github Action
-        uses: denis256/tg-gh-action@v0.0.2
+        uses: denis256/tg-gh-action@v0.0.3
