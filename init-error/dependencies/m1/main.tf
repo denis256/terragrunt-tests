@@ -10,3 +10,7 @@
 module "vpc" {
   source = "git::git@github.com:denis256/terraform-test-module.git//modules/test-file?ref=v0.0.1"
 }
+
+module "vpc2" {
+  source = "git::git@github.com:denis256/terraform-test-module.git//modules/test-file?ref=v0.0.2"
+}
