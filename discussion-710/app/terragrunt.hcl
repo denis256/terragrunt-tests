@@ -4,39 +4,23 @@ include "root" {
 
 dependency "module1" {
   config_path = "../module1"
-  mock_outputs_allowed_terraform_commands = ["validate"]
-  mock_outputs = {
-    result = "mock1"
-  }
+  skip_outputs = true
 }
 
 dependency "module2" {
   config_path = "../module2"
-  mock_outputs_allowed_terraform_commands = ["validate"]
-  mock_outputs = {
-    result = "mock2"
-  }
+  skip_outputs = true
+
 }
 
 dependency "module3" {
   config_path = "../module3"
-  mock_outputs_allowed_terraform_commands = ["validate"]
-  mock_outputs = {
-    result = "mock3"
-  }
+  skip_outputs = true
+
 }
 
 dependency "module4" {
   config_path = "../module4"
-  mock_outputs_allowed_terraform_commands = ["validate"]
-  mock_outputs = {
-    result = "mock4"
-  }
-}
+  skip_outputs = true
 
-inputs = {
-  module1 = dependency.module1.outputs.result
-  module2 = dependency.module2.outputs.result
-  module3 = dependency.module3.outputs.result
-  module4 = dependency.module4.outputs.result
 }
