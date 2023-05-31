@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Plan
-        uses: denis256/tg-gh-action@v0.0.6
+        uses: denis256/tg-gh-action
         with:
           tf_version: '1.4.6'
           tg_version: 'latest'
@@ -23,7 +23,7 @@ jobs:
           tg_command: run-all plan
 
       - name: Apply
-        uses: denis256/tg-gh-action@v0.0.6
+        uses: denis256/tg-gh-action
         with:
           tf_version: '1.4.6'
           tg_version: 'latest'
