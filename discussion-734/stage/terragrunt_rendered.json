@@ -1,0 +1,48 @@
+{
+  "dependencies": null,
+  "download_dir": "",
+  "generate": {
+    "main_tf": {
+      "comment_prefix": "# ",
+      "contents": "output \"aws_account_alias\" {\n  value = \"networking-stage-01\"\n}\n",
+      "disable": false,
+      "disable_signature": false,
+      "if_exists": "overwrite_terragrunt",
+      "path": "main.tf"
+    }
+  },
+  "iam_assume_role_duration": null,
+  "iam_assume_role_session_name": "",
+  "iam_role": "",
+  "inputs": null,
+  "locals": {
+    "config": {
+      "dependencies": null,
+      "download_dir": "",
+      "generate": {},
+      "iam_assume_role_duration": null,
+      "iam_assume_role_session_name": "",
+      "iam_role": "",
+      "inputs": null,
+      "locals": {
+        "account_id": "12345678901",
+        "aws_region": "us-east-1",
+        "environment": "stage"
+      },
+      "retry_max_attempts": null,
+      "retry_sleep_interval_sec": null,
+      "retryable_errors": null,
+      "skip": false,
+      "terraform_binary": "",
+      "terraform_version_constraint": "",
+      "terragrunt_version_constraint": ""
+    }
+  },
+  "retry_max_attempts": null,
+  "retry_sleep_interval_sec": null,
+  "retryable_errors": null,
+  "skip": false,
+  "terraform_binary": "",
+  "terraform_version_constraint": "",
+  "terragrunt_version_constraint": ""
+}
