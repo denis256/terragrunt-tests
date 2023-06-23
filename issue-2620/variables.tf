@@ -1,0 +1,3 @@
+variable "data" {
+  default = "test"
+}
