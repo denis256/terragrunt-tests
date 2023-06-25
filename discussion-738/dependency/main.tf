@@ -1,3 +1,3 @@
 output "id" {
-  value = "test-id"
+  value = "test-id-2"
 }
