@@ -1,6 +1,6 @@
 terraform {
-  before_hook "before_hook" {
+  before_hook "tflint" {
     commands     = ["apply", "plan"]
-    execute      = ["tflint"]
+    execute      = ["tflint", "--minimum-failure-severity=notice"]
   }
 }
