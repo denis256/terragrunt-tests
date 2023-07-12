@@ -5,5 +5,5 @@ dependency "dep" {
 
 inputs = {
   x = "y"
-  a = dependency.dep.outputs.a
+  a = dependency.dep.outputs.y
 }
