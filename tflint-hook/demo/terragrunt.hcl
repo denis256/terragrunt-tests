@@ -1,6 +1,6 @@
   terraform {
-    before_hook "lint" {
+    before_hook "tflint" {
       commands = ["validate"]
-      execute  = ["tflint"]
+      execute  = ["tflint", "--minimum-failure-severity=error"]
     }
   }
