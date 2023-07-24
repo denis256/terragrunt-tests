@@ -13,8 +13,6 @@ provider "aws" {
 
 }
 
-variable name {}
-
 resource "aws_s3_bucket" "invalid" {
-  bucket = var.name
+  bucket = "example-corp-assets"
 }
