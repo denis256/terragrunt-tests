@@ -12,7 +12,7 @@ terraform {
   }
 
   extra_arguments "test" {
-    commands = ["apply", "validate"]
+    commands = get_terraform_commands_that_need_vars()
     env_vars = {
       TF_VAR_custom_var = "Im set in extra_arguments env_vars"
       TF_VAR_name = "corp-1"
