@@ -6,4 +6,3 @@ resource "local_file" "file" {
 output "sensitive_file" {
   value = local_file.file.filename
 }
-
