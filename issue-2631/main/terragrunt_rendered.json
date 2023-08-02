@@ -1,0 +1,83 @@
+{
+  "dependency": {
+    "dep": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/issue-2631/main/terragrunt.hcl"
+      },
+      "value": {
+        "config_path": "../dependency",
+        "mock_outputs": null,
+        "mock_outputs_allowed_terraform_commands": null,
+        "mock_outputs_merge_strategy_with_state": null,
+        "mock_outputs_merge_with_state": null,
+        "name": "dep",
+        "outputs": null,
+        "skip": null
+      }
+    }
+  },
+  "download_dir": {
+    "metadata": null,
+    "value": ""
+  },
+  "iam_assume_role_duration": {
+    "metadata": null,
+    "value": null
+  },
+  "iam_assume_role_session_name": {
+    "metadata": null,
+    "value": ""
+  },
+  "iam_role": {
+    "metadata": null,
+    "value": ""
+  },
+  "inputs": {
+    "a": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/issue-2631/main/terragrunt.hcl"
+      },
+      "value": ""
+    },
+    "aaa": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/issue-2631/main/terragrunt.hcl"
+      },
+      "value": ""
+    },
+    "x": {
+      "metadata": {
+        "found_in_file": "/projects/gruntwork/terragrunt-tests/issue-2631/main/terragrunt.hcl"
+      },
+      "value": "y"
+    }
+  },
+  "retry_max_attempts": {
+    "metadata": null,
+    "value": null
+  },
+  "retry_sleep_interval_sec": {
+    "metadata": null,
+    "value": null
+  },
+  "retryable_errors": {
+    "metadata": null,
+    "value": null
+  },
+  "skip": {
+    "metadata": null,
+    "value": false
+  },
+  "terraform_binary": {
+    "metadata": null,
+    "value": ""
+  },
+  "terraform_version_constraint": {
+    "metadata": null,
+    "value": ""
+  },
+  "terragrunt_version_constraint": {
+    "metadata": null,
+    "value": ""
+  }
+}
