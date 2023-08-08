@@ -1,5 +1,6 @@
 # output-module-groups testing
 
 ```
-terragrunt  output-module-groups
+cd app
+terragrunt output-module-groups
 ```
