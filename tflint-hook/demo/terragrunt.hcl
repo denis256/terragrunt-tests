@@ -2,7 +2,7 @@ terraform {
   source          = "."
   include_in_copy = [".tflint.d/**"]
   before_hook "tflint" {
-    commands = ["validate", "apply"]
+    commands = ["validate", "apply",  "--terragrunt-external-tflint"]
     execute  = ["tflint"]
     # "--terragrunt-external-tflint"
     # ,  "--minimum-failure-severity=error"
