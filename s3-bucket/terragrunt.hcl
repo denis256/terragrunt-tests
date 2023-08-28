@@ -2,21 +2,11 @@ remote_state {
   backend = "s3"
   config = {
     encrypt = true
-    bucket = "test-s3-test-tg-2023-21"
+    //bucket = "test-s3-test-tg-123-1"
+    bucket = "test-s3-test-tg-123-1"
     key = "terraform.tfstate"
-    region = "us-east-1"
-    dynamodb_table = "s3-test-tg3"
-    enable_lock_table_ssencryption = true
+   // region = "us-east-1"
+    region = "us-west-2"
 
-
-    s3_bucket_tags = {
-      owner = "terragrunt integration test"
-      name = "Terraform state storage"
-    }
-
-    dynamodb_table_tags = {
-      owner = "terragrunt integration test"
-      name = "Terraform lock table"
-    }
   }
 }
