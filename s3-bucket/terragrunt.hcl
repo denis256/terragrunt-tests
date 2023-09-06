@@ -3,8 +3,8 @@ remote_state {
   config = {
     encrypt = true
     //bucket = "test-s3-test-tg-123-1"
-    bucket = "test-s3-test-tg-123-5"
-    key = "terraform.tfstate"
+    bucket = "test-s3-test-tg-123-7"
+    key = "terraform2.tfstate"
     region = "us-east-1"
    // region = "us-west-2"
 
