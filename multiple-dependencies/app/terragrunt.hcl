@@ -1,3 +1,7 @@
+terraform {
+  source = "."
+}
+
 dependency "m1" {
   config_path = "../m1"
   mock_outputs = {
@@ -15,6 +19,13 @@ dependency "m3" {
 
 dependency "m4" {
   config_path = "../m4"
+  mock_outputs = {
+    sensitive_file = "file.txt"
+  }
+}
+
+dependency "m5" {
+  config_path = "../m5"
   mock_outputs = {
     sensitive_file = "file.txt"
   }
