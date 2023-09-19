@@ -14,9 +14,11 @@ dependency "vpc_main" {
       }
     }
     mock_outputs_merge_with_state           = true
-    mock_outputs_allowed_terraform_commands = ["init", "refresh", "validate", "plan", "fmt"]
+    mock_outputs_allowed_terraform_commands = ["init", "refresh", "validate", "plan", "fmt", "apply"]
   }
 }
+
 inputs = {
+  qwe = "123"
   aws_vpc_subnet_a_id = dependency.vpc_main.outputs.aws_subnet_public_output[format("%s-%s-default-public-a", local.aws_project_name, local.env)].id
 }
