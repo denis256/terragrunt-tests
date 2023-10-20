@@ -1,4 +1,4 @@
-resource "null_resource" "health_check" {
+resource "null_resource" "script" {
 
   provisioner "local-exec" {
 
