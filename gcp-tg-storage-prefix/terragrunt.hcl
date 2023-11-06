@@ -8,7 +8,7 @@ remote_state {
 
   config = {
     project  = "tg-tests-341219"
-    //bucket   = "tf-test-2023-08-010"
+    bucket   = "tf-test-2023-08-011"
     location = "US-CENTRAL1"
   }
 }
