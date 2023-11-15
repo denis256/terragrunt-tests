@@ -6,4 +6,3 @@ data "terraform_remote_state" "vpc" {
     key    = "mgmt/vpc/terraform.tfstate"
   }
 }
-
