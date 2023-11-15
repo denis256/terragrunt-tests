@@ -1,0 +1,3 @@
+variables:
+  - name: fileName
+    description: File name to create
