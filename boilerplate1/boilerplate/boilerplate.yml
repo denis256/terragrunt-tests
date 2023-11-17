@@ -3,3 +3,4 @@ variables:
     description: Project name
   - name: replica_count
     description: Replica count
+
