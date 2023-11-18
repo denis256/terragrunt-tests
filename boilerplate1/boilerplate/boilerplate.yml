@@ -1,6 +1,0 @@
-variables:
-  - name: project_name
-    description: Project name
-  - name: replica_count
-    description: Replica count
-
