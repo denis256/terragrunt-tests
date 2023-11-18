@@ -1,6 +1,6 @@
 
 inputs = {
-  {{range .inputs}}
+  {{range .parsedInputs}}
   {{.}} = ""
   {{end}}
 }
