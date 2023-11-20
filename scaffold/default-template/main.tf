@@ -3,6 +3,6 @@ variable "replica_count" {}
 
 
 resource "local_file" "config" {
-  content     = "vpc: ${var.vpc} replica_count: ${var.replica_count}"
+  content     = "${var.project_name} vpc: ${var.vpc} replica_count: ${var.replica_count}"
   filename = "${path.module}/conifg.txt"
 }
