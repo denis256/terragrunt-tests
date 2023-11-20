@@ -1,1 +1,5 @@
-variable "project_name" {}
+variable "project_name" {
+
+  description = "Project name"
+
+}
