@@ -4,7 +4,7 @@
 ```
 terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/default-template
 
-terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/pass-vars --var=project_name=project-1 --var=replica_count=666
+terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/pass-vars --var=project_name=project-1 --var=replica_count=test666
 
 terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/pass-vars --var-file=/home/denis/projects/gruntwork/terragrunt-tests/scaffold/files/pass-vars.yaml
 ```
