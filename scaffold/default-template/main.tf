@@ -5,7 +5,8 @@ variable "vpc" {
 
 }
 variable "replica_count" {
-  default = "666"
+  type = number
+  default = 666
 }
 
 

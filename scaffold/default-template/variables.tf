@@ -1,5 +1,5 @@
 variable "project_name" {
-
+  type = string
   description = "Project name"
 
 }
@@ -13,7 +13,7 @@ variable "test_2" {
 }
 
 variable "test_3" {
-  type = integer
+  type = number
   default = 666
   description = "description test 3"
 }
