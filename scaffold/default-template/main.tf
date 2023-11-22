@@ -1,5 +1,5 @@
 variable "vpc" {
-
+  type        = string
   description = "VPC to be used"
   default     = "default-vpc"
 
@@ -7,6 +7,11 @@ variable "vpc" {
 variable "replica_count" {
   type = number
   default = 666
+}
+
+variable "enabled" {
+  type = bool
+  default = true
 }
 
 
