@@ -8,6 +8,8 @@ terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaff
 
 terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/default-template --var SourceUrlType=git --var Ref=6.6.6
 
+terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/default-template --var SourceUrlType=git --var Ref=6.6.6 --var SourceGitSshUser=potato
+
 terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/default-template --var Ref=6.6.6
 
 
