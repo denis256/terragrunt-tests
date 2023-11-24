@@ -12,6 +12,7 @@ terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaff
 
 terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/default-template --var Ref=6.6.6
 
+terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/default-template git::https://github.com/denis256/terragrunt-tests.git//scaffold/base-template
 
 terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/pass-vars --var=project_name=project-1 --var=replica_count=test666
 
