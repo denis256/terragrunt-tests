@@ -4,6 +4,8 @@
 ```
 terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/default-template
 
+terragrunt scaffold github.com/denis256/terragrunt-tests.git//scaffold/default-template
+
 terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/default-template --var SourceUrlType=git
 
 terragrunt scaffold git::https://github.com/denis256/terragrunt-tests.git//scaffold/default-template --var SourceUrlType=git --var Ref=6.6.6
