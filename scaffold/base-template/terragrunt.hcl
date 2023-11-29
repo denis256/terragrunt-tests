@@ -1,6 +1,6 @@
 # Base template to be used in different projects
 terraform {
-  source = "{{ .sourceUrl }}{{if .Ref}}?ref={{.Ref}}{{end}}"
+  source = "{{ .sourceUrl }}"
 }
 
 inputs = {

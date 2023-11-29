@@ -1,5 +1,2 @@
 # boilerplate config
 variables:
-  - name: Ref
-    description: Reference version used in template
-    default: ""
