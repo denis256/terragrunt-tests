@@ -4,6 +4,25 @@ variable "project_name" {
 
 }
 
+variable "open_port" {
+  type = number
+  description = "Port to open"
+}
+
+variable "enable_backups" {
+  type = bool
+}
+
+variable "users" {
+    type = list(string)
+    description = "List of users"
+}
+
+variable "policy_map" {
+    type = map(string)
+    description = "Map of policies"
+}
+
 variable "test_1" {}
 
 variable "test_2" {
