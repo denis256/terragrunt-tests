@@ -1,16 +1,19 @@
 remote_state {
   backend = "s3"
+  generate = {
+    path      = "backend.tf"
+    if_exists = "overwrite_terragrunt"
+  }
   config = {
-    bucket                = "test-tg-123"
-    key                   = "terraform.tfstate"
-    region                = "us-west-2"
+    bucket                = "test-tg-2023-01"
+    key                   = "denis-1-terraform.tfstate"
+    region                = "eu-central-1"
     assume_role = {
-      role_arn            = "arn:aws:iam::123:role/s3-role-1"
+      role_arn            = get_aws_caller_identity_arn()
       external_id        = "123"
       session_name = "qwe"
     }
     encrypt               = true
-    dynamodb_table        = "admin-terraform-lock"
     disable_bucket_update = true
     s3_bucket_tags = {
       owner = "terragrunt"
