@@ -15,9 +15,13 @@ terraform {
     # Syntax below is little hacky, but we want to have var files used in specific order, and the first file might not exist.
     required_var_files = concat(
       fileexists("${get_working_dir()}/${local.cluster_region}.tfvars") ? ["${get_working_dir()}/${local.cluster_region}.tfvars"] : [],
+      fileexists("${get_working_dir()}/${local.cluster_region}2.tfvars") ? ["${get_working_dir()}/${local.cluster_region}2.tfvars"] : [],
       [
         local.config_settings_file_path,
-        local.config_versions_file_path
+        local.config_versions_file_path,
+        local.config_1,
+        local.config_2,
+        local.config_3,
       ]
     )
   }
@@ -25,6 +29,9 @@ terraform {
 
 locals {
   cluster_region = "us-east-1"
-  config_settings_file_path = "default-settings.tfvars"
-  config_versions_file_path = "default-versions.tfvars"
+  config_settings_file_path = "settings.tfvars"
+  config_versions_file_path = "versions.tfvars"
+  config_1 = "1.tfvars"
+  config_2 = "2.tfvars"
+  config_3 = "3.tfvars"
 }
