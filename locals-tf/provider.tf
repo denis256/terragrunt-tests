@@ -5,16 +5,10 @@ variable "aws_tags" {
 }
 
 provider "aws" {
-region = "us-east-1"
-profile = "prod"
-default_tags {
-    tags = var.aws_tags
+    region = "us-east-1"
+    profile = "prod"
+    default_tags {
+        tags = var.aws_tags
+    }
 }
-}
-
-resource "local_file" "foo" {
-    content     = jsonencode(var.aws_tags)
-    filename = "foo.txt"
-}
-
 

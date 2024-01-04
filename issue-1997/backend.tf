@@ -2,7 +2,7 @@
 terraform {
   backend "gcs" {
     bucket                      = "tg-test-12345"
-    impersonate_service_account = "terragrunt2052@tg-tests-341219.iam.gserviceaccount.com"
+    impersonate_service_account = "xxx@abc-123.iam.gserviceaccount.com"
     prefix                      = "."
   }
 }
