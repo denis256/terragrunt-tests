@@ -5,7 +5,7 @@ terragrunt apply
 terragrunt state list
 terragrunt state list | wc -l
 terragrunt output
-terragrunt output -json file_name
-terragrunt output -json file_name | tee out.out
+terragrunt output -json vpc_id
+terragrunt output -json vpc_id | tee out.out
 terragrunt state list
 ```
