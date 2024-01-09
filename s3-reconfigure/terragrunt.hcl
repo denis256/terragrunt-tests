@@ -1,6 +1,6 @@
 remote_state {
   backend = "s3"
-  #disable_init = true
+  disable_init = true
   generate = {
     path      = "backend.tf"
     if_exists = "overwrite"
