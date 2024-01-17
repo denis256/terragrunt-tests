@@ -12,3 +12,18 @@ data "aws_instance" "example" {
   count = length(var.instance_ids)
   instance_id = var.instance_ids[count.index]
 }
+
+data "aws_instance" "example2" {
+  count = length(var.instance_ids)
+  instance_id = var.instance_ids[count.index]
+}
+
+data "aws_instance" "example3" {
+  count = length(var.instance_ids)
+  instance_id = var.instance_ids[count.index]
+}
+
+data "aws_instance" "example4" {
+  count = length(var.instance_ids)
+  instance_id = var.instance_ids[count.index]
+}

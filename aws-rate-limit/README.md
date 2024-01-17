@@ -1,5 +1,11 @@
 
+Prepare:
+
+```
+for i in {1..100}; do cp -r app_template "app_$i"; done
+```
+
 ```bash
-for i in {1..150}; do terraform refresh; done
+terragrunt run-all refresh
 ```
 
