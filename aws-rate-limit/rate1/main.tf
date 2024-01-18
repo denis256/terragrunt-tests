@@ -15,7 +15,7 @@ data "aws_s3_bucket" "buckets" {
 }
 
 resource "null_resource" "api_call_trigger" {
-  count = 1000000 # Large count to force frequent API calls
+  count = 100 # Large count to force frequent API calls
 
   triggers = {
     always_run = "${timestamp()}"
