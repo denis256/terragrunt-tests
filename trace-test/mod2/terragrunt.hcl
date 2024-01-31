@@ -4,6 +4,6 @@ dependency "prev" {
 
 inputs = {
   bucket = get_env("BUCKET", "my-terraform-bucket")
-  sleep = run_cmd("sleep 1")
+  sleep = run_cmd("bash", "-c", "sleep 1")
 
 }
