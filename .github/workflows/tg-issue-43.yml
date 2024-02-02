@@ -27,7 +27,7 @@ jobs:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
           tg_dir: "${{ env.working_dir }}/${{ env.environment }}"
-          tg_command: 'run-all plan -out tfplan-${{ env.environment }}'
+          tg_command: 'run-all --terragrunt-log-level debug plan -out tfplan-${{ env.environment }}'
 
       - name: Apply
         uses: gruntwork-io/terragrunt-action@v2
@@ -35,4 +35,4 @@ jobs:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
           tg_dir: "${{ env.working_dir }}/${{ env.environment }}"
-          tg_command: 'run-all apply tfplan-${{ env.environment }}'
+          tg_command: 'run-all --terragrunt-log-level debug apply tfplan-${{ env.environment }}'
