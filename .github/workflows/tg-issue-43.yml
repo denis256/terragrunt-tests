@@ -26,13 +26,13 @@ jobs:
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
-          tg_dir: "${{ env.working_dir }}/${{ inputs.environment }}"
-          tg_command: 'run-all plan -out tfplan-${{ inputs.environment }}'
+          tg_dir: "${{ env.working_dir }}/${{ env.environment }}"
+          tg_command: 'run-all plan -out tfplan-${{ env.environment }}'
 
       - name: Apply
         uses: gruntwork-io/terragrunt-action@v2
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
-          tg_dir: "${{ env.working_dir }}/${{ inputs.environment }}"
-          tg_command: 'run-all apply tfplan-${{ inputs.environment }}'
+          tg_dir: "${{ env.working_dir }}/${{ env.environment }}"
+          tg_command: 'run-all apply tfplan-${{ env.environment }}'
