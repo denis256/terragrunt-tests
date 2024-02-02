@@ -1,0 +1,39 @@
+name: 'tg-issue-43'
+
+on:
+  workflow_dispatch:
+
+env:
+  tf_version: '1.4.7'
+  tg_version: '0.46.3'
+  working_dir: 'tg-action-issue-43'
+  environment: 'example'
+
+jobs:
+
+  apply:
+    runs-on: ubuntu-latest
+    needs: [checks]
+    steps:
+
+      - name: 'Checkout'
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Plan
+        uses: gruntwork-io/terragrunt-action@v2
+        with:
+          tf_version: ${{ env.tf_version }}
+          tg_version: ${{ env.tg_version }}
+          tg_dir: "${{ env.working_dir }}/${{ inputs.environment }}"
+          tg_command: 'run-all plan -out tfplan-${{ inputs.environment }}'
+
+      - name: Apply
+        uses: gruntwork-io/terragrunt-action@v2
+        with:
+          tf_version: ${{ env.tf_version }}
+          tg_version: ${{ env.tg_version }}
+          tg_dir: "${{ env.working_dir }}/${{ inputs.environment }}"
+          tg_command: 'run-all apply tfplan-${{ inputs.environment }}'

@@ -1,0 +1,1 @@
+# Output passing example
