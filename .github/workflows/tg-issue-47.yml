@@ -26,7 +26,7 @@ jobs:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
           tg_dir: "${{ env.working_dir }}"
-          tg_command: 'apply plan -out tfplan'
+          tg_command: 'plan -out tfplan'
 
       - name: Apply
         uses: gruntwork-io/terragrunt-action@v2
