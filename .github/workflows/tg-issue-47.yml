@@ -7,7 +7,6 @@ env:
   tf_version: '1.4.7'
   tg_version: '0.46.3'
   working_dir: 'tg-action-issue-43/example/module1'
-  environment: 'example'
 
 jobs:
 
@@ -26,15 +25,15 @@ jobs:
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
-          tg_dir: "${{ env.working_dir }}/${{ env.environment }}"
-          tg_command: 'run-all plan -out tfplan'
+          tg_dir: "${{ env.working_dir }}"
+          tg_command: 'apply plan -out tfplan'
 
       - name: Apply
         uses: gruntwork-io/terragrunt-action@v2
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
-          tg_dir: "${{ env.working_dir }}/${{ env.environment }}"
+          tg_dir: "${{ env.working_dir }}"
           tg_command: >-
             apply
             --var-file devl.tfvars
