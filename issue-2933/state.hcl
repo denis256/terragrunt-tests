@@ -5,7 +5,7 @@ remote_state {
     if_exists = "overwrite_terragrunt"
   }
   config = {
-    bucket = "test-denis-bucket-2024-02"
+    bucket = "test-denis-bucket-2024-02-1"
 
     key            = "${path_relative_to_include()}/terraform.tfstate"
     region         = "us-west-2"
