@@ -36,4 +36,4 @@ jobs:
           tg_dir: "${{ env.working_dir }}"
           tg_command: >-
             apply
-            --var-file devl.tfvars
+            --var-file devl.tfvars --terragrunt-non-interactive
