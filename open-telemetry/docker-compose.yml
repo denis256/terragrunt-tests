@@ -1,23 +1,18 @@
 version: '3'
 services:
   otel-collector:
-    image: otel/opentelemetry-collector:latest
+    image: otel/opentelemetry-collector:0.94.0
     volumes:
       - ./otel-collector-config.yaml:/etc/otelcol/config.yaml
     ports:
       - "4317:4317" # OTLP gRPC receiver
-      - "4318:4318" # OTLP HTTP receiver
+      #- "4318:4318" # OTLP HTTP receiver
       - "8889:8889" # Prometheus exporter
-
   prometheus:
-    image: prom/prometheus:latest
+    image: prom/prometheus:v2.45.3
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
     depends_on:
       - otel-collector
-
-networks:
-  default:
-    driver: bridge

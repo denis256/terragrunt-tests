@@ -13,10 +13,6 @@ exporters:
 
 service:
   pipelines:
-    traces:
-      receivers: [otlp]
-      processors: [batch]
-      exporters: [prometheus]
     metrics:
       receivers: [otlp]
       processors: [batch]
