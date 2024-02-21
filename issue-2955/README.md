@@ -1,0 +1,5 @@
+
+```
+cd app
+terragrunt apply
+```
