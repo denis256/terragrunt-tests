@@ -1,7 +1,4 @@
-dependency "external_ebs_key_2024" {
-  config_path = "../kms/external-ebs-key-2024"
-}
-
-inputs = {
-  data = dependency.external_ebs_key_2024.outputs.qwe
+include "external_ebs_key_2024" {
+  path   = find_in_parent_folders("external_ebs_key_2024.hcl")
+  expose = true
 }
