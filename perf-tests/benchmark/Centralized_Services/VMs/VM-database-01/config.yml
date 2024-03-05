@@ -1,0 +1,4 @@
+---
+vm_name: pg01
+db_name: example1
+dns_a_record: pg-01
