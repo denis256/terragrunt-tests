@@ -1,0 +1,6 @@
+
+```
+cd app
+terragrunt validate 
+```
+
