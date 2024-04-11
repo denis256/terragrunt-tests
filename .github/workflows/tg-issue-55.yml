@@ -33,6 +33,7 @@ jobs:
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"
+          INPUT_PRE_EXEC_1: "env"
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
