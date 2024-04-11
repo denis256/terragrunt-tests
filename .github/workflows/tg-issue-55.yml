@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
 
 env:
-  TF_VERSION: 1.5.1
-  TG_VERSION: 0.55.21
-  working_dir: 'tg-issue-55'
+  TF_VERSION: "1.5.1"
+  TG_VERSION: "0.55.21"
+  working_dir: "tg-issue-55"
 
 jobs:
 
