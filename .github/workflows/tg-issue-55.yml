@@ -1,0 +1,42 @@
+name: 'tg-issue-55'
+
+on:
+  workflow_dispatch:
+
+env:
+  tf_version: '1.4.7'
+  tg_version: '0.46.3'
+  working_dir: 'tg-issue-55'
+
+jobs:
+
+  run:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: 'Checkout'
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Plan
+        uses: gruntwork-io/terragrunt-action@v2
+        with:
+          tf_version: ${{ env.tf_version }}
+          tg_version: ${{ env.tg_version }}
+          tg_dir: "${{ env.working_dir }}"
+          tg_command: 'plan -out {{ github.workspace }}/terragrunt.tfplan'
+
+      - name: Apply
+        uses: gruntwork-io/terragrunt-action@v2
+        env:
+          TRACE: "1"
+          TERRAGRUNT_NON_INTERACTIVE: "true"
+        with:
+          tf_version: ${{ env.tf_version }}
+          tg_version: ${{ env.tg_version }}
+          tg_dir: "${{ env.working_dir }}"
+          tg_command: >-
+            apply -auto-approve {{ github.workspace }}/terragrunt.tfplan
+            
