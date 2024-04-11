@@ -36,7 +36,7 @@ jobs:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
           tg_dir: "${{ env.working_dir }}"
-          tg_command: plan -out $GITHUB_WORKSPACE/terragrunt.tfplan
+          tg_command: plan -out ${{ runner.workspace }}/terragrunt.tfplan
 
       - name: Apply
         uses: gruntwork-io/terragrunt-action@v2
@@ -48,5 +48,5 @@ jobs:
           tg_version: ${{ env.tg_version }}
           tg_dir: "${{ env.working_dir }}"
           tg_command: >-
-            apply -auto-approve $GITHUB_WORKSPACE/terragrunt.tfplan
+            apply -auto-approve ${{ runner.workspace }}/terragrunt.tfplan
             
