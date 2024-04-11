@@ -21,7 +21,7 @@ jobs:
           submodules: true
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@39-permissions-set
+        uses: gruntwork-io/terragrunt-action@v2
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
@@ -29,7 +29,7 @@ jobs:
           tg_command: 'plan -out tfplan'
 
       - name: Apply
-        uses: gruntwork-io/terragrunt-action@39-permissions-set
+        uses: gruntwork-io/terragrunt-action@v2
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"
