@@ -1,24 +1,18 @@
+provider "aws" {
+  region = "us-east-1"
+}
 
 provider "aws" {
   alias  = "other_account"
   region = "eu-central-1"
 }
 
-provider "aws" {
-  region = "us-east-1" # You can choose the region that suits you
+module "s3_module" {
+  source = "./module"
 }
 
-resource "aws_s3_bucket" "my_bucket" {
-  bucket = "terragrunt-test-3324323423"
-
-  tags = {
-    Name        = "My Bucket"
-    Environment = "Test"
-  }
-}
-
-resource "aws_s3_bucket" "my_bucket_2" {
-  bucket = "terragrunt-test-3324323423-2"
+resource "aws_s3_bucket" "my_bucket_1" {
+  bucket = "terragrunt-test-module-1"
   provider  = aws.other_account
 
   tags = {
@@ -27,6 +21,14 @@ resource "aws_s3_bucket" "my_bucket_2" {
   }
 }
 
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "terragrunt-test-3"
+
+  tags = {
+    Name        = "My Bucket"
+    Environment = "Test"
+  }
+}
 
 output "bucket_id" {
   value = aws_s3_bucket.my_bucket.id

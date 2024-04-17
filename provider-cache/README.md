@@ -1,4 +1,3 @@
 ```
-TERRAGRUNT_PROVIDER_CACHE=1 terragrunt plan                                                         <aws:md-sandbox-admin>
-
+TERRAGRUNT_PROVIDER_CACHE=1 terragrunt plan
 ```
