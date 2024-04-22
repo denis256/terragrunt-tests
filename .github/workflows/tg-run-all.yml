@@ -1,4 +1,4 @@
-name: 'tg-issue-55'
+name: 'tg-run-all'
 
 on:
   workflow_dispatch:
