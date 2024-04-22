@@ -1,12 +1,12 @@
-name: 'tg-issue-47'
+name: 'tg-issue-55'
 
 on:
   workflow_dispatch:
 
 env:
-  tf_version: '1.4.7'
-  tg_version: '0.46.3'
-  working_dir: 'tg-issue-47'
+  tf_version: "1.5.1"
+  tg_version: "0.55.21"
+  working_dir: "run-all"
 
 jobs:
 
@@ -22,21 +22,13 @@ jobs:
 
       - name: Plan
         uses: gruntwork-io/terragrunt-action@SME-228/LIB-70/opentofu-mise-tg-action
-        with:
-          tf_version: ${{ env.tf_version }}
-          tg_version: ${{ env.tg_version }}
-          tg_dir: "${{ env.working_dir }}"
-          tg_command: 'plan -out tfplan'
-
-      - name: Apply
-        uses: gruntwork-io/terragrunt-action@SME-228/LIB-70/opentofu-mise-tg-action
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"
+          INPUT_PRE_EXEC_1: "env"
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
           tg_dir: "${{ env.working_dir }}"
-          tg_command: >-
-            apply
-            --var-file devl.tfvars -auto-approve
+          tg_command: run-all plan
+
