@@ -1,0 +1,4 @@
+```
+terragrunt render-json
+
+```

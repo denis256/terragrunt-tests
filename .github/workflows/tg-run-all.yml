@@ -21,7 +21,7 @@ jobs:
           submodules: true
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@SME-228/LIB-70/opentofu-mise-tg-action
+        uses: gruntwork-io/terragrunt-action@SME-532/fix-runner
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"
