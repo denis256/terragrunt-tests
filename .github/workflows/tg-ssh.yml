@@ -18,15 +18,15 @@ jobs:
         run: "mkdir -p /home/runner/work/_temp/_github_workflow"
         shell: bash
 
-#      - uses: webfactory/ssh-agent@v0.7.0
-#        with:
-#          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-#          ssh-auth-sock: "/home/runner/work/_temp/_github_workflow/ssh-agent.sock"
+      - uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-auth-sock: "/home/runner/work/_temp/_github_workflow/ssh-agent.sock"
 
       - name: Plan
         uses: gruntwork-io/terragrunt-action@v2
-#        env:
-#          SSH_AUTH_SOCK: "/github/workflow/ssh-agent.sock"
+        env:
+          SSH_AUTH_SOCK: "/github/workflow/ssh-agent.sock"
 
         with:
           tf_version: ${{ env.tf_version }}
