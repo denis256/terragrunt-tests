@@ -21,7 +21,7 @@ jobs:
           submodules: true
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@SME-228/LIB-70/opentofu-mise-tg-action
+        uses: gruntwork-io/terragrunt-action@bug/github-ssh-keys-63
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
@@ -29,7 +29,7 @@ jobs:
           tg_command: 'plan -out tfplan'
 
       - name: Apply
-        uses: gruntwork-io/terragrunt-action@SME-228/LIB-70/opentofu-mise-tg-action
+        uses: gruntwork-io/terragrunt-action@bug/github-ssh-keys-63
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"

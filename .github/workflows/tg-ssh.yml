@@ -24,7 +24,7 @@ jobs:
           ssh-auth-sock: "/home/runner/work/_temp/_github_workflow/ssh-agent.sock"
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@v2
+        uses: gruntwork-io/terragrunt-action@bug/github-ssh-keys-63
         env:
           SSH_AUTH_SOCK: "/github/workflow/ssh-agent.sock"
 
