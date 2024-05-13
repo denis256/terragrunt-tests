@@ -29,7 +29,7 @@ jobs:
           echo "RUNNER_WORKSPACE === $RUNNER_WORKSPACE"
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@bug/github-ssh-keys-63
+        uses: gruntwork-io/terragrunt-action@v2
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"
@@ -41,7 +41,7 @@ jobs:
           tg_command: plan -out ${{ runner.workspace }}/terragrunt.tfplan
 
       - name: Apply
-        uses: gruntwork-io/terragrunt-action@bug/github-ssh-keys-63
+        uses: gruntwork-io/terragrunt-action@v2
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"

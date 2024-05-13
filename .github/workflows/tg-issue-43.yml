@@ -22,7 +22,7 @@ jobs:
           submodules: true
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@bug/github-ssh-keys-63
+        uses: gruntwork-io/terragrunt-action@v2
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
@@ -30,7 +30,7 @@ jobs:
           tg_command: 'run-all plan -out tfplan'
 
       - name: Apply
-        uses: gruntwork-io/terragrunt-action@bug/github-ssh-keys-63
+        uses: gruntwork-io/terragrunt-action@v2
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
