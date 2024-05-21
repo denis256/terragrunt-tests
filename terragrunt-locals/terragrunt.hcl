@@ -1,5 +1,5 @@
 locals {
-  api_token = run_cmd("./key.sh", "--terragrunt-non-interactive")
+  api_token = run_cmd("./script.sh", "--terragrunt-non-interactive")
 }
 
 terraform {
