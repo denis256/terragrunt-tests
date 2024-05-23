@@ -5,7 +5,7 @@ on: [pull_request]
 env:
   tf_version: '1.5.7'
   tg_version: '0.53.2'
-  working_dir: 'tf-lint-regeneration/dev/apps'
+  working_dir: 'run-all'
   TRACE: '1'
 
 jobs:
