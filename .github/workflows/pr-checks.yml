@@ -1,0 +1,38 @@
+name: 'pr-checks'
+
+on: [pull_request]
+
+env:
+  tf_version: '1.5.7'
+  tg_version: '0.53.2'
+  working_dir: 'run-all'
+  TRACE: '1'
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@master
+
+      - name: Run checks
+        uses: gruntwork-io/terragrunt-action@v2
+        with:
+          tf_version: ${{ env.tf_version }}
+          tg_version: ${{ env.tg_version }}
+          tg_dir: ${{ env.working_dir }}
+          tg_command: 'hclfmt --terragrunt-check --terragrunt-diff'
+          tg_comment: '0'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run plan
+        uses: gruntwork-io/terragrunt-action@v2
+        with:
+          tf_version: ${{ env.tf_version }}
+          tg_version: ${{ env.tg_version }}
+          tg_dir: ${{ env.working_dir }}
+          tg_command: 'run-all plan'
+          tg_comment: '1'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
