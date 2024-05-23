@@ -5,7 +5,7 @@ on: [pull_request]
 env:
   tf_version: '1.5.7'
   tg_version: '0.53.2'
-  working_dir: 'run-all'
+  working_dir: '.'
   TRACE: '1'
 
 jobs:
