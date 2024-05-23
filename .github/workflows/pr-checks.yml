@@ -6,7 +6,7 @@ env:
   tf_version: '1.5.7'
   tg_version: '0.53.2'
   working_dir: 'run-all'
-  TRACE: '1'
+  #TRACE: '1'
 
 jobs:
   checks:
