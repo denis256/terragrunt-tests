@@ -6,7 +6,7 @@ env:
   tf_version: '1.5.7'
   tg_version: '0.53.2'
   working_dir: 'run-all'
-  TRACE: '1'
+  #TRACE: '1'
 
 jobs:
   checks:
@@ -15,19 +15,13 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@master
 
-      - name: Run checks
-        uses: gruntwork-io/terragrunt-action@v2
+      - uses: webfactory/ssh-agent@v0.7.0
         with:
-          tf_version: ${{ env.tf_version }}
-          tg_version: ${{ env.tg_version }}
-          tg_dir: ${{ env.working_dir }}
-          tg_command: 'hclfmt --terragrunt-check --terragrunt-diff'
-          tg_comment: '0'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-auth-sock: "/home/runner/work/_temp/_github_workflow/ssh-agent.sock"
 
       - name: Run plan
-        uses: gruntwork-io/terragrunt-action@v2
+        uses: gruntwork-io/terragrunt-action@bug/jq-args-71
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
@@ -36,3 +30,4 @@ jobs:
           tg_comment: '1'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SSH_AUTH_SOCK: "/github/workflow/ssh-agent.sock"
