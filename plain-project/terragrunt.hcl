@@ -1,0 +1,3 @@
+inputs = {
+  value = "test"
+}
