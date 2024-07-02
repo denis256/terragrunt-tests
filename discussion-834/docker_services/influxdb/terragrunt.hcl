@@ -1,8 +1,3 @@
-include "common" {
-    path = find_in_parent_folders("common.hcl")
-}
-
-
-inputs = {
-  docker_service = dependency.docker_server.outputs.ip
+terraform {
+  source = "${get_terragrunt_dir()}/../../modules/docker_servers/influxdb"
 }
