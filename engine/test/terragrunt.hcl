@@ -1,5 +1,5 @@
 engine {
-  source  = "/projects/gruntwork/terragrunt-engine-opentofu/terragrunt-iac-engine-opentofu"
+  source  = "/projects/gruntwork/terragrunt/terragrunt-iac-engine-opentofu_v0.0.1"
   version = "v0.0.1"
   type    = "rpc"
   meta = {
