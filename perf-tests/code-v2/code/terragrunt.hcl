@@ -1,0 +1,4 @@
+
+locals {
+  xyz = "xyz"
+}
