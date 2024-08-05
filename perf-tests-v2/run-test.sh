@@ -4,4 +4,5 @@ export EXECUTABLE="${EXECUTABLE:-terragrunt}"
 
 cd test/code
 
-terragrunt run-all apply --terragrunt-non-interactive
+echo "executable: ${EXECUTABLE}"
+${EXECUTABLE} run-all apply --terragrunt-non-interactive

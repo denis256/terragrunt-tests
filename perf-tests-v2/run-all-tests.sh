@@ -2,18 +2,20 @@
 
 source ./versions.sh
 
+rm -rf ./results/*.json || true
+rm combined_results.json || true
 
 local_versions=(
 "/projects/gruntwork/terragrunt/terragrunt"
+"/projects/gruntwork/terragrunt-tests/perf-tests-v2/terragrunt-local-cache.sh"
 )
 
 executables=()
 
-cwd=$(pwd)
-
+pwd=$(pwd)
 
 for version in "${versions[@]}"; do
-  full_path="${cwd}${local_path}.${version}"
+  full_path="${pwd}${local_path}/terragrunt.${version}"
   executables+=("${full_path}")
 done
 
@@ -24,10 +26,11 @@ done
 echo "Run:"
 mkdir results
 for exe in "${executables[@]}"; do
-    id=$(basename "${exe}")
-    echo "${id}"
-    export EXECUTABLE="${exe}"
-    hyperfine --runs 3 "./run-test.sh ${id}" --export-json "results/${id}-results.json"
+  ./code-init.sh
+  id=$(basename "${exe}")
+  echo "${id} ${exe}"
+  export EXECUTABLE="${exe}"
+  hyperfine --runs 5 "./run-test.sh ${id}" --export-json "results/${id}-results.json"
 done
 
 # Collect all results into a single JSON file
