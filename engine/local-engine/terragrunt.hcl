@@ -1,13 +1,11 @@
 engine {
-  source  = "/projects/gruntwork/terragrunt/terragrunt-iac-engine-opentofu_v0.0.1"
-  version = "v0.0.1"
-  type    = "rpc"
+  source = "/projects/terragrunt-engine-client"
   meta = {
-    tools_to_install = ["kubectl"]
-    tofu_version = "1.6.0"
+    endpoint = "localhost:50051"
+    token    = get_env("TG_SERVER_TOKEN")
   }
 }
 
 inputs = {
-  value = "qwe 123"
+  value = "test-value"
 }
