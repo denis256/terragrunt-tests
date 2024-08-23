@@ -1,8 +1,7 @@
 engine {
-  source = "/projects/terragrunt-engine-client"
+  source = "/projects/gruntwork/terragrunt-engine-terraform/terragrunt-iac-engine-terraform"
   meta = {
-    endpoint = "localhost:50051"
-    token    = get_env("TG_SERVER_TOKEN")
+
   }
 }
 
