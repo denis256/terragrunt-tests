@@ -1,5 +1,8 @@
 
-terragrunt run-all apply
 
-terragrunt run-all show -json
+```
+cd app
+terragrunt plan -out planfile
+terragrunt show -json planfile  > out.json
+```
 
