@@ -6,3 +6,7 @@ remote_state {
     region = "us-east-1"
   }
 }
+
+terraform {
+  source = "."
+}
