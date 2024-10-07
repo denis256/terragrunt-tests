@@ -1,11 +1,11 @@
-name: 'Terragrunt GitHub Action Basic Test'
+name: 'basic-test'
 on:
   workflow_dispatch:
 
 env:
   tofu_version: '1.8.1'
   tg_version: '0.67.0'
-  working_dir: 'run-all'
+  working_dir: 'basic-test'
 
 jobs:
   checks:
