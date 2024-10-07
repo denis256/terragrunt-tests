@@ -1,3 +1,3 @@
-terragrunt {
+terraform {
   source = "."
 }
