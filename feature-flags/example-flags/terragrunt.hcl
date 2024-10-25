@@ -8,10 +8,8 @@ feature "int_feature_flag" {
 }
 
 locals {
-
   string_feature_flag = run_cmd("echo", "string_feature_flag", feature.string_feature_flag.value)
   int_feature_flag = run_cmd("echo", "int_feature_flag", feature.int_feature_flag.value)
-
 }
 
 
