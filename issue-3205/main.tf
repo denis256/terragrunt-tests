@@ -1,23 +1,20 @@
-variable "access_policies" {
-  type = list(
-    object({
-      object_id = list(string),
-      secret_permissions = list(string),
-      key_permissions = list(string)
-    })
-  )
-}
+resource "local_file" "policy" {
+  for_each = {
+    for policy in flatten([
+      for p in var.access_policies : [
+        for id in p.object_ids : {
+          id = id
+          secret_permissions = p.secret_permissions
+          key_permissions = p.key_permissions
+        }
+      ]
+    ]) : policy.id => policy
+  }
 
-locals {
-  processed_access_policies = [
-    for policy in var.access_policies : {
-      object_ids = [for id in policy.object_id : id]
-      secret_permissions = policy.secret_permissions
-      key_permissions = policy.key_permissions
-    }
-  ]
-}
-
-output "processed_access_policies" {
-  value = local.processed_access_policies
+  filename = "${path.module}/policies/policy_${each.key}.json"
+  content = jsonencode({
+    object_id = each.key
+    secret_permissions = each.value.secret_permissions
+    key_permissions = each.value.key_permissions
+  })
 }
