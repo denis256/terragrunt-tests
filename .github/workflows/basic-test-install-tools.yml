@@ -33,6 +33,7 @@ jobs:
         uses: gruntwork-io/terragrunt-action@v2
         env:
           INPUT_PRE_EXEC_0: 'sudo curl -sLO https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip && sudo unzip -q awscli-exe-linux-x86_64.zip && sudo ./aws/install'
+          INPUT_PRE_EXEC_1: 'aws --version'
         with:
           tofu_version: ${{ env.tofu_version }}
           tg_version: ${{ env.tg_version }}
