@@ -1,8 +1,8 @@
 
-feature "exclude_gcp_deploy"{
-  default = true
+feature "gcp_deploy"{
+  default = false
 }
 
-feature "exclude_aws_deploy"{
-  default = true
+feature "aws_deploy"{
+  default = false
 }
