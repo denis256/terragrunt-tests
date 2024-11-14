@@ -3,8 +3,8 @@ include "root" {
 }
 
 exclude {
-  if = !feature.gcp_deploy.value
+  if = feature.exclude_gcp_deploy.value
   actions = ["apply"]
-  exclude_dependencies = feature.gcp_deploy.value
+  exclude_dependencies = feature.exclude_gcp_deploy.value
 }
 

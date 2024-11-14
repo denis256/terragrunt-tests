@@ -3,10 +3,10 @@
 
 terragrunt run-all apply
 
-terragrunt run-all apply  --feature gcp_deploy=true
+terragrunt run-all apply  --feature exclude_gcp_deploy=false
 
 
-terragrunt run-all apply  --feature gcp_deploy=true --feature aws_deploy=true
+terragrunt run-all apply  --feature exclude_gcp_deploy=false --feature exclude_aws_deploy=false
 
 
 ```

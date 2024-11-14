@@ -3,7 +3,7 @@ include "root" {
 }
 
 exclude {
-  if = feature.aws_deploy.value || feature.gcp_deploy.value
+  if = !feature.exclude_aws_deploy.value || !feature.exclude_gcp_deploy.value
   actions = ["apply"]
-  exclude_dependencies = feature.aws_deploy.value || feature.gcp_deploy.value
+  exclude_dependencies = feature.exclude_aws_deploy.value || feature.exclude_gcp_deploy.value
 }
