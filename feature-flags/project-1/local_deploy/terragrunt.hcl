@@ -14,5 +14,5 @@ dependency "module" {
 exclude {
   if = feature.gcp_deploy.value || feature.aws_deploy.value
   actions = ["apply"]
-  exclude_dependencies = false
+  exclude_dependencies = feature.gcp_deploy.value || feature.aws_deploy.value
 }
