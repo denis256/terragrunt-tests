@@ -1,14 +1,12 @@
 
 ```
 
-terragrunt run-all apply --feature dev_deploy=true
+terragrunt run-all apply --feature environment=dev
 
-terragrunt run-all apply --feature dev_deploy=false --feature stage_deploy=true
+terragrunt run-all apply --feature non_prod=true
 
-terragrunt run-all apply --feature stage_deploy=true
+terragrunt run-all apply --feature environment=prod
 
-
-terragrunt run-all apply --feature dev_deploy=false --feature prod_deploy=true
-
+terragrunt run-all apply --feature non_prod=false
 
 ```
