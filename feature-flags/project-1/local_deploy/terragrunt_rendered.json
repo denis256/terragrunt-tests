@@ -1,0 +1,50 @@
+{
+  "dependencies": null,
+  "dependency": {
+    "module": {
+      "config_path": "../app1",
+      "enabled": null,
+      "inputs": null,
+      "mock_outputs": {
+        "data": "mock"
+      },
+      "mock_outputs_allowed_terraform_commands": null,
+      "mock_outputs_merge_strategy_with_state": null,
+      "mock_outputs_merge_with_state": null,
+      "name": "module",
+      "outputs": null,
+      "skip": null
+    }
+  },
+  "download_dir": "",
+  "exclude": {
+    "actions": [
+      "apply"
+    ],
+    "exclude_dependencies": false,
+    "if": false
+  },
+  "feature": {
+    "aws_deploy": {
+      "default": false,
+      "name": "aws_deploy"
+    },
+    "gcp_deploy": {
+      "default": false,
+      "name": "gcp_deploy"
+    }
+  },
+  "generate": {},
+  "iam_assume_role_duration": null,
+  "iam_assume_role_session_name": "",
+  "iam_role": "",
+  "iam_web_identity_token": "",
+  "inputs": null,
+  "locals": null,
+  "retry_max_attempts": null,
+  "retry_sleep_interval_sec": null,
+  "retryable_errors": null,
+  "terraform_binary": "",
+  "terraform_version_constraint": "",
+  "terragrunt_version_constraint": ""
+}
