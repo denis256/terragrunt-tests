@@ -7,7 +7,7 @@ feature "non_prod" {
 }
 
 exclude {
-  if = feature.environment.value != "stage" && !feature.non_prod.value
+  if = !(feature.environment.value == "stage" || feature.non_prod.value)
   actions = ["all"]
   exclude_dependencies = true
 }
