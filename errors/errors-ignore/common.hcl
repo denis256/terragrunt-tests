@@ -3,6 +3,6 @@ errors {
     ignorable_errors = [
       ".*Script error.*",
     ]
-    message = "Ignoring error example1"
+    message = "Ignoring script error"
   }
 }
