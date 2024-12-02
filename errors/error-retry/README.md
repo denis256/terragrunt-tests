@@ -1,0 +1,4 @@
+
+```
+terragrunt apply --auto-approve
+```
