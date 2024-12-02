@@ -15,5 +15,5 @@ resource "null_resource" "script_runner" {
 
 
 output "value" {
-  value = "valid value from depednency"
+  value = "valid value from failing_dep"
 }
