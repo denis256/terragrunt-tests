@@ -2,17 +2,17 @@ terraform {
   source = "tfr:///terraform-aws-modules/ec2-instance/aws?version=5.7.1"
 
   after_hook "smoke_tests" {
-    commands     = ["apply"]
-    execute      = ["echo", "Running smoke tests"]
+    commands = ["apply"]
+    execute  = ["echo", "Running smoke tests"]
   }
 }
 
 errors {
-    retry "transient_errors" {
-        retryable_errors = [".*Error: transient network issue.*"]
-        max_attempts = 3
-        sleep_interval_sec = 5
-    }
+  retry "transient_errors" {
+    retryable_errors   = [".*Error: transient network issue.*"]
+    max_attempts       = 3
+    sleep_interval_sec = 5
+  }
 }
 
 dependency "vpc" {
