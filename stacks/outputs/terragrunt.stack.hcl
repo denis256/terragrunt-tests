@@ -1,20 +1,20 @@
-unit "mother" {
-	source = "units/chicken"
-	path   = "mother"
+unit "aapl" {
+	source = "units/aapl"
+	path   = "aapl"
 }
 
-unit "father" {
-	source = "units/chicken"
-	path   = "father"
+unit "nvda" {
+	source = "units/nvda"
+	path   = "nvda"
 }
 
-unit "chick_1" {
-	source = "units/chick"
-	path   = "chicks/chick-1"
+unit "project1_aapl" {
+	source = "units/aapl"
+	path   = "project1/aapl"
 }
 
-unit "chick_2" {
-	source = "units/chick"
-	path   = "chicks/chick-2"
+unit "project1_nvda" {
+	source = "units/nvda"
+	path   = "project1/nvda"
 }
 
