@@ -1,7 +1,7 @@
 # root/generate.hcl
 locals {
   config         = read_terragrunt_config("versions.hcl")
-  project_config = read_terragrunt_config(find_in_parent_folders("versions.hcl", "project.hcl"), { inputs = {} })
+  project_config = read_terragrunt_config(find_in_parent_folders("versions.hcl"))
 
   # Merge the providers from root and project-specific versions.hcl files, prioritizing the project-specific versions
   merged_providers = {
