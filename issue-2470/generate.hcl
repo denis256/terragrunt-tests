@@ -1,13 +1,20 @@
 # root/generate.hcl
 locals {
-  config            = read_terragrunt_config("versions.hcl")
-  project_config    = read_terragrunt_config(find_in_parent_folders("versions.hcl", "project.hcl"), { inputs = {} })
+  config         = read_terragrunt_config("versions.hcl")
+  project_config = read_terragrunt_config(find_in_parent_folders("versions.hcl", "project.hcl"), { inputs = {} })
 
-  # Merge the providers from root and project-specific versions.hcl files
-  merged_providers  = merge(
-    lookup(local.config.locals, "required_providers", {}),
-    lookup(local.project_config.locals, "required_providers", {})
-  )
+  # Merge the providers from root and project-specific versions.hcl files, prioritizing the project-specific versions
+  merged_providers = {
+    for provider, config in merge(
+      lookup(local.project_config.locals, "required_providers", {}),
+      lookup(local.config.locals, "required_providers", {})
+    ):
+    provider => {
+      source  = lookup(config, "source", null)
+      version = lookup(config, "version", null)
+    }
+    if lookup(config, "version", null) != null
+  }
 
   # Use the required_version from the project-specific versions.hcl file if defined, otherwise use the one from the root versions.hcl file
   merged_required_version = coalesce(
