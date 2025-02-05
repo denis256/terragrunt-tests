@@ -1,8 +1,8 @@
 locals {
   required_providers = {
-    kubernetes = {
-      source  = "hashicorp/kubernetes"
-      version = "~> 2.15"
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.2"
     }
   }
 }
