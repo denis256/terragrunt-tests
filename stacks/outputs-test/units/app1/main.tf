@@ -35,3 +35,9 @@ output "complex_list" {
     }
   ]
 }
+
+
+resource "local_file" "config" {
+  content     = " file"
+  filename = "${path.module}/config.txt"
+}
