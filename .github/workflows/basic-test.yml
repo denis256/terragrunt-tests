@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@main
+        uses: gruntwork-io/terragrunt-action@pwd-fix
         with:
           tofu_version: ${{ env.tofu_version }}
           tg_version: ${{ env.tg_version }}
