@@ -4,5 +4,7 @@ locals {
 }
 
 inputs = {
+  deployment = unit.values.deployment
+  project = unit.values.project
   data = local.data
 }

@@ -1,5 +1,18 @@
+
+variable "deployment" {}
+
+variable "project" {}
+
 variable "data" {}
 
-output "value" {
+output "data" {
   value = var.data
+}
+
+output "deployment" {
+  value = var.deployment
+}
+
+output "project" {
+  value = var.project
 }
