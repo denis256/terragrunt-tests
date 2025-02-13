@@ -1,8 +1,12 @@
+locals {
+	project = "my-project"
+}
 unit "app1" {
 	source = "units/app"
 	path   = "app1"
 
 	values = {
+		project    = local.project
 		deployment = "app1"
 	}
 }
@@ -12,6 +16,7 @@ unit "app2" {
 	path   = "app2"
 
 	values = {
+		project    = local.project
 		deployment = "app2"
 	}
 }
