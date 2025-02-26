@@ -1,7 +1,7 @@
 
-unit "dev-unit" {
-	source = "../units/dev-unit"
-	path   = "dev-unit"
+unit "dev" {
+	source = "../units/dev"
+	path   = "dev"
 }
 
 stack "projects" {
