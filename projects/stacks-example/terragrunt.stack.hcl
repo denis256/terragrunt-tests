@@ -6,6 +6,6 @@ stack "dev" {
 
 
 stack "prod" {
-	source = "${get_repo_root()}/stacks/dev"
+	source = "${get_repo_root()}/stacks/prod"
 	path = "prod"
 }
