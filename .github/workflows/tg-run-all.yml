@@ -5,7 +5,7 @@ on:
 
 env:
   tf_version: "1.7.5"
-  tg_version: "0.55.18"
+  tg_version: "0.75.10"
   working_dir: "run-all"
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
           submodules: true
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@v2
+        uses: gruntwork-io/terragrunt-action@feat/use-2.1.7-image
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"
@@ -35,7 +35,7 @@ jobs:
 
 
       - name: Apply
-        uses: gruntwork-io/terragrunt-action@v2
+        uses: gruntwork-io/terragrunt-action@feat/use-2.1.7-image
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"
