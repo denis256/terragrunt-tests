@@ -1,7 +1,7 @@
 unit "prod-unit-config" {
-	source = "${get_repo_root()}/stacks-test/hidden/config/prod"
+	source = "${get_repo_root()}/stacks-test/hidden/configs/prod"
 	path   = "prod-unit-config"
-	hidden = true
+	no_dot_terragrunt_stack = true
 }
 
 unit "prod-api" {

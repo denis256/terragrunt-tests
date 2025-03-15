@@ -1,7 +1,7 @@
 stack "root-config" {
-  source = "${get_repo_root()}/stack-test/hidden/config/root"
+  source = "${get_repo_root()}/stack-test/hidden/configs/root"
   path   = "root-config"
-  hidden = true
+  no_dot_terragrunt_stack = true
 }
 
 stack "dev" {

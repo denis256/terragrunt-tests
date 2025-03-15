@@ -1,7 +1,7 @@
 unit "dev-unit-config" {
-	source = "${get_repo_root()}/stacks-test/hidden/config/dev"
+	source = "${get_repo_root()}/stacks-test/hidden/configs/dev"
 	path   = "dev-unit-config"
-	hidden = true
+	no_dot_terragrunt_stack = true
 }
 
 unit "dev-api" {
