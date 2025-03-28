@@ -4,6 +4,6 @@ locals {
 }
 
 inputs = {
-  data = "stack: ${local.stack_data.local.project} app1: ${local.stack_data.unit.app1.values.deployment}"
+  data = "project_bucket: ${local.stack_data.local.project_bucket} app1: ${local.stack_data.unit.app1.values.deployment}"
 
 }

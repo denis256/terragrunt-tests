@@ -1,4 +1,5 @@
 locals {
+	project_bucket = "potatoes-and-ice-cream"
 	project = "root-stack-my-project"
 }
 
