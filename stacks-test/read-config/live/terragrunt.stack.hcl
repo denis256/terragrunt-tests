@@ -15,18 +15,3 @@ unit "app1" {
 		}
 	}
 }
-
-unit "app2" {
-	source = "../units/app"
-	path   = "app2"
-
-	values = {
-		project    = local.project
-		deployment = "app2"
-		config = {
-			"key1" = "value3"
-			"key2" = "value4s"
-		}
-	}
-}
-
