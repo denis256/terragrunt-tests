@@ -1,10 +1,9 @@
 
 locals {
-  data = "payload: ${values.deployment}-${values.project}"
+  stack_data = read_terragrunt_config(find_in_parent_folders("terragrunt.stack.hcl"))
 }
 
 inputs = {
-  deployment = values.deployment
-  project = values.project
-  data = local.data
+  data = "stack: ${local.stack_data.local.project} app1: ${local.stack_data.unit.app1.values.deployment}"
+
 }
