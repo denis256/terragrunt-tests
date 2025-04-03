@@ -8,7 +8,7 @@ unit "frontend" {
 	path   = "frontend-v1"
 }
 
-stack "stacks" {
+stack "test_stack" {
 	source = "${get_repo_root()}/stacks-test/nested-output/stacks"
-	path   = "stacks"
+	path   = "stacks1"
 }
