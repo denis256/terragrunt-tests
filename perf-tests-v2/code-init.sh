@@ -8,7 +8,7 @@ rm -rf ./code/deps
 mkdir -p code/apps
 mkdir -p code/deps
 
-for i in {1..5}
+for i in {1..20}
 do
     cp -Rfv dependency-template "code/deps/dep-$i"
 

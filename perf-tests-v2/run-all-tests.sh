@@ -30,7 +30,7 @@ for exe in "${executables[@]}"; do
   id=$(basename "${exe}")
   echo "${id} ${exe}"
   export EXECUTABLE="${exe}"
-  hyperfine --runs 5 "./run-test.sh ${id}" --export-json "results/${id}-results.json"
+  hyperfine --runs 10 "./run-test.sh ${id}" --export-json "results/${id}-results.json"
 done
 
 # Collect all results into a single JSON file
