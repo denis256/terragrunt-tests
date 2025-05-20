@@ -15,5 +15,5 @@ Workflow:
 Check results in `results` directory and combined_results.json
 
 ```
-python3 hyperfine/scripts/plot_histogram.py  combined_results.json
+python3 hyperfine/scripts/plot_histogram.py  combined_results.json --output file.png
 ```

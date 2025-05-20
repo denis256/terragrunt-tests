@@ -7,7 +7,7 @@ rm combined_results.json || true
 
 local_versions=(
 "/projects/gruntwork/terragrunt/terragrunt"
-"/projects/gruntwork/terragrunt-tests/perf-tests-v2/terragrunt-local-cache.sh"
+#"/projects/gruntwork/terragrunt-tests/perf-tests-v2/terragrunt-local-cache.sh"
 )
 
 executables=()
