@@ -1,7 +1,7 @@
 
 
 resource "local_file" "file" {
-  content     = "file"
+  content     = "file  "
   filename = "${path.module}/file.txt"
 }
 
