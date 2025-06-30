@@ -29,7 +29,7 @@ jobs:
           SSH_AUTH_SOCK: "/github/workflow/ssh-agent.sock"
 
         with:
-          tf_version: ${{ env.tf_version }}
+          tofu_version: ${{ env.tofu_version }}
           tg_version: ${{ env.tg_version }}
           tg_dir: ${{ env.working_dir }}
           tg_command: 'plan --terragrunt-log-level debug'
