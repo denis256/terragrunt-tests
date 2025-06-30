@@ -21,7 +21,7 @@ jobs:
           ssh-auth-sock: "/home/runner/work/_temp/_github_workflow/ssh-agent.sock"
 
       - name: Run plan
-        uses: gruntwork-io/terragrunt-action@bug/jq-args-71
+        uses: gruntwork-io/terragrunt-action@feat/switch-off-docker
         with:
           tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}

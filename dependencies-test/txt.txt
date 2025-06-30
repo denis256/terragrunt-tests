@@ -1,0 +1,12 @@
+digraph {
+        "alb" ;
+        "alb-v2" ;
+        "alb-v2" -> "alb";
+        "alb-v2" -> "ecs-v3";
+        "ecs" ;
+        "ecs" -> "alb";
+        "ecs-v2" ;
+        "ecs-v2" -> "alb";
+        "ecs-v3" ;
+        "ecs-v3" -> "alb";
+}
