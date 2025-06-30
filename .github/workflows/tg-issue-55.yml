@@ -5,7 +5,7 @@ on:
 
 env:
   tf_version: "1.5.1"
-  tg_version: "0.55.21"
+  tg_version: '0.77.22'
   working_dir: "tg-issue-55"
 
 jobs:
