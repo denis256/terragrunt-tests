@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  tf_version: "1.5.1"
+  tofu_version: '1.10.0'
   tg_version: '0.77.22'
   working_dir: "action-ssh-repo"
 
