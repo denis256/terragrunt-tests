@@ -1,11 +1,11 @@
 locals {
-    overwrite_var = run_cmd("echo", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+  overwrite_var = run_cmd("echo", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 }
 
 generate "provider" {
-  path = "provider.tf"
+  path      = "provider.tf"
   if_exists = "overwrite_terragrunt"
-  contents = <<EOF
+  contents  = <<EOF
 
 resource "local_file" "file" {
     content     = "auto generated file example"

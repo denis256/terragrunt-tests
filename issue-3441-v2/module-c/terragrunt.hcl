@@ -11,6 +11,6 @@ dependency "module_b" {
 }
 
 inputs = {
-  test_var = dependency.module_b.outputs.test_output
+  test_var   = dependency.module_b.outputs.test_output
   test_var_2 = dependency.module_b.inputs.test_var
 }

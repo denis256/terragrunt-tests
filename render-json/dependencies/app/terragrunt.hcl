@@ -1,7 +1,7 @@
 dependencies {
-  paths = ["../d1" ]
+  paths = ["../d1"]
 }
 
 include "root" {
-  path   = "./include.hcl"
+  path = "./include.hcl"
 }

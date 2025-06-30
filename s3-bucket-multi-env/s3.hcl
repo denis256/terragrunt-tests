@@ -13,21 +13,21 @@ remote_state {
   }
 
   config = {
-    encrypt = true
-    bucket = local.s3_config.inputs.bucket
-    key = "terraform.tfstate3"
-    region = local.s3_config.inputs.region
-    dynamodb_table = local.s3_config.inputs.bucket
+    encrypt                        = true
+    bucket                         = local.s3_config.inputs.bucket
+    key                            = "terraform.tfstate3"
+    region                         = local.s3_config.inputs.region
+    dynamodb_table                 = local.s3_config.inputs.bucket
     enable_lock_table_ssencryption = true
 
     s3_bucket_tags = {
       owner = "terragrunt integration test"
-      name = "Terraform state storage"
+      name  = "Terraform state storage"
     }
 
     dynamodb_table_tags = {
       owner = "terragrunt integration test"
-      name = "Terraform lock table"
+      name  = "Terraform lock table"
     }
   }
 }

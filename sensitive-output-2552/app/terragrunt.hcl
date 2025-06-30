@@ -1,10 +1,10 @@
 dependency "d1" {
   config_path = "../dependency"
 
-#  mock_outputs_allowed_terraform_commands = ["validate"]
-#  mock_outputs = {
-#    password = "123"
-#  }
+  #  mock_outputs_allowed_terraform_commands = ["validate"]
+  #  mock_outputs = {
+  #    password = "123"
+  #  }
 }
 
 inputs = {

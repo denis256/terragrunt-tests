@@ -1,8 +1,8 @@
-locals  {
-  account          = yamldecode(file("account.yaml"))
-  environment      = local.account.environment
-  project          = yamldecode(file("project.yaml"))
-  owner            = local.project.owner
+locals {
+  account     = yamldecode(file("account.yaml"))
+  environment = local.account.environment
+  project     = yamldecode(file("project.yaml"))
+  owner       = local.project.owner
 
 }
 

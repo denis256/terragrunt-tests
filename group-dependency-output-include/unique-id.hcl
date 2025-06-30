@@ -1,7 +1,7 @@
 
 locals {
   # read config file from each module to know in which one output is disabled
-  config    = read_terragrunt_config("config.hcl")
+  config = read_terragrunt_config("config.hcl")
 }
 
 dependency "unique_id" {

@@ -1,3 +1,3 @@
-  include "incl" {
-      path = "../incl.hcl"
-  }
+include "incl" {
+  path = "../incl.hcl"
+}

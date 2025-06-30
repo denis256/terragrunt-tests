@@ -7,7 +7,7 @@ dependency "app_service_plan01" {
     asp_id = "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/mockrg/providers/Microsoft.Web/serverfarms/mockasp"
   }
   mock_outputs_allowed_terraform_commands = ["validate", "plan"]
-  mock_outputs_merge_strategy_with_state = "true"
+  mock_outputs_merge_strategy_with_state  = "true"
 }
 
 inputs = {

@@ -5,7 +5,7 @@ dependency "dep" {
 }
 
 inputs = {
-  x = "y"
-  a = dependency.dep.outputs.a
+  x   = "y"
+  a   = dependency.dep.outputs.a
   aaa = dependency.dep.qaaaa
 }

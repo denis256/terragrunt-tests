@@ -11,21 +11,21 @@ remote_state {
     if_exists = "overwrite_terragrunt"
   }
   config = {
-    bucket = "${local.common_vars.inputs.resource_prefix}-states-${get_aws_account_id()}"
-    key = "${path_relative_to_include()}/terraform.tfstate"
+    bucket         = "${local.common_vars.inputs.resource_prefix}-states-${get_aws_account_id()}"
+    key            = "${path_relative_to_include()}/terraform.tfstate"
     region         = "eu-central-1"
     encrypt        = true
     dynamodb_table = "${local.common_vars.inputs.resource_prefix}-lock-table"
 
-    s3_bucket_tags = merge(tomap({"global.env" = "Development"}), local.common_vars.inputs.default_tags)
-    dynamodb_table_tags =  merge(tomap({"global.env" = "Development"}),local.common_vars.inputs.default_tags)
+    s3_bucket_tags      = merge(tomap({ "global.env" = "Development" }), local.common_vars.inputs.default_tags)
+    dynamodb_table_tags = merge(tomap({ "global.env" = "Development" }), local.common_vars.inputs.default_tags)
   }
 }
 
 generate "provider" {
-  path = "provider.tf"
+  path      = "provider.tf"
   if_exists = "overwrite_terragrunt"
-  contents = <<EOF
+  contents  = <<EOF
 provider "aws" {
   region = "eu-central-1"
   default_tags {

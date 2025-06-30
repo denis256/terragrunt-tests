@@ -1,10 +1,10 @@
 
 dependency "dep" {
   config_path = "../dependency"
-      
-    mock_outputs = {
-      test = "value"
-    }
+
+  mock_outputs = {
+    test = "value"
+  }
 }
 
 dependency "dep2" {

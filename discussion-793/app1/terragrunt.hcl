@@ -4,6 +4,6 @@ include "root" {
 }
 
 dependency "blah" {
-  config_path = "${include.root.locals.config_path}"
+  config_path  = "${include.root.locals.config_path}"
   skip_outputs = true
 }

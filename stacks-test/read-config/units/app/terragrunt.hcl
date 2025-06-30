@@ -1,5 +1,5 @@
 locals {
-  stack_data = read_terragrunt_config(find_in_parent_folders("terragrunt.stack.hcl"))
+  stack_data  = read_terragrunt_config(find_in_parent_folders("terragrunt.stack.hcl"))
   read_values = read_terragrunt_config("terragrunt.values.hcl")
 }
 

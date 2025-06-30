@@ -8,6 +8,6 @@ dependency "vm" {
 }
 
 inputs = {
-  ip_address  = dependency.vm.outputs.vm_ip
-  vm_uuid     = dependency.vm.outputs.vm_uuid
+  ip_address = dependency.vm.outputs.vm_ip
+  vm_uuid    = dependency.vm.outputs.vm_uuid
 }

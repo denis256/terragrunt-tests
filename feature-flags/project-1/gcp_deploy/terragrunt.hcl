@@ -1,10 +1,10 @@
 include "root" {
-  path   = find_in_parent_folders("common.hcl")
+  path = find_in_parent_folders("common.hcl")
 }
 
 exclude {
-  if = !feature.gcp_deploy.value
-  actions = ["apply"]
+  if                   = !feature.gcp_deploy.value
+  actions              = ["apply"]
   exclude_dependencies = feature.gcp_deploy.value
 }
 

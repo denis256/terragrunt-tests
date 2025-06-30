@@ -3,5 +3,5 @@ dependency "env-global" {
 }
 
 inputs = {
-  hosted_zone_id      = dependency.env-global.outputs.public_domain_zone_id
+  hosted_zone_id = dependency.env-global.outputs.public_domain_zone_id
 }

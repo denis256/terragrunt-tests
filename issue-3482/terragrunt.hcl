@@ -1,8 +1,8 @@
 
 generate "test" {
-  path = "example_backend.txt"
+  path      = "example_backend.txt"
   if_exists = "overwrite"
-  contents = <<EOF
+  contents  = <<EOF
 example_backend
 EOF
 }

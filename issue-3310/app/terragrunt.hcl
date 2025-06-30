@@ -1,5 +1,5 @@
 locals {
-  infra_hcl  = read_terragrunt_config("../infra/terragrunt.hcl")
+  infra_hcl = read_terragrunt_config("../infra/terragrunt.hcl")
 }
 
 inputs = {

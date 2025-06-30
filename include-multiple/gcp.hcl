@@ -1,7 +1,7 @@
 generate "gcp" {
   path      = "gcp.tf"
   if_exists = "overwrite"
-  contents = <<EOF
+  contents  = <<EOF
 provider "google" {
   region  = "us-central1"
 }

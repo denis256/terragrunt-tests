@@ -3,6 +3,6 @@ dependency "dep" {
 }
 
 include "inputs" {
-  path   = "inputs.hcl"
+  path           = "inputs.hcl"
   merge_strategy = "deep"
 }

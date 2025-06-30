@@ -8,7 +8,7 @@ locals {
     for provider, config in merge(
       lookup(local.project_config.locals, "required_providers", {}),
       lookup(local.config.locals, "required_providers", {})
-    ):
+    ) :
     provider => {
       source  = lookup(config, "source", null)
       version = lookup(config, "version", null)

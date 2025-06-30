@@ -7,7 +7,7 @@ dependencies {
   paths = [
     find_in_parent_folders("nginx"),
     find_in_parent_folders("vm_setup_ssh")
-    ]
+  ]
 }
 
 dependency "vm" {

@@ -1,3 +1,3 @@
 inputs = {
-  aft_vpc_endpoints           = false
+  aft_vpc_endpoints = false
 }

@@ -1,5 +1,5 @@
 include "aws_configs" {
-  path = find_in_parent_folders("aws_config.hcl")
+  path   = find_in_parent_folders("aws_config.hcl")
   expose = true
 }
 

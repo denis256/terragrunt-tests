@@ -1,6 +1,6 @@
 locals {
   name_prefix = "test"
-  map1        = {
+  map1 = {
     "key1" : "1234"
   }
   x = 1
@@ -12,7 +12,7 @@ locals {
   xyz  = ["1", 2, 3]
   one  = 1
   zero = 0
-  p    = {
+  p = {
     type : "boolean"
     value = "2"
   }

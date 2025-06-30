@@ -5,7 +5,7 @@
 #}
 
 include "broken_hcl" {
-  path           = find_in_parent_folders("broken.hcl")
+  path = find_in_parent_folders("broken.hcl")
 }
 
 #dependency "module" {

@@ -8,8 +8,8 @@ errors {
   # Note that this replaces `retryable_errors`, `retry_max_attempts` and `retry_sleep_interval_sec` fields.
   # Those fields will still be supported for backwards compatibility, but this block will take precedence.
   retry "foo" {
-    retryable_errors = [".*Error: foo.*"]
-    max_attempts = 3
+    retryable_errors   = [".*Error: foo.*"]
+    max_attempts       = 3
     sleep_interval_sec = 5
   }
 

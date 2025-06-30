@@ -5,6 +5,6 @@ include "region" {
 }
 
 inputs = {
-  region              = include.region.locals.region
+  region = include.region.locals.region
 }
 

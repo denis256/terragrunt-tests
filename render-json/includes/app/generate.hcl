@@ -1,7 +1,7 @@
 generate "provider" {
   path      = "provider.tf"
   if_exists = "overwrite"
-  contents = <<EOF
+  contents  = <<EOF
 # test
 EOF
 }

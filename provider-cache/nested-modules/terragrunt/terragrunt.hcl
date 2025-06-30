@@ -29,5 +29,5 @@ terraform {
 }
 
 inputs = {
-  name               = "test"
+  name = "test"
 }

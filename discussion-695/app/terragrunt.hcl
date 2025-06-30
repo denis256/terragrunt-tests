@@ -9,5 +9,5 @@ dependency "d1" {
 }
 
 inputs = {
-    ecr_url = replace(dependency.d1.outputs.ecr_url, "087285199408.dkr.ecr.us-east-1.amazonaws.com", "666.dkr.ecr.n-korea.amazonaws.com")
+  ecr_url = replace(dependency.d1.outputs.ecr_url, "087285199408.dkr.ecr.us-east-1.amazonaws.com", "666.dkr.ecr.n-korea.amazonaws.com")
 }

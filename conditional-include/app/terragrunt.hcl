@@ -1,6 +1,6 @@
 
 include "region" {
-  path           = find_in_parent_folders("${local.file}")
+  path = find_in_parent_folders("${local.file}")
 
 }
 

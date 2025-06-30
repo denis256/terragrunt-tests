@@ -3,7 +3,7 @@
 generate "custom_logic" {
   path      = "custom_logic.tf"
   if_exists = "overwrite"
-  contents = <<EOF
+  contents  = <<EOF
 
 resource "local_file" "app2" {
   content     = "app2"

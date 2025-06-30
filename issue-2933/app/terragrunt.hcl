@@ -1,5 +1,5 @@
 include "root" {
-  path   = "${get_repo_root()}/issue-2933/state.hcl"
+  path = "${get_repo_root()}/issue-2933/state.hcl"
 }
 
 

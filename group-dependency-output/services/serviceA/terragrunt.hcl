@@ -1,6 +1,6 @@
 locals {
-  unique_id_vars    = read_terragrunt_config(find_in_parent_folders("unique-id.hcl"))
-  unique_id         = local.unique_id_vars.dependency.unique_id.outputs.id
+  unique_id_vars = read_terragrunt_config(find_in_parent_folders("unique-id.hcl"))
+  unique_id      = local.unique_id_vars.dependency.unique_id.outputs.id
 }
 
 #dependency "unique_id" {

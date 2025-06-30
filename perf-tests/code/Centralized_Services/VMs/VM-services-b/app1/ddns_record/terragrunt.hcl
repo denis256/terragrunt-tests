@@ -6,7 +6,7 @@ include "root" {
 dependencies {
   paths = [
     "${get_parent_terragrunt_dir()}/Basic_Services/DNS/VM-dns-01/dns_server"
-    ]
+  ]
 }
 
 dependency "vm" {
@@ -14,5 +14,5 @@ dependency "vm" {
 }
 
 inputs = {
-  ip_address  = dependency.vm.outputs.vm_ip
+  ip_address = dependency.vm.outputs.vm_ip
 }

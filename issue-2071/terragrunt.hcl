@@ -11,7 +11,7 @@ locals {
 generate "locals" {
   if_exists = "overwrite"
   path      = "qwe.tf"
-  contents = <<-EOF
+  contents  = <<-EOF
     locals {
       complex1 = ${jsonencode(local.complex)}
     }

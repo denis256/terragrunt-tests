@@ -1,5 +1,5 @@
 dependency "02" {
-  config_path = "../02_folder"
+  config_path  = "../02_folder"
   skip_outputs = true
 }
 

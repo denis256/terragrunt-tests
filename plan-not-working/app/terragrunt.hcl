@@ -3,7 +3,7 @@ include "root" {
 }
 
 dependency "dependency" {
-  config_path = "../dependency"
+  config_path                             = "../dependency"
   mock_outputs_allowed_terraform_commands = ["validate"]
   mock_outputs = {
     output_file = "test-file.txt"

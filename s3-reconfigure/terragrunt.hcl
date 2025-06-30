@@ -6,9 +6,9 @@ remote_state {
     if_exists = "overwrite"
   }
   config = {
-    bucket         = "denis-test-us-east-2-3"
-    key            = "${path_relative_to_include()}/terraform.tfstate"
-    region         = "us-east-2"
-    encrypt        = true
+    bucket  = "denis-test-us-east-2-3"
+    key     = "${path_relative_to_include()}/terraform.tfstate"
+    region  = "us-east-2"
+    encrypt = true
   }
 }

@@ -1,5 +1,5 @@
 
 include "env" {
-  path   = "environment.hcl"
+  path = "environment.hcl"
 }
 

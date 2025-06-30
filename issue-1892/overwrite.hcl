@@ -1,3 +1,3 @@
 locals {
-    overwrite_var = run_cmd("echo", "overwrite")
+  overwrite_var = run_cmd("echo", "overwrite")
 }

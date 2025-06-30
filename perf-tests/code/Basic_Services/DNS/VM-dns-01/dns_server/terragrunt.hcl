@@ -7,7 +7,7 @@ dependencies {
   paths = [
     find_in_parent_folders("vm_setup_post-cloud-init"),
     find_in_parent_folders("vm_setup_ssh")
-    ]
+  ]
 }
 
 dependency "vm" {
@@ -15,6 +15,6 @@ dependency "vm" {
 }
 
 inputs = {
-  ip_address  = dependency.vm.outputs.vm_ip
-  vm_uuid     = dependency.vm.outputs.vm_uuid
+  ip_address = dependency.vm.outputs.vm_ip
+  vm_uuid    = dependency.vm.outputs.vm_uuid
 }

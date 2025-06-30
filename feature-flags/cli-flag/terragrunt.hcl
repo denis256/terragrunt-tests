@@ -12,5 +12,5 @@ locals {
 
 inputs = {
   boolean_feature_flag = feature.boolean_feature_flag.value
-  string_feature_flag = feature.string_feature_flag.value
+  string_feature_flag  = feature.string_feature_flag.value
 }

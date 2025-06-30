@@ -2,7 +2,7 @@ locals {
   aws_region = "us-east-1"
   a = {
     b = {
-      c = "d"
+      c   = "d"
       xyz = "abc"
     }
   }
@@ -14,20 +14,20 @@ inputs = {
 
   app1 = {
     xyz = {
-        name = "app1"
-        type = "s3"
-        bucket = "bucket1"
+      name   = "app1"
+      type   = "s3"
+      bucket = "bucket1"
     }
   }
 }
 
 prevent_destroy = true
-skip = true
+skip            = true
 
 
-iam_role = "arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME"
-iam_assume_role_duration = 14400
-terraform_binary = "/home/ubuntu/.tfenv/bin/terraform"
+iam_role                     = "arn:aws:iam::ACCOUNT_ID:role/ROLE_NAME"
+iam_assume_role_duration     = 14400
+terraform_binary             = "/home/ubuntu/.tfenv/bin/terraform"
 terraform_version_constraint = ">= 0.11"
 #terragrunt_version_constraint = ">= 0.23"
 

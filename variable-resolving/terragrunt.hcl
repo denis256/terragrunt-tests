@@ -3,9 +3,9 @@ locals {
 }
 
 generate "service-accounts" {
-  path = "service-accounts.tf"
+  path      = "service-accounts.tf"
   if_exists = "overwrite_terragrunt"
-  contents = <<EOF
+  contents  = <<EOF
 
 
 policy = {

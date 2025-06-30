@@ -1,9 +1,9 @@
 locals {
   monitors = {
     "CF-origin-latency" = {
-      name  = "cloudfront origin latency"
+      name = "cloudfront origin latency"
       query = {
-        type   = "metric_standard"
+        type = "metric_standard"
         params = {
           time_aggr   = "avg"
           time_window = "current_1mo"
@@ -20,6 +20,6 @@ locals {
 }
 
 inputs = {
-    monitors = local.monitors
+  monitors = local.monitors
 
 }

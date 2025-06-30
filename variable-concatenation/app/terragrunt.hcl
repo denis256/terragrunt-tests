@@ -8,7 +8,7 @@ include "b" {
   expose = true
 }
 
-inputs = merge (
+inputs = merge(
   include.a.inputs,
   include.b.inputs,
 )

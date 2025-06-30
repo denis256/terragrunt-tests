@@ -5,7 +5,7 @@ locals {
 generate "vars" {
   path      = "variables.auto.tfvars"
   if_exists = "overwrite"
-  contents = <<EOF
+  contents  = <<EOF
 content = "${local.content}"
 EOF
 }

@@ -3,7 +3,7 @@ locals {
 }
 
 inputs = {
-  env_name= local.env_name
+  env_name = local.env_name
 }
 
 # Configure S3 and DynamoDB

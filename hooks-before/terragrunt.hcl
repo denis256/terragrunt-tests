@@ -2,7 +2,7 @@ terraform {
 
   after_hook "hook" {
     commands = ["terragrunt-read-config"]
-    execute = ["echo", "terragrunt-read-config"]
+    execute  = ["echo", "terragrunt-read-config"]
   }
 }
 

@@ -3,5 +3,5 @@ include "tf_module" {
 }
 inputs = {
   file_name = "file1.txt"
-  content  = "content of file1.txt"
+  content   = "content of file1.txt"
 }

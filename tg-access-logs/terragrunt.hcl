@@ -1,17 +1,17 @@
 remote_state {
-  backend  = "s3"
+  backend = "s3"
   generate = {
     path      = "backend.tf"
     if_exists = "overwrite"
   }
   config = {
-    encrypt                        = true
-    bucket                         = "tf-access-logs-denis-71"
-    key                            = "terraform.tfstate"
-    region                         = "us-west-2"
-    dynamodb_table                 = "tf-access-logs-denis-71"
-    skip_bucket_ssencryption = true
-    accesslogging_bucket_name      = "tf-access-logs-denis-71-logs"
+    encrypt                   = true
+    bucket                    = "tf-access-logs-denis-71"
+    key                       = "terraform.tfstate"
+    region                    = "us-west-2"
+    dynamodb_table            = "tf-access-logs-denis-71"
+    skip_bucket_ssencryption  = true
+    accesslogging_bucket_name = "tf-access-logs-denis-71-logs"
     #bucket_sse_algorithm           = "AES256"
 
     accesslogging_bucket_tags = {

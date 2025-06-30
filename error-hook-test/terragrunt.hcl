@@ -8,12 +8,12 @@ terraform {
       "azurerm_resource_group", # how to set regex statement
       ".*subscriptions.*resourceGroups.*test.*",
       "No such file or directory",
-     # ".*not-existing-file.*"
+      # ".*not-existing-file.*"
     ]
   }
 }
 
 inputs = {
   location = "Southeast Asia"
-  name = "test"
+  name     = "test"
 }

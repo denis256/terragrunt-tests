@@ -39,15 +39,15 @@ terraform {
 
 remote_state {
   generate = {
-    path = "backend.tf"
+    path      = "backend.tf"
     if_exists = "skip"
   }
   backend = "local"
-  config = {}
-#  backend = "http"
-#  config = {
-#    address = "http://myrest.api.com/foo/${path_relative_to_include()}"
-#    lock_address = "http://myrest.api.com/foo/${path_relative_to_include()}"
-#    unlock_address = "http://myrest.api.com/foo/${path_relative_to_include()}"
-#  }
+  config  = {}
+  #  backend = "http"
+  #  config = {
+  #    address = "http://myrest.api.com/foo/${path_relative_to_include()}"
+  #    lock_address = "http://myrest.api.com/foo/${path_relative_to_include()}"
+  #    unlock_address = "http://myrest.api.com/foo/${path_relative_to_include()}"
+  #  }
 }

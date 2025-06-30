@@ -5,9 +5,9 @@ remote_state {
     if_exists = "overwrite"
   }
   config = {
-    bucket   = "your-local-bucket-name"
-    key      = "your-local-key"
-    region   = "your-local-region"
-    profile  = "your-local-aws-profile"
+    bucket  = "your-local-bucket-name"
+    key     = "your-local-key"
+    region  = "your-local-region"
+    profile = "your-local-aws-profile"
   }
 }

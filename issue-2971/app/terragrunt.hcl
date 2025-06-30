@@ -10,6 +10,6 @@ dependency "grafana" {
 }
 
 inputs = {
-  config_url = dependency.grafana.outputs.grafana_admin_fqdn
+  config_url     = dependency.grafana.outputs.grafana_admin_fqdn
   kubernetes_url = dependency.grafana.outputs.kubernetes_url
 }

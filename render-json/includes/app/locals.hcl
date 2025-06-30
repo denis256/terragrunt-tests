@@ -1,5 +1,5 @@
 locals {
-  a1 = "qwe"
+  a1      = "qwe"
   content = "test"
 }
 

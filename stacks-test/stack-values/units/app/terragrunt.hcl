@@ -5,6 +5,6 @@ locals {
 
 inputs = {
   deployment = values.deployment
-  project = values.project
-  data = local.data
+  project    = values.project
+  data       = local.data
 }

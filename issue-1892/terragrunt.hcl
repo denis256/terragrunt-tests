@@ -1,3 +1,3 @@
 locals {
-    root_var = run_cmd("echo", "root")
+  root_var = run_cmd("echo", "root")
 }

@@ -1,5 +1,5 @@
 include "project" {
-  path   = "../commons/project.hcl"
+  path           = "../commons/project.hcl"
   merge_strategy = "deep"
 }
 
@@ -7,7 +7,7 @@ include "project" {
 generate "provider" {
   path      = "provider.tf"
   if_exists = "overwrite"
-  contents = <<EOF
+  contents  = <<EOF
 # test
 EOF
 }

@@ -28,10 +28,10 @@ terraform {
 }
 
 locals {
-  cluster_region = "us-east-1"
+  cluster_region            = "us-east-1"
   config_settings_file_path = "settings.tfvars"
   config_versions_file_path = "versions.tfvars"
-  config_1 = "1.tfvars"
-  config_2 = "2.tfvars"
-  config_3 = "3.tfvars"
+  config_1                  = "1.tfvars"
+  config_2                  = "2.tfvars"
+  config_3                  = "3.tfvars"
 }

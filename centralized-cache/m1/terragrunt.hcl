@@ -1,6 +1,6 @@
 
 include "common" {
-  path   = find_in_parent_folders()
+  path = find_in_parent_folders()
 }
 
 dependency "m2" {

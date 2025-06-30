@@ -8,7 +8,7 @@ dependencies {
     find_in_parent_folders("vm_setup_ssh"),
     find_in_parent_folders("config_webapp_3a"),
     find_in_parent_folders("config_webapp_3b")
-    ]
+  ]
 }
 
 dependency "webapp" {

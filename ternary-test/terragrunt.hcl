@@ -1,5 +1,5 @@
 locals {
-  val = false
+  val        = false
   account_id = val ? "mock-value" : get_aws_account_id()
 }
 

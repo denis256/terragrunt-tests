@@ -3,6 +3,6 @@ include "root" {
 }
 
 inputs = {
-  file_name ="file.txt"
-  content = "test content"
+  file_name = "file.txt"
+  content   = "test content"
 }

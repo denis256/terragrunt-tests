@@ -1,18 +1,18 @@
 locals {
-    aws_region = "us-east-1"
-    aws_profile = "prod"
-    aws_tags = { test = "test" }
+  aws_region  = "us-east-1"
+  aws_profile = "prod"
+  aws_tags    = { test = "test" }
 }
 
 
 inputs = {
-    aws_tags = local.aws_tags
+  aws_tags = local.aws_tags
 }
 
 generate "provider" {
-path = "provider.tf"
-if_exists = "overwrite_terragrunt"
-contents = <<EOF
+  path      = "provider.tf"
+  if_exists = "overwrite_terragrunt"
+  contents  = <<EOF
 
 variable "aws_tags" {
    type = map

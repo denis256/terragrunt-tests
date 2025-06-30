@@ -7,7 +7,7 @@ dependency "module2" {
   mock_outputs = {
     attribute = "mock attribute"
     hello     = "mock hello"
-    subnets   = {
+    subnets = {
       dummy = {
         name = "test"
       }

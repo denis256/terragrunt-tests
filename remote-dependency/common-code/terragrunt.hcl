@@ -1,4 +1,4 @@
 locals {
 
-    x = run_cmd("echo", "HCL file evaluation")
+  x = run_cmd("echo", "HCL file evaluation")
 }

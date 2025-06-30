@@ -7,7 +7,7 @@ dependencies {
   paths = [
     find_in_parent_folders("vm_setup_ssh"),
     find_in_parent_folders("config_webapp_3a")
-    ]
+  ]
 }
 
 dependency "webapp" {

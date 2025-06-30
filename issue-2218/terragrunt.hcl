@@ -1,7 +1,7 @@
 terraform {
   before_hook "before_hook_plan" {
     commands = ["plan"]
-    execute  = [
+    execute = [
       "echo",
       " ********************** running plan"
     ]
@@ -10,7 +10,7 @@ terraform {
 
   before_hook "before_hook_apply" {
     commands = ["apply"]
-    execute  = [
+    execute = [
       "echo",
       "********************* running apply"
     ]

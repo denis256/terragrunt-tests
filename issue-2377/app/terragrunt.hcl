@@ -9,7 +9,7 @@ include "drone" {
 
 dependency "p2" {
   config_path = "../common"
-//  skip_outputs = true
+  //  skip_outputs = true
   mock_outputs_merge_strategy_with_state = "deep_map_only"
 
   /*

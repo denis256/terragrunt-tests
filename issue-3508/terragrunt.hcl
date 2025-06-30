@@ -1,6 +1,6 @@
 locals {
 
-  git_info    = jsondecode(run_cmd("--terragrunt-quiet", "./script.sh"))
+  git_info = jsondecode(run_cmd("--terragrunt-quiet", "./script.sh"))
 }
 
 inputs = {

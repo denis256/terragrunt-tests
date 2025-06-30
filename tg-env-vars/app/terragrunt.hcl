@@ -2,8 +2,8 @@
 terraform {
 
   before_hook "before" {
-    commands     = ["init", "apply", "destroy"]
-    execute      = ["cp", "-rfv", "${get_repo_root()}/tg-env-vars/module", "."]
+    commands = ["init", "apply", "destroy"]
+    execute  = ["cp", "-rfv", "${get_repo_root()}/tg-env-vars/module", "."]
   }
 
   after_hook "clean" {

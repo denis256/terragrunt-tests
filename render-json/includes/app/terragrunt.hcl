@@ -1,17 +1,17 @@
 include "common" {
-  path   = "../common/common.hcl"
+  path = "../common/common.hcl"
 }
 
 include "inputs" {
-  path   = "./inputs.hcl"
+  path = "./inputs.hcl"
 }
 
 include "locals" {
-  path   = "./locals.hcl"
+  path = "./locals.hcl"
 }
 
 include "generate" {
-  path   = "./generate.hcl"
+  path = "./generate.hcl"
 }
 
 locals {

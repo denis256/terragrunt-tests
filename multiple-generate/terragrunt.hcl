@@ -1,7 +1,7 @@
 generate "provider" {
   path      = "file.txt"
   if_exists = "overwrite"
-  contents = <<EOF
+  contents  = <<EOF
 p1
 EOF
 }
@@ -9,7 +9,7 @@ EOF
 generate "provider2" {
   path      = "file.txt"
   if_exists = "overwrite"
-  contents = <<EOF
+  contents  = <<EOF
 p2
 EOF
 }

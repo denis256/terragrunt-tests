@@ -1,10 +1,10 @@
 remote_state {
   backend = "s3"
   config = {
-    encrypt  = true
-    bucket = "s3-test-denis-12"
-    key = "terraform.tfstate"
-    region = "us-east-1"
+    encrypt = true
+    bucket  = "s3-test-denis-12"
+    key     = "terraform.tfstate"
+    region  = "us-east-1"
 
     #dynamodb_table = "s3-test-denis-9"
     #enable_lock_table_ssencryption = true

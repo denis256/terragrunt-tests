@@ -5,7 +5,7 @@ locals {
   terraform_state_dynamodb_table   = "org1-terraform-lock"
   terraform_state_s3_key           = "terragrunt/${path_relative_to_include()}/terraform.tfstate"
   global_vars                      = yamldecode(file(find_in_parent_folders("global_settings.yaml")))
-  terraform_cache_dir              = format("%s/%s", get_env("TF_PLUGIN_CACHE_DIR",  abspath("${get_repo_root()}/.terragrunt-cache/.plugins")), path_relative_to_include())
+  terraform_cache_dir              = format("%s/%s", get_env("TF_PLUGIN_CACHE_DIR", abspath("${get_repo_root()}/.terragrunt-cache/.plugins")), path_relative_to_include())
 }
 
 remote_state {
@@ -37,11 +37,11 @@ terraform {
   }
 
 
-#  before_hook "copy_global_providers" {
-#    commands     = ["init-from-module","plan"]
-#    execute      = ["wget", "-qN", "https://raw.githubusercontent.com/org1/terraform-modules-public/v0.0.6/_global/_global_providers.tf"]
-#    run_on_error = true
-#  }
+  #  before_hook "copy_global_providers" {
+  #    commands     = ["init-from-module","plan"]
+  #    execute      = ["wget", "-qN", "https://raw.githubusercontent.com/org1/terraform-modules-public/v0.0.6/_global/_global_providers.tf"]
+  #    run_on_error = true
+  #  }
 
 
   before_hook "provider_cache" {
@@ -71,7 +71,7 @@ terraform {
 
     env_vars = {
       TF_PLUGIN_CACHE_DIR = local.terraform_cache_dir
-      KUBE_CONFIG_PATH = get_env("KUBE_CONFIG_PATH", "~/.kube/config")
+      KUBE_CONFIG_PATH    = get_env("KUBE_CONFIG_PATH", "~/.kube/config")
     }
   }
 
@@ -83,7 +83,7 @@ download_dir = abspath("${get_repo_root()}/.terragrunt-cache")
 # where terraform_remote_state data sources are placed directly into the modules.
 inputs = {
   aws_profile                      = local.terraform_config_profile
-  aws_allowed_account_ids          = tolist([local.global_vars["aws_account_id"]])  # we should use list(get_aws_account_id()), but this does not work yet: https://github.com/gruntwork-io/terragrunt/issues/791
+  aws_allowed_account_ids          = tolist([local.global_vars["aws_account_id"]]) # we should use list(get_aws_account_id()), but this does not work yet: https://github.com/gruntwork-io/terragrunt/issues/791
   terraform_state_s3_bucket        = local.terraform_state_s3_bucket
   terraform_state_s3_bucket_region = local.terraform_state_s3_bucket_region
   terraform_state_dynamodb_table   = local.terraform_state_dynamodb_table

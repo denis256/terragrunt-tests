@@ -1,5 +1,5 @@
 include "unique_id" {
-  path   = find_in_parent_folders("unique-id.hcl")
+  path           = find_in_parent_folders("unique-id.hcl")
   merge_strategy = "deep"
 }
 

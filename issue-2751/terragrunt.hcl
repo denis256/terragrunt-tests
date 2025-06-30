@@ -1,7 +1,7 @@
 generate "provider" {
   path      = "providers.tf"
   if_exists = "overwrite"
-  contents = <<EOF
+  contents  = <<EOF
 provider "aws" {
   region  = "eu-west-1"
 }

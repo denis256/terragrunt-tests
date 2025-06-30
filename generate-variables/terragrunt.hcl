@@ -3,10 +3,10 @@ locals {
 }
 
 generate "file" {
-  for_each = toset(locals.names)
-  path = "file.txt"
+  for_each  = toset(locals.names)
+  path      = "file.txt"
   if_exists = "overwrite_terragrunt"
-  contents = <<EOF
+  contents  = <<EOF
 
 file
 EOF

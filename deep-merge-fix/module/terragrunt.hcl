@@ -10,7 +10,7 @@ dependency "vpc_accepter" {
 
 
 include "root" {
-  path = find_in_parent_folders("common.hcl")
+  path           = find_in_parent_folders("common.hcl")
   merge_strategy = "deep"
 }
 

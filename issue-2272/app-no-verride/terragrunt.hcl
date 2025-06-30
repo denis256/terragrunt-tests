@@ -6,6 +6,6 @@ include {
 
 locals {
 
-  val = run_cmd("echo", "get_aws_account_id: ",  "${get_aws_account_id()}")
+  val = run_cmd("echo", "get_aws_account_id: ", "${get_aws_account_id()}")
 }
 

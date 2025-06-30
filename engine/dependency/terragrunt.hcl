@@ -1,3 +1,3 @@
 engine {
-  source  = "github.com/gruntwork-io/terragrunt-engine-opentofu"
+  source = "github.com/gruntwork-io/terragrunt-engine-opentofu"
 }

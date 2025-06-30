@@ -1,8 +1,8 @@
 locals {
-  project_id = "tg-tests-xxx"
+  project_id   = "tg-tests-xxx"
   project_name = "tg-tests"
-  gcp_region = "us-central1"
-  bucket_name = "tg-test-12345"
+  gcp_region   = "us-central1"
+  bucket_name  = "tg-test-12345"
 
   service_account = "xxx@abc-123.iam.gserviceaccount.com"
   //service_account = "denis.o@linux.com"
@@ -22,7 +22,7 @@ remote_state {
   }
 
   generate = {
-    path = "backend.tf"
+    path      = "backend.tf"
     if_exists = "overwrite_terragrunt"
   }
 }

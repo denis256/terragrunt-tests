@@ -15,7 +15,7 @@ locals {
 }
 
 inputs = {
-  mydepoutput= dependency.mydep.outputs.myoutput
+  mydepoutput = dependency.mydep.outputs.myoutput
 }
 
 dependency "mydep" {

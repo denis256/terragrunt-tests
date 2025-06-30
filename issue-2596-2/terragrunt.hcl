@@ -1,5 +1,5 @@
 terraform {
-    source = "tfr:///terraform-aws-modules/vpc/aws?version=3.5.0"
+  source = "tfr:///terraform-aws-modules/vpc/aws?version=3.5.0"
 
   extra_arguments "optional_vars" {
     commands = [
@@ -15,7 +15,7 @@ terraform {
 }
 
 inputs = {
-  enable_classiclink = ""
+  enable_classiclink             = ""
   enable_classiclink_dns_support = ""
-  enable_classiclink = ""
+  enable_classiclink             = ""
 }

@@ -7,9 +7,9 @@ remote_state {
     key                  = "terraform.tfstate"
     subscription_id      = "123"
     tenant_id            = "456"
-    location = "eastus"
-    access_tier = "Hot"
-    sku = "Standard_LRS"
-    kind = "StorageV2"
+    location             = "eastus"
+    access_tier          = "Hot"
+    sku                  = "Standard_LRS"
+    kind                 = "StorageV2"
   }
 }

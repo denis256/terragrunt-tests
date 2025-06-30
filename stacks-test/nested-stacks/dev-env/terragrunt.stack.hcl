@@ -1,10 +1,10 @@
 
 unit "dev" {
-	source = "../units/dev"
-	path   = "dev"
+  source = "../units/dev"
+  path   = "dev"
 }
 
 stack "projects" {
-	source = "../projects"
-	path = "projects"
+  source = "../projects"
+  path   = "projects"
 }

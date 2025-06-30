@@ -16,6 +16,6 @@ config {
 
 rule "aws_s3_bucket_name" {
   enabled = true
-  regex = "my-prefix-.*"
-  prefix = "my-prefix-"
+  regex   = "my-prefix-.*"
+  prefix  = "my-prefix-"
 }
