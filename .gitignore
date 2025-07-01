@@ -13,3 +13,4 @@ vendor
 .terraform.lock.hcl
 .terragrunt-stack
 *-gen.tf
+venv
