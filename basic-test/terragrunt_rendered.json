@@ -1,0 +1,27 @@
+{
+  "dependencies": null,
+  "download_dir": "",
+  "generate": {},
+  "iam_assume_role_duration": null,
+  "iam_assume_role_session_name": "",
+  "iam_role": "",
+  "iam_web_identity_token": "",
+  "inputs": null,
+  "locals": null,
+  "retry_max_attempts": null,
+  "retry_sleep_interval_sec": null,
+  "retryable_errors": null,
+  "terraform": {
+    "after_hook": {},
+    "before_hook": {},
+    "copy_terraform_lock_file": null,
+    "error_hook": {},
+    "exclude_from_copy": null,
+    "extra_arguments": {},
+    "include_in_copy": null,
+    "source": "."
+  },
+  "terraform_binary": "",
+  "terraform_version_constraint": "",
+  "terragrunt_version_constraint": ""
+}
