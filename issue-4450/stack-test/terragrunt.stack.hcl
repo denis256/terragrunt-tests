@@ -1,11 +1,7 @@
-locals {
-  project = "my-project"
-}
-
-unit "broken-unit" {
-  source = "./units/dev"
-  path   = "dev"
+unit "dev-api" {
+  source = "${get_repo_root()}/units/api"
+  path   = "api"
   values = {
-    value = local.not_existing_project
+    ver = "dev-api 1.0.0"
   }
 }
