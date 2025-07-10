@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@feat/switch-off-docker
+        uses: gruntwork-io/terragrunt-action@v3
         with:
           tf_version: '1.4.6'
           tg_version: 'latest'
@@ -23,7 +23,7 @@ jobs:
           tg_command: run-all plan
 
       - name: Apply
-        uses: gruntwork-io/terragrunt-action@feat/switch-off-docker
+        uses: gruntwork-io/terragrunt-action@v3
         with:
           tf_version: '1.4.6'
           tg_version: 'latest'

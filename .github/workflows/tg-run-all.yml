@@ -21,7 +21,7 @@ jobs:
           submodules: true
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@feat/switch-off-docker
+        uses: gruntwork-io/terragrunt-action@v3
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"
@@ -35,7 +35,7 @@ jobs:
 
 
       - name: Apply
-        uses: gruntwork-io/terragrunt-action@feat/switch-off-docker
+        uses: gruntwork-io/terragrunt-action@v3
         env:
           TRACE: "1"
           TERRAGRUNT_NON_INTERACTIVE: "true"
