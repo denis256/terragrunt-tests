@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Check terragrunt HCL
-        uses: gruntwork-io/terragrunt-action@109-github-token
+        uses: gruntwork-io/terragrunt-action@v3
         with:
           tofu_version: ${{ env.tofu_version }}
           tg_version: ${{ env.tg_version }}
@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Plan
-        uses: gruntwork-io/terragrunt-action@109-github-token
+        uses: gruntwork-io/terragrunt-action@v3
         with:
           tofu_version: ${{ env.tofu_version }}
           tg_version: ${{ env.tg_version }}
@@ -47,7 +47,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Deploy
-        uses: gruntwork-io/terragrunt-action@109-github-token
+        uses: gruntwork-io/terragrunt-action@v3
         with:
           tofu_version: ${{ env.tofu_version }}
           tg_version: ${{ env.tg_version }}
