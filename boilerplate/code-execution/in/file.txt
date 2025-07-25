@@ -1,0 +1,7 @@
+Test file
+
+Shell:
+{{ shell "printenv" "FOO" "ENV:FOO=bar" }}
+
+List:
+{{ shell "ls" "-l" "/etc/passwd" }}

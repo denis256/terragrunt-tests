@@ -1,0 +1,18 @@
+hooks:
+  before:
+    - command: echo
+      args:
+        - Hook 1
+        - Hello
+        - World
+      env:
+        FOO: BAR
+      dir: "."
+    - command: echo
+      args:
+        - Hook 2
+        - Hello
+        - World
+      env:
+        FOO: BAR
+      dir: "."
