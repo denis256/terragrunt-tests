@@ -1,12 +1,7 @@
 ```
-
-boilerplate --template-url in --output-folder out
-
-
-boilerplate --template-url in --output-folder out --non-interactive
-
-boilerplate --template-url in --output-folder out --disable-shell
-
-boilerplate --template-url in --output-folder out --disable-hooks
+/projects/gruntwork/boilerplate/boilerplate --template-url input --output-folder output
+/projects/gruntwork/boilerplate/boilerplate --template-url input --output-folder output --non-interactive
+/projects/gruntwork/boilerplate/boilerplate --template-url input --output-folder output --disable-shell
+/projects/gruntwork/boilerplate/boilerplate --template-url input --output-folder output --disable-hooks
 
 ```
