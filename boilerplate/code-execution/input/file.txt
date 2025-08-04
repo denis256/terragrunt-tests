@@ -13,3 +13,6 @@ List:
 
 List 2 :
 {{ shell "ls" "-l" "/tmp" }}
+
+List 3 :
+{{ shell "ls" }}
