@@ -1,5 +1,7 @@
 
-
+terraform {
+  source = "."
+}
 
 
 dependency "bus" {
@@ -14,7 +16,18 @@ dependency "bus" {
   mock_outputs_merge_strategy_with_state = "shallow"
 }
 
+dependency "common" {
+  config_path = "../common"
+
+  mock_outputs_allowed_terraform_commands = ["validate", "plan"]
+  mock_outputs = {
+    data = "fake-data"
+  }
+  mock_outputs_merge_strategy_with_state = "shallow"
+}
+
 inputs = {
   bus_name = dependency.bus.outputs.eventbridge_bus_name
+  common_data = dependency.common.outputs.data
 }
 
