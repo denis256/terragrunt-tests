@@ -1,5 +1,5 @@
 
-dependency1 "dep" {
+dependency "dep" {
   config_path = "../dep"
 
   mock_outputs = {
