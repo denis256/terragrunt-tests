@@ -1,3 +1,3 @@
 locals {
-  cmd = run_cmd("echo", "basic-1")
+  cmd = run_cmd("echo", "commit-1")
 }
