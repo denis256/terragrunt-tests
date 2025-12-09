@@ -7,8 +7,12 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 UNITS_DIR="$SCRIPT_DIR/units"
 
+# Configurable terragrunt path (default: local build)
+TERRAGRUNT="${TERRAGRUNT:-/projects/gruntwork/terragrunt/terragrunt}"
+
 echo "=== Git Filter Flag Test ==="
 echo "Testing --filter=[ref] and --filter-affected flags"
+echo "Using terragrunt: $TERRAGRUNT"
 echo ""
 
 # Colors for output
@@ -54,25 +58,25 @@ echo ""
 
 # Test 1: Filter by single git reference (compare to current state)
 echo "--- Test 1: Filter by single git reference ---"
-echo "Syntax: terragrunt run --filter=[HEAD^1] plan"
+echo "Syntax: $TERRAGRUNT run --filter=[HEAD^1] plan"
 echo "This targets units changed since previous commit"
 echo ""
 
 # Test 2: Filter by commit range using three-dot syntax
 echo "--- Test 2: Filter by commit range (three-dot syntax) ---"
-echo "Syntax: terragrunt run --filter=[main...HEAD] plan"
+echo "Syntax: $TERRAGRUNT run --filter=[main...HEAD] plan"
 echo "This targets units changed between main branch and HEAD"
 echo ""
 
 # Test 3: Filter-affected shorthand
 echo "--- Test 3: Filter-affected shorthand ---"
-echo "Syntax: terragrunt run --filter-affected plan"
+echo "Syntax: $TERRAGRUNT run --filter-affected plan"
 echo "Equivalent to --filter=[main...HEAD]"
 echo ""
 
 # Test 4: Filter by specific commit hashes
 echo "--- Test 4: Filter by specific commit hashes ---"
-echo "Syntax: terragrunt run --filter=[a1b2c3d...e4f5g6h] plan"
+echo "Syntax: $TERRAGRUNT run --filter=[a1b2c3d...e4f5g6h] plan"
 echo "This targets units changed between two specific commits"
 echo ""
 
@@ -81,23 +85,23 @@ echo "=== Practical Test Scenarios ==="
 echo ""
 
 echo "Scenario A: Initial apply of all units"
-echo "Command: cd $UNITS_DIR && terragrunt run-all plan"
+echo "Command: cd $UNITS_DIR && $TERRAGRUNT run-all plan"
 echo ""
 
 echo "Scenario B: Apply only changed units (since last commit)"
-echo "Command: cd $UNITS_DIR && terragrunt run --filter=[HEAD^1] apply"
+echo "Command: cd $UNITS_DIR && $TERRAGRUNT run --filter=[HEAD^1] apply"
 echo ""
 
 echo "Scenario C: Apply only units changed in feature branch"
-echo "Command: cd $UNITS_DIR && terragrunt run --filter=[$MAIN_BRANCH...HEAD] apply"
+echo "Command: cd $UNITS_DIR && $TERRAGRUNT run --filter=[$MAIN_BRANCH...HEAD] apply"
 echo ""
 
 echo "Scenario D: Using filter-affected (same as Scenario C)"
-echo "Command: cd $UNITS_DIR && terragrunt run --filter-affected apply"
+echo "Command: cd $UNITS_DIR && $TERRAGRUNT run --filter-affected apply"
 echo ""
 
 echo "Scenario E: Destroy removed units with filter-allow-destroy"
-echo "Command: cd $UNITS_DIR && terragrunt run --filter=[main...HEAD] --filter-allow-destroy apply"
+echo "Command: cd $UNITS_DIR && $TERRAGRUNT run --filter=[main...HEAD] --filter-allow-destroy apply"
 echo ""
 
 # Show unit structure
@@ -116,3 +120,5 @@ echo ""
 
 echo "=== Test Complete ==="
 echo "Run actual terragrunt commands to test git filtering"
+echo ""
+echo "Override terragrunt path: TERRAGRUNT=/path/to/terragrunt ./test.sh"

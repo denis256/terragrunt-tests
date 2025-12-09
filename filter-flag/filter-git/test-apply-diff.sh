@@ -7,6 +7,9 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 UNITS_DIR="$SCRIPT_DIR/units"
 
+# Configurable terragrunt path (default: local build)
+TERRAGRUNT="${TERRAGRUNT:-/projects/gruntwork/terragrunt/terragrunt}"
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -30,10 +33,12 @@ echo "=== Git Filter Apply Test ==="
 echo ""
 
 # Check prerequisites
-if ! command -v terragrunt &> /dev/null; then
-    log_error "terragrunt not found in PATH"
+if [[ ! -x "$TERRAGRUNT" ]]; then
+    log_error "terragrunt not found at: $TERRAGRUNT"
+    log_info "Set TERRAGRUNT env var to override path"
     exit 1
 fi
+log_info "Using terragrunt: $TERRAGRUNT"
 
 cd "$SCRIPT_DIR"
 BASE_COMMIT=$(git rev-parse HEAD)
@@ -43,8 +48,8 @@ log_info "Base commit: $BASE_COMMIT"
 echo ""
 echo "=== Test 1: List all units ==="
 cd "$UNITS_DIR"
-log_info "Running: terragrunt run-all plan (dry-run)"
-if terragrunt run-all plan --terragrunt-non-interactive 2>&1 | head -50; then
+log_info "Running: $TERRAGRUNT run-all plan (dry-run)"
+if $TERRAGRUNT run-all plan --terragrunt-non-interactive 2>&1 | head -50; then
     log_success "Listed all units"
 else
     log_warn "Plan had issues (may be expected without full terraform setup)"
@@ -62,7 +67,7 @@ git status --short "$UNITS_DIR"
 
 # Test filter command (show what would be selected)
 echo ""
-log_info "Filter command: terragrunt run --filter=[HEAD] plan"
+log_info "Filter command: $TERRAGRUNT run --filter=[HEAD] plan"
 log_info "This would target only the database unit (and dependents)"
 echo ""
 
@@ -100,7 +105,7 @@ echo "=== Test Complete ==="
 echo ""
 echo "To run actual filtered apply:"
 echo "  1. Commit current changes"
-echo "  2. Run: terragrunt run --filter=[HEAD^1] apply"
+echo "  2. Run: $TERRAGRUNT run --filter=[HEAD^1] apply"
 echo ""
 echo "Or for branch comparison:"
-echo "  terragrunt run --filter=[main...HEAD] apply"
+echo "  $TERRAGRUNT run --filter=[main...HEAD] apply"
