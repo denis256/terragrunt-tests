@@ -1,16 +1,19 @@
 # Git-based Filtering for Terragrunt
 
-Test examples for `--filter` flag with git references per [issue #4060](https://github.com/gruntwork-io/terragrunt/issues/4060).
+Test examples for `--filter` flag with git references
+per [issue #4060](https://github.com/gruntwork-io/terragrunt/issues/4060).
 
 ## Syntax
 
 ### Single Reference
+
 ```bash
 # Compare to current state, target units changed since previous commit
 terragrunt run --filter=[HEAD^1] plan
 ```
 
 ### Commit Range (three-dot syntax)
+
 ```bash
 # Target units changed between two references
 terragrunt run --filter=[main...HEAD] plan
@@ -19,6 +22,7 @@ terragrunt run --filter=[trunk...feature-branch] plan
 ```
 
 ### Filter-affected Shorthand
+
 ```bash
 # Equivalent to --filter=[main...HEAD]
 terragrunt run --filter-affected plan
@@ -26,12 +30,12 @@ terragrunt run --filter-affected plan
 
 ## Flags
 
-| Flag | Description |
-|------|-------------|
-| `--filter=[ref]` | Filter units by git reference |
+| Flag                     | Description                             |
+|--------------------------|-----------------------------------------|
+| `--filter=[ref]`         | Filter units by git reference           |
 | `--filter=[ref1...ref2]` | Filter units changed between references |
-| `--filter-affected` | Shorthand for `--filter=[main...HEAD]` |
-| `--filter-allow-destroy` | Allow destroy on removed units |
+| `--filter-affected`      | Shorthand for `--filter=[main...HEAD]`  |
+| `--filter-allow-destroy` | Allow destroy on removed units          |
 
 ## Unit Structure
 
@@ -46,16 +50,19 @@ units/
 ## Test Scenarios
 
 ### 1. Apply all units
+
 ```bash
 cd units && terragrunt run-all apply
 ```
 
 ### 2. Apply only changed units since last commit
+
 ```bash
 cd units && terragrunt run --filter=[HEAD^1] apply
 ```
 
 ### 3. Apply units changed in feature branch
+
 ```bash
 cd units && terragrunt run --filter=[main...HEAD] apply
 # or
@@ -63,6 +70,7 @@ cd units && terragrunt run --filter-affected apply
 ```
 
 ### 4. Handle deleted units
+
 ```bash
 # When units are removed between branches, use --filter-allow-destroy
 cd units && terragrunt run --filter=[main...HEAD] --filter-allow-destroy apply
@@ -78,5 +86,6 @@ cd units && terragrunt run --filter=[main...HEAD] --filter-allow-destroy apply
 ## Heterogeneous Runs
 
 When filtering across refs where units were deleted, Terragrunt performs "heterogeneous runs":
+
 - Automatically adds `-destroy` flag to operations for removed units
 - Enables proper cleanup across branches
