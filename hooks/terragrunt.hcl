@@ -6,7 +6,7 @@ terraform {
     execute  = ["echo", "Fetching Kubernetes config"]
   }
 
-  before_hook "sleep_test" {
+  before_hook "pwd" {
     commands = ["apply", "plan"]
     execute  = ["./script.sh"]
   }
