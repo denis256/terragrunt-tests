@@ -1,0 +1,1 @@
+dependency "borked" { config_path = "${get_terragrunt_dir()}/not-here" }
