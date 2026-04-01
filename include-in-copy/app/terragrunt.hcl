@@ -1,4 +1,4 @@
-terraform {
-  source          = "."
-  include_in_copy = ["../config.txt"]
-}
+# terraform {
+#   source          = "."
+#   include_in_copy = ["../config.txt"]
+# }
