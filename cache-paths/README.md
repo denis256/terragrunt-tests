@@ -32,14 +32,14 @@ All projects:
 
 ```bash
 cd projects
-terragrunt run -all init
-terragrunt run -all plan
-terragrunt run -all apply
+terragrunt run --all init
+terragrunt run --all plan
+terragrunt run --all apply
 ```
 
 Destroy:
 
 ```bash
 cd projects
-terragrunt run -all destroy
+terragrunt run --all destroy
 ```
