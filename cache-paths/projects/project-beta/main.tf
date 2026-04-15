@@ -1,7 +1,7 @@
 module "project" {
   source = "../../modules/gcp-project"
 
-  project_name = var.project_name
+  project_name = "beta"
 }
 
 module "iam" {
@@ -9,15 +9,7 @@ module "iam" {
 
   project_id = module.project.project_id
   role       = "roles/owner"
-  member     = var.member
-}
-
-variable "project_name" {
-  type = string
-}
-
-variable "member" {
-  type = string
+  member     = "serviceAccount:sa@beta.iam.gserviceaccount.com"
 }
 
 output "project_id" {

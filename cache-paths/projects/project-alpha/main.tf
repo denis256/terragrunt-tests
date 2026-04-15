@@ -1,8 +1,8 @@
 module "project" {
   source = "../../modules/gcp-project"
 
-  project_name    = var.project_name
-  billing_account = var.billing_account
+  project_name    = "alpha"
+  billing_account = "111111-111111-111111"
 }
 
 module "network" {
@@ -17,14 +17,6 @@ resource "null_resource" "config_connector" {
     project_id = module.project.project_id
     role       = "roles/editor"
   }
-}
-
-variable "project_name" {
-  type = string
-}
-
-variable "billing_account" {
-  type = string
 }
 
 output "project_id" {

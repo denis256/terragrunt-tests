@@ -1,7 +1,7 @@
 module "project" {
   source = "../../modules/gcp-project"
 
-  project_name = var.project_name
+  project_name = "gamma"
 }
 
 module "network" {
@@ -16,15 +16,7 @@ module "iam" {
 
   project_id = module.project.project_id
   role       = "roles/editor"
-  member     = var.member
-}
-
-variable "project_name" {
-  type = string
-}
-
-variable "member" {
-  type = string
+  member     = "group:devops@example.com"
 }
 
 output "project_id" {
