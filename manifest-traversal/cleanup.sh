@@ -14,5 +14,8 @@ rm -rf "$SCRIPT_DIR/attacker-repo-worktree"
 rm -rf "$SCRIPT_DIR/attacker-repo.git"
 rm -f  "$SCRIPT_DIR/attacker-module/.terragrunt-module-manifest"
 rm -f  "$SCRIPT_DIR/forge_bin"
+rm -rf "$SCRIPT_DIR/.scratch"
+rm -f  /tmp/repro-manifest-traversal-rce-marker.txt
+rm -rf /tmp/repro-victim
 
 echo "cleaned."

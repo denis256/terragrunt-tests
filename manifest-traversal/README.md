@@ -1,28 +1,5 @@
 # manifest-traversal -- arbitrary file deletion via .terragrunt-module-manifest
 
-## What this reproduces
-
-`internal/util/file.go` contains a `fileManifest` whose `Clean()` method
-gob-decodes a `.terragrunt-module-manifest` file out of the terragrunt
-module cache and calls `os.Remove(entry.Path)` for every file entry it
-finds. The file is read from `terraformSource.WorkingDir`, which is the
-freshly-downloaded module content. That content is attacker-controlled
-when the module source is something an attacker can publish (a registry
-module, a git URL, an http tarball, an s3 bucket they can write to,
-etc.). Before the patch, no check enforced that the decoded paths stay
-inside the module cache, so a module shipped with a forged manifest
-could delete arbitrary files reachable by the user running terragrunt.
-
-## Confirmed end-to-end
-
-The reproducer was run against two locally-built terragrunt binaries
-from the same source tree, with and without the fix applied:
-
-```
-unpatched: 3 of 3 sentinels deleted    -> *** VULNERABLE ***
-patched:   3 of 3 sentinels survived   -> *** PATCHED ***
-```
-
 ## Layout
 
 ```
@@ -161,6 +138,44 @@ the top-level wipe) and re-run; the warning will then appear.
 An unpatched run prints no warning and reports
 `*** VULNERABLE *** 3 of 3 sentinels were deleted`.
 
+## Side-by-side comparison with `local-exec` and `data "external"`
+
+`compare.sh` runs three independent attacker modules so you can read
+the trigger surfaces side by side:
+
+```
+TERRAGRUNT_BIN=/path/to/terragrunt ./compare.sh
+```
+
+Each scenario sets up its own attacker git repo, plants three sentinels
+in /tmp, runs the listed terragrunt subcommand, and reports how many
+were deleted plus whether `/tmp/repro-manifest-traversal-rce-marker.txt`
+was written (the marker proves the channel is full code execution, not
+delete-only).
+
+Confirmed against locally-built binaries from this exact tree:
+
+| Channel | unpatched | patched | trigger | RCE? |
+|---|---|---|---|---|
+| forged manifest | deleted 3/3 | deleted 0/3 | `init` | no (delete only) |
+| `data "external"` | deleted 3/3 | deleted 3/3 | `plan` | yes |
+| `local-exec` provisioner | deleted 3/3 | deleted 3/3 | `apply` | yes |
+
+Reading the table:
+
+- **`local-exec` and `data "external"` are not bugs.** They are
+  documented terraform features. A user who runs `plan` or `apply`
+  against an unfamiliar module is opting into running its code on their
+  machine. The patched build correctly does not interfere with them.
+- **The forged manifest is the only channel that fires on `init`.**
+  Init is the lowest-friction subcommand a user runs to "look at" a
+  module. There is no plan rendered, no resource graph displayed, no
+  prompt. The deletion happens silently inside go-getter cleanup.
+- **Capability ceilings line up the other way.** `local-exec` /
+  `data "external"` get full shell. The manifest bug is delete-only.
+  Severity is "moderate" precisely because it trades capability for
+  trigger-earlyness and stealth.
+
 ## Cleanup
 
 ```
@@ -168,4 +183,4 @@ An unpatched run prints no warning and reports
 ```
 
 Removes `/tmp` sentinels, the consumer cache, the attacker git repo,
-and the forge binary.
+the comparison `.scratch/` workspaces, and the forge binary.
