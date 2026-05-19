@@ -1,0 +1,85 @@
+Terragrunt panic report
+======================
+
+Timestamp: 2026-05-16T20:01:33.910483036Z
+Terragrunt version: 0.0.0
+Build commit: unknown
+Build modified: false
+Go runtime: go1.26.0
+GOOS/GOARCH: linux/amd64
+NumCPU: 8
+GOMAXPROCS: 8
+NumGoroutine: 3
+PID: 112479
+Working directory: /projects/gruntwork/terragrunt-tests/panic-error
+Command line: /tmp/terragrunt-test apply
+
+Panic: error occurred:
+
+* /projects/gruntwork/terragrunt-tests/panic-error/terragrunt.hcl:3,22-30: Error in function call; Call to function "run_cmd" failed: panic in function implementation: runtime error: slice bounds out of range [1:0]
+  goroutine 42 [running]:
+  runtime/debug.Stack()
+  	/home/denis256/.local/share/mise/installs/go/1.26.0/src/runtime/debug/stack.go:26 +0x5e
+  github.com/zclconf/go-cty/cty/function.errorForPanic(...)
+  	/home/denis256/go/pkg/mod/github.com/zclconf/go-cty@v1.18.1/cty/function/error.go:44
+  github.com/zclconf/go-cty/cty/function.Function.Call.func2()
+  	/home/denis256/go/pkg/mod/github.com/zclconf/go-cty@v1.18.1/cty/function/function.go:349 +0x96
+  panic({0x2eb0840?, 0x2e0168596168?})
+  	/home/denis256/.local/share/mise/installs/go/1.26.0/src/runtime/panic.go:860 +0x13a
+  github.com/gruntwork-io/terragrunt/pkg/config.runCommandImpl({0x3480288, 0x2e0168378d20}, 0x2e016820b808, {0x34bb8d0, 0x2e0168462678}, {0x2e016837dbc0, 0x1, 0x1})
+  	/projects/gruntwork/terragrunt-3/pkg/config/config_helpers.go:455 +0xe8f
+  github.com/gruntwork-io/terragrunt/pkg/config.RunCommand({0x3480288?, 0x2e0168378d20?}, 0x34196f8?, {0x34bb8d0?, 0x2e0168462678?}, {0x2e016837dbc0?, 0x1?, 0x1?})
+  	/projects/gruntwork/terragrunt-3/pkg/config/config_helpers.go:364 +0x2c
+  github.com/gruntwork-io/terragrunt/pkg/config.createTerragruntEvalContext.wrapStringSliceToStringAsFuncImpl.func5({0x2e0167bf7ee0?, 0x34196f8?, 0x29d4dc0?}, {{0x2e016837dbb0?, 0x5f7af74be22f9a2a?}})
+  	/projects/gruntwork/terragrunt-3/pkg/config/cty_helpers.go:39 +0x8c
+  github.com/zclconf/go-cty/cty/function.Function.Call({0x3480bb8?}, {0x2e0167bf7ee0, 0x1, 0x1})
+  	/home/denis256/go/pkg/mod/github.com/zclconf/go-cty@v1.18.1/cty/function/function.go:353 +0x6da
+  github.com/hashicorp/hcl/v2/hclsyntax.(*FunctionCallExpr).Value(0x2e01682392c0, 0x2e016837fc98)
+  	/home/denis256/go/pkg/mod/github.com/hashicorp/hcl/v2@v2.24.0/hclsyntax/expression.go:528 +0x1a3f
+  github.com/gruntwork-io/terragrunt/pkg/config/hclparse.(*Attribute).Value(0x2e016837da90, 0x2e01682392c0?)
+  	/projects/gruntwork/terragrunt-3/pkg/config/hclparse/attributes.go:77 +0x29
+  github.com/gruntwork-io/terragrunt/pkg/config.attemptEvaluateLocals({0x3480288, 0x2e0168378d20}, 0x2e016820b808, {0x34bb8d0, 0x2e0168462678}, 0x2e0167bf7920, {0x2e01679834b0, 0x1, 0x427f25?}, 0x2e01685bc1e0)
+  	/projects/gruntwork/terragrunt-3/pkg/config/locals.go:140 +0x528
+  github.com/gruntwork-io/terragrunt/pkg/config.EvaluateLocalsBlock({0x3480288, 0x2e0168378d20}, 0x2e016820b808, {0x34bb8d0, 0x2e0168462678}, 0x2e0167bf7920)
+  	/projects/gruntwork/terragrunt-3/pkg/config/locals.go:64 +0x214
+  github.com/gruntwork-io/terragrunt/pkg/config.DecodeBaseBlocks({0x3480288, 0x2e0168378d20}, 0x2e016820b208, {0x34bb8d0, 0x2e0168462678}, 0x2e0167bf7920, 0x0)
+  	/projects/gruntwork/terragrunt-3/pkg/config/config_partial.go:173 +0x528
+  github.com/gruntwork-io/terragrunt/pkg/config.PartialParseConfig({0x3480288, 0x2e0168378d20}, 0x2e016820ac08, {0x34bb8d0, 0x2e0168462678}, 0x2e0167bf7920, 0x0)
+  	/projects/gruntwork/terragrunt-3/pkg/config/config_partial.go:408 +0x290
+  github.com/gruntwork-io/terragrunt/pkg/config.TerragruntConfigFromPartialConfig({0x3480288, 0x2e0168378d20}, 0x2e016820ac08, {0x34bb8d0, 0x2e0168462678}, 0x2e0167bf7920, 0x0)
+  	/projects/gruntwork/terragrunt-3/pkg/config/config_partial.go:340 +0x429
+  github.com/gruntwork-io/terragrunt/pkg/config.PartialParseConfigFile.func1({0x3480288, 0x2e0168378d20})
+  	/projects/gruntwork/terragrunt-3/pkg/config/config_partial.go:313 +0x145
+  github.com/gruntwork-io/terragrunt/internal/telemetry.(*Meter).Time(0x21?, {0x3480288?, 0x2e0168378d20?}, {0x30a478d?, 0x30?}, 0x2e01685942a0?, 0x2e0167912660?)
+  	/projects/gruntwork/terragrunt-3/internal/telemetry/meter.go:78 +0x23c
+  github.com/gruntwork-io/terragrunt/internal/telemetry.(*Telemeter).Collect.func1({0x3480288?, 0x2e0168378d20?})
+  	/projects/gruntwork/terragrunt-3/internal/telemetry/telemeter.go:81 +0x3e
+  github.com/gruntwork-io/terragrunt/internal/telemetry.(*Tracer).Trace(0xb?, {0x3480288?, 0x2e0168378d20?}, {0x30a478d?, 0x7664da5c36d8?}, 0x10?, 0x2e0167b05008?)
+  	/projects/gruntwork/terragrunt-3/internal/telemetry/tracer.go:201 +0x2af
+  github.com/gruntwork-io/terragrunt/internal/telemetry.(*Telemeter).Collect(0x3480288?, {0x3480288?, 0x2e0168378d20?}, {0x30a478d?, 0x2e0167912838?}, 0x47141e?, 0x2e0168378cf0?)
+  	/projects/gruntwork/terragrunt-3/internal/telemetry/telemeter.go:80 +0x1bd
+  github.com/gruntwork-io/terragrunt/pkg/config.TraceParseConfigFile({0x3480288, 0x2e0168378d20}, {0x2e01682f1100, 0x3f}, {0x2e01678c0104, 0x30}, 0x1, {0x2e0168588260, 0x2, 0x2}, ...)
+  	/projects/gruntwork/terragrunt-3/pkg/config/telemetry.go:58 +0x42d
+  github.com/gruntwork-io/terragrunt/pkg/config.PartialParseConfigFile({0x3480288, 0x2e0168378d20}, 0x2e016820ac08, {0x34bb8d0, 0x2e0168462678}, {0x2e01682f1100, 0x3f}, 0x0)
+  	/projects/gruntwork/terragrunt-3/pkg/config/config_partial.go:287 +0x373
+  github.com/gruntwork-io/terragrunt/internal/cli/commands/run.getTerragruntConfig({0x3480288?, 0x2e0168378d20?}, {0x34bb8d0, 0x2e0168462678}, 0x2e016803e008)
+  	/projects/gruntwork/terragrunt-3/internal/cli/commands/run/run.go:250 +0xf3
+  github.com/gruntwork-io/terragrunt/internal/cli/commands/run.checkVersionConstraints({0x3480288, 0x2e0168378d20}, {0x34bb8d0, 0x2e0168462678}, 0x2e016803e008)
+  	/projects/gruntwork/terragrunt-3/internal/cli/commands/run/run.go:191 +0x47
+  github.com/gruntwork-io/terragrunt/internal/cli/commands/run.Run({0x3480288, 0x2e0168378d20}, {0x34bb8d0, 0x2e0168462678}, 0x2e016803e008)
+  	/projects/gruntwork/terragrunt-3/internal/cli/commands/run/run.go:91 +0x545
+  github.com/gruntwork-io/terragrunt/internal/cli/commands/run.NewSubcommands.func1.Action.1(...)
+  	/projects/gruntwork/terragrunt-3/internal/cli/commands/run/cli.go:80
+  github.com/gruntwork-io/terragrunt/internal/cli/commands/run.NewSubcommands.func1({0x3480288?, 0x2e0168378d20?}, 0x2e0167d08701?)
+  	/projects/gruntwork/terragrunt-3/internal/cli/commands/run/cli.go:69 +0x29
+  github.com/gruntwork-io/terragrunt/internal/cli/commands.RunAction.func2()
+  	/projects/gruntwork/terragrunt-3/internal/cli/commands/commands.go:310 +0x4f
+  golang.org/x/sync/errgroup.(*Group).Go.func1()
+  	/home/denis256/go/pkg/mod/golang.org/x/sync@v0.20.0/errgroup/errgroup.go:93 +0x50
+  created by golang.org/x/sync/errgroup.(*Group).Go in goroutine 1
+  	/home/denis256/go/pkg/mod/golang.org/x/sync@v0.20.0/errgroup/errgroup.go:78 +0x95
+  .
+
+
+Stack trace:
+(no stack trace was available)
