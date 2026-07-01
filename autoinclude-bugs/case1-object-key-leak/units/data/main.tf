@@ -1,0 +1,1 @@
+output "value" { value = "data" }
