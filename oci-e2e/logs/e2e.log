@@ -1,0 +1,954 @@
+[08:31:11] generated self-signed cert in /projects/gruntwork/terragrunt-tests/oci-e2e/certs
+[08:31:12] registry registry:2.8.3 up on https://127.0.0.1:5443 (ping: 200)
+[08:31:12] pushed blob sha256:2756aa6ab316350813d48701fe5ea8e818a4da4e8fed415a35a5f71213c83b23 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[08:31:12] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[08:31:12] pushed manifest 1.0.0 (sha256:b3def626fa0edf764bbad770c7d356ec02637efb4a5caaf84717b85b41451456) to modules/vpc
+[08:31:12] building terragrunt from /projects/gruntwork/terragrunt-2
+[08:31:17] plan in /projects/gruntwork/terragrunt-tests/oci-e2e
+[90m08:31:17.982[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/tMalKAdUEw_HdC0p6WXRnTre4FY/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m08:31:18.268[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m08:31:18.269[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m08:31:18.269[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m08:31:18.269[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m08:31:18.271[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m08:31:18.271[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m08:31:18.271[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m08:31:18.271[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m08:31:18.271[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m08:31:18.271[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m08:31:18.312[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m08:31:18.312[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-from-docker-registry"[0m
+[90m08:31:18.312[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m08:31:18.312[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m08:31:18.312[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m08:31:18.312[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m08:31:18.312[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m08:31:18.312[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[08:31:18] OK: /projects/gruntwork/terragrunt-tests/oci-e2e produced: oci_works = "hello-from-docker-registry"
+[08:31:18] plan in /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test
+[90m08:31:18.474[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/4RUuRluHQDBaqENXvFRBnS1f0VU/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m08:31:18.534[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m08:31:18.534[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m08:31:18.534[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m08:31:18.534[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m08:31:18.534[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m08:31:18.534[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m08:31:18.534[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m08:31:18.534[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m08:31:18.534[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m08:31:18.534[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m08:31:18.586[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m08:31:18.586[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m sub = "sub"[0m
+[90m08:31:18.586[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m08:31:18.586[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m08:31:18.586[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m08:31:18.586[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m08:31:18.586[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m08:31:18.586[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[08:31:18] OK: /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test produced: sub = "sub"
+[08:31:18] e2e PASSED
+[08:37:53] registry registry:2.8.3 up on https://127.0.0.1:5443 (ping: 200)
+[08:37:53] pushed blob sha256:2089f852559cf8c245ae1b8ae70c04406de95f61df645ad1eb0a46603fe3bee4 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[08:37:53] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[08:37:53] pushed manifest 1.0.0 (sha256:bc501f380d4d07fda6a26c4009b0ec5230796f516783e2e7c956d7cdd47cc415) to modules/vpc
+[08:37:53] building terragrunt from /projects/gruntwork/terragrunt-2
+[08:38:00] plan in /projects/gruntwork/terragrunt-tests/oci-e2e
+[90m08:38:02.485[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/tMalKAdUEw_HdC0p6WXRnTre4FY/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m08:38:02.829[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m08:38:02.835[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m08:38:02.835[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m08:38:02.835[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m08:38:02.835[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m08:38:02.835[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m08:38:02.835[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m08:38:02.835[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m08:38:02.835[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m08:38:02.835[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m08:38:02.993[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m08:38:02.993[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-from-docker-registry"[0m
+[90m08:38:02.993[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m08:38:02.993[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m08:38:02.993[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m08:38:02.993[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m08:38:02.993[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m08:38:02.993[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[08:38:03] OK: /projects/gruntwork/terragrunt-tests/oci-e2e produced: oci_works = "hello-from-docker-registry"
+[08:38:03] plan in /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test
+[90m08:38:03.195[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/4RUuRluHQDBaqENXvFRBnS1f0VU/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m08:38:03.295[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m08:38:03.297[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m08:38:03.297[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m08:38:03.297[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m08:38:03.297[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m08:38:03.297[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m08:38:03.297[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m08:38:03.297[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m08:38:03.297[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m08:38:03.297[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m08:38:03.353[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m08:38:03.354[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m sub = "sub"[0m
+[90m08:38:03.354[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m08:38:03.354[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m08:38:03.354[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m08:38:03.354[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m08:38:03.354[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m08:38:03.354[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[08:38:03] OK: /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test produced: sub = "sub"
+[08:38:03] e2e PASSED
+[08:45:16] registry registry:2.8.3 up on https://127.0.0.1:5443 (ping: 200)
+[08:45:16] pushed blob sha256:f159a88e54caaad6dbe5f6c59a74a6384d56c26a022f76beb391c39f4b0fbfac (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[08:45:16] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[08:45:16] pushed manifest 1.0.0 (sha256:2c8e564c46c5f0363846c5ea55b75c6cd6094ed4b5a4422fefb0d13f790fbb3b) to modules/vpc
+[08:45:16] building terragrunt from /projects/gruntwork/terragrunt-2
+[08:45:21] plan in /projects/gruntwork/terragrunt-tests/oci-e2e
+[90m08:45:21.600[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/tMalKAdUEw_HdC0p6WXRnTre4FY/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m08:45:21.810[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m08:45:21.811[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m08:45:21.811[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m08:45:21.811[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m08:45:21.811[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m08:45:21.811[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m08:45:21.811[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m08:45:21.811[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m08:45:21.811[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m08:45:21.811[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m08:45:21.854[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m08:45:21.855[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-from-docker-registry"[0m
+[90m08:45:21.855[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m08:45:21.855[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m08:45:21.855[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m08:45:21.855[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m08:45:21.855[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m08:45:21.855[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[08:45:21] OK: /projects/gruntwork/terragrunt-tests/oci-e2e produced: oci_works = "hello-from-docker-registry"
+[08:45:21] plan in /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test
+[90m08:45:22.006[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/4RUuRluHQDBaqENXvFRBnS1f0VU/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m08:45:22.055[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m08:45:22.055[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m08:45:22.055[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m08:45:22.055[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m08:45:22.055[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m08:45:22.055[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m08:45:22.055[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m08:45:22.055[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m08:45:22.055[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m08:45:22.055[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m08:45:22.091[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m08:45:22.091[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m sub = "sub"[0m
+[90m08:45:22.091[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m08:45:22.091[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m08:45:22.091[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m08:45:22.091[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m08:45:22.091[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m08:45:22.091[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[08:45:22] OK: /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test produced: sub = "sub"
+[08:45:22] e2e PASSED
+[16:00:36] registry registry:2.8.3 up on https://127.0.0.1:5443 (ping: 200)
+[16:00:37] pushed blob sha256:fac6a3ae6fa7c22e68c05d06c2bd4c5c05a057ff14f49c41afb6e8022fab5e10 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:00:37] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:00:37] pushed manifest 1.0.0 (sha256:6eb9d8aaa6c30cb4312510d96fecc416bb3a910d44c9da27b4380d3c74bfc196) to modules/vpc
+[16:00:37] building terragrunt from /projects/gruntwork/terragrunt-2
+[16:01:01] plan in /projects/gruntwork/terragrunt-tests/oci-e2e
+[90m16:01:03.194[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/tMalKAdUEw_HdC0p6WXRnTre4FY/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:03.736[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:03.745[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:03.745[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:03.746[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:03.746[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:03.746[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:03.746[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:03.746[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:03.746[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:03.746[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:03.864[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:03.864[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-from-docker-registry"[0m
+[90m16:01:03.864[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:03.864[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:03.864[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:03.864[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:03.864[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:03.864[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:03] OK: /projects/gruntwork/terragrunt-tests/oci-e2e produced: oci_works = "hello-from-docker-registry"
+[16:01:03] plan in /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test
+[90m16:01:04.035[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/4RUuRluHQDBaqENXvFRBnS1f0VU/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:04.088[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:04.089[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:04.089[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:04.089[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:04.089[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:04.089[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:04.089[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:04.089[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:04.089[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:04.089[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:04.133[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:04.133[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m sub = "sub"[0m
+[90m16:01:04.133[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:04.133[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:04.133[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:04.133[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:04.133[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:04.133[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:04] OK: /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test produced: sub = "sub"
+[16:01:04] e2e PASSED
+[16:01:04] build sanity: --version and --help must run
+terragrunt version latest
+[16:01:04] OK: binary executes
+[90m16:01:04.551[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:04.613[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:04.614[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:04.614[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:04.614[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:04.614[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:04.614[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:04.614[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:04.614[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:04.614[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:04.614[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:04.657[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:04.657[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-from-docker-registry"[0m
+[90m16:01:04.657[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:04.657[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:04.657[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:04.657[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:04.657[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:04.657[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:04] FAIL: cold run downloaded no content
+[16:01:28] build sanity: --version and --help must run
+terragrunt version latest
+[16:01:28] OK: binary executes
+[16:01:28] pushing unique content for a cold start
+[16:01:28] pushed blob sha256:199fb82c94751f8cf89dd19958db1899d0e3aa93eb0836fd28d1f326f254743b (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:01:28] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:01:28] pushed manifest 1.0.0 (sha256:8b86a509fc3c963eed7e9aeadddd240d04efd5756498a8648dfa3549623e2134) to modules/vpc
+[90m16:01:28.952[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:29.042[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:29.042[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:29.042[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:29.043[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:29.043[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:29.043[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:29.043[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:29.043[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:29.043[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:29.043[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:29.084[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:29.085[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-cold-1784304088-2821587"[0m
+[90m16:01:29.085[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:29.085[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:29.085[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:29.085[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:29.085[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:29.085[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:29] OK: cold run fetched the module (1 blob GET)
+[90m16:01:29.314[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:29.357[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:29.358[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:29.358[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:29.358[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:29.358[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:29.358[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:29.358[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:29.358[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:29.358[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:29.358[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:29.398[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:29.398[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-cold-1784304088-2821587"[0m
+[90m16:01:29.398[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:29.398[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:29.398[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:29.398[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:29.398[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:29.398[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:29] OK: warm run served from CAS (zero blob GETs, tag re-probed)
+[16:01:29] re-pushing tag 1.0.0 with new content
+[16:01:29] pushed blob sha256:431ae978d36d23a2fe36edaac685ed33df4a4777a65db5a2312dcf4c41771545 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:01:29] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:01:29] pushed manifest 1.0.0 (sha256:eb91d60a1bbdacfc69306c840f079e4d358a91972d9e3d40a2d5c530b1ff3016) to modules/vpc
+[90m16:01:29.810[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:29.877[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:29.877[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:29.877[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:29.878[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:29.878[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:29.878[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:29.878[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:29.878[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:29.878[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:29.878[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:29.913[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:29.913[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-repush-1784304088-2821587"[0m
+[90m16:01:29.913[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:29.913[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:29.913[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:29.913[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:29.913[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:29.913[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:29] OK: re-pushed tag invalidated the cache and fetched the new content
+[16:01:30] pushed blob sha256:62709a3551e03c9a1f7a61e4b8242b514fc93ec7677733eef016f4a16e9eb067 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:01:30] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:01:30] pushed manifest 1.0.0 (sha256:ca8cad60aadc7d0e989fb48a30851fd47cb9592399d077241ee6cfcea90cb108) to modules/vpc
+[16:01:30] cas validation PASSED
+[16:01:35] registry registry:2.8.3 up on https://127.0.0.1:5443 (ping: 200)
+[16:01:35] pushed blob sha256:8df41a38eceac707092f222495d9c4198be071b6559d7a377fcc05f480437162 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:01:35] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:01:35] pushed manifest 1.0.0 (sha256:9c27ecc3eedfee280c35cddea632b68616975ab51e451874722068a17a0b1b42) to modules/vpc
+[16:01:35] building terragrunt from /projects/gruntwork/terragrunt-2
+[16:01:36] plan in /projects/gruntwork/terragrunt-tests/oci-e2e
+[90m16:01:36.446[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/tMalKAdUEw_HdC0p6WXRnTre4FY/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:36.913[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:36.914[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:36.914[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:36.914[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:36.914[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:36.914[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:36.914[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:36.914[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:36.914[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:36.914[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:36.953[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:36.953[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-from-docker-registry"[0m
+[90m16:01:36.953[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:36.953[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:36.953[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:36.953[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:36.953[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:36.953[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:36] OK: /projects/gruntwork/terragrunt-tests/oci-e2e produced: oci_works = "hello-from-docker-registry"
+[16:01:36] plan in /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test
+[90m16:01:37.104[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/4RUuRluHQDBaqENXvFRBnS1f0VU/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:37.168[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:37.168[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:37.169[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:37.169[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:37.169[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:37.169[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:37.169[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:37.169[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:37.169[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:37.169[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:37.222[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:37.222[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m sub = "sub"[0m
+[90m16:01:37.222[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:37.222[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:37.222[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:37.222[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:37.222[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:37.222[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:37] OK: /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test produced: sub = "sub"
+[16:01:37] e2e PASSED
+[16:01:37] build sanity: --version and --help must run
+terragrunt version latest
+[16:01:37] OK: binary executes
+[16:01:37] pushing unique content for a cold start
+[16:01:37] pushed blob sha256:a5b21e95b14a2b8edb839c1a0a2dd96bead16d6fe5276afa38075ec087993fd9 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:01:37] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:01:37] pushed manifest 1.0.0 (sha256:6eb3d24658019721b2db3cd7ce71a0633fcbb20d14d6b6a6dcfcd4b69fdb899c) to modules/vpc
+[90m16:01:37.776[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:37.827[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:37.828[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:37.828[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:37.828[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:37.828[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:37.828[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:37.828[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:37.828[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:37.828[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:37.828[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:37.869[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:37.869[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-cold-1784304097-2823232"[0m
+[90m16:01:37.869[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:37.870[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:37.870[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:37.870[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:37.870[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:37.870[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:37] OK: cold run fetched the module (1 blob GET)
+[90m16:01:38.078[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:38.131[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:38.136[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:38.136[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:38.136[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:38.136[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:38.136[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:38.136[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:38.136[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:38.136[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:38.136[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:38.191[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:38.191[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-cold-1784304097-2823232"[0m
+[90m16:01:38.191[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:38.191[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:38.191[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:38.191[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:38.191[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:38.191[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:38] OK: warm run served from CAS (zero blob GETs, tag re-probed)
+[16:01:38] re-pushing tag 1.0.0 with new content
+[16:01:38] pushed blob sha256:513eebfe91b85c5e3262e32648daf8bdd3f89b3b16210037ee00cc628dc40659 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:01:38] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:01:38] pushed manifest 1.0.0 (sha256:7d3c2dafefac8f527aa3dbf7af332ac0605275c6660f2bfba2f8617e38b8b6e9) to modules/vpc
+[90m16:01:38.569[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:01:38.656[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:01:38.656[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:01:38.656[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:01:38.656[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:01:38.656[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:01:38.656[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:01:38.656[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:01:38.656[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:01:38.656[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:01:38.656[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:01:38.699[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:01:38.700[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-repush-1784304097-2823232"[0m
+[90m16:01:38.700[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:01:38.700[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:01:38.700[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:01:38.700[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:01:38.700[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:01:38.700[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:01:38] OK: re-pushed tag invalidated the cache and fetched the new content
+[16:01:38] pushed blob sha256:a83f12a0ecf90b3afbf1ff65a476d10c6c2f16c1af5ee9190da41d856421af26 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:01:38] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:01:38] pushed manifest 1.0.0 (sha256:80acc5fabd7da356f10d884beb6e78e86d477547af1c68a0e5d14ab28bbc3954) to modules/vpc
+[16:01:38] cas validation PASSED
+[16:15:22] registry registry:2.8.3 up on https://127.0.0.1:5443 (ping: 200)
+[16:15:23] pushed blob sha256:18808e55cbc3eb85c43a8f1f3781c2abc7ec84620c709d4ddee2436cdaeb6329 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:15:23] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:15:23] pushed manifest 1.0.0 (sha256:29ababbc8be3a29f4cb98a6983e886b4cd17bab9e59b9dc21746a246adcb3639) to modules/vpc
+[16:15:23] building terragrunt from /projects/gruntwork/terragrunt-2
+[16:15:28] plan in /projects/gruntwork/terragrunt-tests/oci-e2e
+[90m16:15:29.113[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/tMalKAdUEw_HdC0p6WXRnTre4FY/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:15:29.451[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:15:29.461[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:15:29.461[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:15:29.461[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:15:29.461[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:15:29.461[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:15:29.461[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:15:29.461[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:15:29.461[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:15:29.461[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:15:29.542[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:15:29.542[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-from-docker-registry"[0m
+[90m16:15:29.542[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:15:29.542[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:15:29.542[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:15:29.542[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:15:29.542[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:15:29.542[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:15:29] OK: /projects/gruntwork/terragrunt-tests/oci-e2e produced: oci_works = "hello-from-docker-registry"
+[16:15:29] plan in /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test
+[90m16:15:29.700[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/4RUuRluHQDBaqENXvFRBnS1f0VU/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:15:29.760[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:15:29.761[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:15:29.761[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:15:29.761[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:15:29.761[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:15:29.761[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:15:29.761[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:15:29.761[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:15:29.761[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:15:29.761[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:15:29.801[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:15:29.801[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m sub = "sub"[0m
+[90m16:15:29.801[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:15:29.801[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:15:29.801[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:15:29.801[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:15:29.801[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:15:29.801[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:15:29] OK: /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test produced: sub = "sub"
+[16:15:29] e2e PASSED
+[16:15:29] build sanity: --version and --help must run
+terragrunt version latest
+[16:15:30] OK: binary executes
+[16:15:30] pushing unique content for a cold start
+[16:15:30] pushed blob sha256:8e80c7cb569b77f693a6dd5224d6b13e5ec97e5f1e50ea2d2c8f3151933c7af4 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:15:30] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:15:30] pushed manifest 1.0.0 (sha256:1fa07bb69a64c35e7b8c9f344c77ed35d5e80af051f29b2643e4574d10279a6d) to modules/vpc
+[90m16:15:30.390[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:15:30.475[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:15:30.476[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:15:30.477[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:15:30.477[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:15:30.477[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:15:30.477[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:15:30.477[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:15:30.477[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:15:30.477[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:15:30.477[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:15:30.519[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:15:30.519[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-cold-1784304930-2916960"[0m
+[90m16:15:30.519[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:15:30.519[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:15:30.519[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:15:30.519[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:15:30.519[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:15:30.519[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:15:30] OK: cold run fetched the module (1 blob GET)
+[90m16:15:30.714[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:15:30.757[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:15:30.758[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:15:30.758[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:15:30.758[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:15:30.758[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:15:30.758[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:15:30.758[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:15:30.758[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:15:30.758[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:15:30.758[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:15:30.799[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:15:30.800[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-cold-1784304930-2916960"[0m
+[90m16:15:30.800[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:15:30.800[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:15:30.800[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:15:30.800[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:15:30.800[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:15:30.800[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:15:30] OK: warm run served from CAS (zero blob GETs, tag re-probed)
+[16:15:30] re-pushing tag 1.0.0 with new content
+[16:15:30] pushed blob sha256:7ba46bb8bd1826231e9141f303867127e1cf2a31c8b64dd3d1714208c7de42dd (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:15:31] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:15:31] pushed manifest 1.0.0 (sha256:333f39504b81de14a9a6a9a9d10eb062a1a1510647da05c031138e52bd81c1b2) to modules/vpc
+[90m16:15:31.162[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m16:15:31.231[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m16:15:31.231[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m16:15:31.231[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m16:15:31.231[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m16:15:31.231[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m16:15:31.231[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m16:15:31.231[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m16:15:31.231[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m16:15:31.231[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m16:15:31.231[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m16:15:31.272[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m16:15:31.272[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-repush-1784304930-2916960"[0m
+[90m16:15:31.272[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m16:15:31.272[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m16:15:31.272[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m16:15:31.272[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m16:15:31.272[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m16:15:31.272[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[16:15:31] OK: re-pushed tag invalidated the cache and fetched the new content
+[16:15:31] pushed blob sha256:6a423290d640d9fd753103818ec4a7a1eeeaeca5bbdc6aca69f07b9bcebff74a (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[16:15:31] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[16:15:31] pushed manifest 1.0.0 (sha256:9e49b8653e21cba236818ff3ed455129263b57b3eea475ec9be77cbb203aa339) to modules/vpc
+[16:15:31] cas validation PASSED
+[17:22:34] registry registry:2.8.3 up on https://127.0.0.1:5443 (ping: 200)
+[17:22:34] pushed blob sha256:d51b67d05b6d54cc06c167aa7fd47e75517efb469e1b8af007982f9403114f15 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[17:22:34] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[17:22:34] pushed manifest 1.0.0 (sha256:dc2e9165a803b6acb1fc76c1d9e1356861cc029182c179260a14837001e12ae5) to modules/vpc
+[17:22:34] building terragrunt from /projects/gruntwork/terragrunt-2
+[17:22:39] plan in /projects/gruntwork/terragrunt-tests/oci-e2e
+[90m17:22:40.251[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/tMalKAdUEw_HdC0p6WXRnTre4FY/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m17:22:40.576[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m17:22:40.586[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m17:22:40.586[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m17:22:40.586[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m17:22:40.586[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m17:22:40.586[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m17:22:40.586[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m17:22:40.586[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m17:22:40.586[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m17:22:40.586[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m17:22:40.806[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m17:22:40.806[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-from-docker-registry"[0m
+[90m17:22:40.806[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m17:22:40.806[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m17:22:40.806[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m17:22:40.806[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m17:22:40.806[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m17:22:40.806[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[17:22:40] OK: /projects/gruntwork/terragrunt-tests/oci-e2e produced: oci_works = "hello-from-docker-registry"
+[17:22:40] plan in /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test
+[90m17:22:40.993[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/4RUuRluHQDBaqENXvFRBnS1f0VU/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m17:22:41.048[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m17:22:41.049[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m17:22:41.049[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m17:22:41.049[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m17:22:41.049[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m17:22:41.049[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m17:22:41.049[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m17:22:41.049[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m17:22:41.049[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m17:22:41.049[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m17:22:41.097[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m17:22:41.097[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m sub = "sub"[0m
+[90m17:22:41.097[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m17:22:41.097[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m17:22:41.097[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m17:22:41.097[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m17:22:41.097[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m17:22:41.097[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[17:22:41] OK: /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test produced: sub = "sub"
+[17:22:41] e2e PASSED
+[17:22:41] build sanity: --version and --help must run
+terragrunt version latest
+[17:22:41] OK: binary executes
+[17:22:41] pushing unique content for a cold start
+[17:22:41] pushed blob sha256:99fce980a46a43e24dad688d71e3e5cca882a64a3a41c44b22d2d755c17cbca9 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[17:22:41] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[17:22:41] pushed manifest 1.0.0 (sha256:951a61b27fab96da49c6c6aa7721a3f11af946318d3488fb5a0f42b5b1ecc089) to modules/vpc
+[90m17:22:41.695[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m17:22:41.764[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m17:22:41.765[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m17:22:41.765[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m17:22:41.765[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m17:22:41.765[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m17:22:41.765[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m17:22:41.765[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m17:22:41.765[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m17:22:41.765[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m17:22:41.765[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m17:22:41.803[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m17:22:41.803[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-cold-1784308961-3343766"[0m
+[90m17:22:41.803[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m17:22:41.803[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m17:22:41.803[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m17:22:41.803[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m17:22:41.803[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m17:22:41.803[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[17:22:41] OK: cold run fetched the module (1 blob GET)
+[90m17:22:42.008[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m17:22:42.058[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m17:22:42.058[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m17:22:42.058[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m17:22:42.058[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m17:22:42.058[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m17:22:42.059[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m17:22:42.059[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m17:22:42.059[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m17:22:42.059[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m17:22:42.059[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m17:22:42.117[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m17:22:42.117[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-cold-1784308961-3343766"[0m
+[90m17:22:42.117[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m17:22:42.117[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m17:22:42.117[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m17:22:42.117[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m17:22:42.117[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m17:22:42.117[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[17:22:42] OK: warm run served from CAS (zero blob GETs, tag re-probed)
+[17:22:42] re-pushing tag 1.0.0 with new content
+[17:22:42] pushed blob sha256:d2d36d7594e47c51c1a44cf7b0e0767f5ada9d6857f8665bcd106d084a843cd3 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[17:22:42] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[17:22:42] pushed manifest 1.0.0 (sha256:a8393c0918abc660b509d3f8f7094849dae94284efe455fb37200d6a544404af) to modules/vpc
+[90m17:22:42.528[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m17:22:42.614[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m17:22:42.615[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m17:22:42.615[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m17:22:42.615[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m17:22:42.615[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m17:22:42.615[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m17:22:42.615[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m17:22:42.615[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m17:22:42.615[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m17:22:42.615[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m17:22:42.662[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m17:22:42.664[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-repush-1784308961-3343766"[0m
+[90m17:22:42.664[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m17:22:42.664[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m17:22:42.664[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m17:22:42.664[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m17:22:42.664[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m17:22:42.664[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[17:22:42] OK: re-pushed tag invalidated the cache and fetched the new content
+[17:22:42] pushed blob sha256:7452055447c46c01219ec448adeeaafdd99d809b8b9113f177cd5b89c631c4c7 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[17:22:42] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[17:22:42] pushed manifest 1.0.0 (sha256:be7a1d552d3fe23a3b21acab77809c1913c2752d5274c6d1714010854c6678f0) to modules/vpc
+[17:22:42] cas validation PASSED
+[18:37:31] pushed blob sha256:85c3020986b2644a61d6e3333391eaeef4d4717745d3d81d2872bedaa7e1a685 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[18:37:31] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[18:37:31] pushed manifest 1.0.0 (sha256:4ce6dfb6c2f11dee15231dd66c2e733207cc885ae0bd73558028b4c304cafb59) to modules/vpc
+[18:38:35] publishing unique module content (cold start)
+[18:38:35] pushed blob sha256:69eff55fb55d54177a32e3edd010696658f45cfe7b7a1eb5ad984683284d8ff9 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[18:38:35] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[18:38:35] pushed manifest 1.0.0 (sha256:5152b27cb295c1d6a10b7498219b2ab195a305fbdbfa8d4153a458d0b5606ea8) to modules/vpc
+18:38:35.960 DEBUG  Terragrunt Version: 0.0.0
+18:38:35.961 DEBUG  using cache key for version files: H2PcpB8dh-BE5Dz-LiSD1hykSfk
+18:38:35.961 DEBUG  Running command: tofu -version
+18:38:35.993 DEBUG  tofu version: 1.12.2
+18:38:35.994 DEBUG  Auto provider cache dir enabled: TF_PLUGIN_CACHE_DIR=/home/denis256/.cache/terragrunt/providers
+18:38:35.996 DEBUG  Did not find any locals block: skipping evaluation.
+18:38:35.996 DEBUG  using cache key for version files: H2PcpB8dh-BE5Dz-LiSD1hykSfk
+18:38:35.996 DEBUG  Reading Terragrunt config file at ./terragrunt.hcl
+18:38:35.997 DEBUG  Did not find any locals block: skipping evaluation.
+18:38:35.997 DEBUG  Did not find any locals block: skipping evaluation.
+18:38:35.998 DEBUG  Report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work not found, creating new run
+18:38:35.998 DEBUG  Adding report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work
+18:38:35.998 INFO   Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:38:35.998 DEBUG  CAS enabled: attempting to use Content Addressable Storage for source: oci://127.0.0.1:5443/modules/vpc?tag=1.0.0
+18:38:36.025 DEBUG  Successfully downloaded source using CAS: oci://127.0.0.1:5443/modules/vpc?tag=1.0.0
+18:38:36.025 DEBUG  Copying files from /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work into ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:38:36.026 DEBUG  Setting working directory to ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:38:36.026 DEBUG  Running command: tofu init
+18:38:36.058 INFO   tofu: Initializing the backend...
+18:38:36.059 INFO   tofu: Initializing provider plugins...
+18:38:36.059 INFO   tofu: OpenTofu has been successfully initialized!
+18:38:36.059 INFO   tofu: 
+18:38:36.059 INFO   tofu: You may now begin working with OpenTofu. Try running "tofu plan" to see
+18:38:36.059 INFO   tofu: any changes that are required for your infrastructure. All OpenTofu commands
+18:38:36.059 INFO   tofu: should now work.
+18:38:36.059 INFO   tofu: If you ever set or change modules or backend configuration for OpenTofu,
+18:38:36.059 INFO   tofu: rerun this command to reinitialize your working directory. If you forget, other
+18:38:36.059 INFO   tofu: commands will detect it and remind you to do so if necessary.
+18:38:36.063 DEBUG  Running command: tofu plan
+18:38:36.107 STDOUT tofu: Changes to Outputs:
+18:38:36.107 STDOUT tofu:   + oci_works = "cas-evidence-1784313515-3891279"
+18:38:36.107 STDOUT tofu: You can apply this plan to save these new output values to the OpenTofu
+18:38:36.107 STDOUT tofu: state, without changing any real infrastructure.
+18:38:36.107 STDOUT tofu: 
+18:38:36.107 STDOUT tofu: ─────────────────────────────────────────────────────────────────────────────
+18:38:36.107 STDOUT tofu: Note: You didn't use the -out option to save this plan, so OpenTofu can't
+18:38:36.107 STDOUT tofu: guarantee to take exactly these actions if you run "tofu apply" now.
+18:38:36.111 DEBUG  Ending report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work with result succeeded
+18:38:36.319 DEBUG  Terragrunt Version: 0.0.0
+18:38:36.319 DEBUG  using cache key for version files: H2PcpB8dh-BE5Dz-LiSD1hykSfk
+18:38:36.319 DEBUG  Running command: tofu -version
+18:38:36.359 DEBUG  tofu version: 1.12.2
+18:38:36.359 DEBUG  Auto provider cache dir enabled: TF_PLUGIN_CACHE_DIR=/home/denis256/.cache/terragrunt/providers
+18:38:36.360 DEBUG  Did not find any locals block: skipping evaluation.
+18:38:36.360 DEBUG  using cache key for version files: H2PcpB8dh-BE5Dz-LiSD1hykSfk
+18:38:36.360 DEBUG  Reading Terragrunt config file at ./terragrunt.hcl
+18:38:36.360 DEBUG  Did not find any locals block: skipping evaluation.
+18:38:36.360 DEBUG  Did not find any locals block: skipping evaluation.
+18:38:36.361 DEBUG  Report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work not found, creating new run
+18:38:36.361 DEBUG  Adding report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work
+18:38:36.361 INFO   Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:38:36.361 DEBUG  CAS enabled: attempting to use Content Addressable Storage for source: oci://127.0.0.1:5443/modules/vpc?tag=1.0.0
+18:38:36.374 DEBUG  Successfully downloaded source using CAS: oci://127.0.0.1:5443/modules/vpc?tag=1.0.0
+18:38:36.375 DEBUG  Copying files from /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work into ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:38:36.376 DEBUG  Setting working directory to ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:38:36.376 DEBUG  Running command: tofu init
+18:38:36.403 INFO   tofu: Initializing the backend...
+18:38:36.404 INFO   tofu: Initializing provider plugins...
+18:38:36.404 INFO   tofu: OpenTofu has been successfully initialized!
+18:38:36.404 INFO   tofu: 
+18:38:36.404 INFO   tofu: You may now begin working with OpenTofu. Try running "tofu plan" to see
+18:38:36.404 INFO   tofu: any changes that are required for your infrastructure. All OpenTofu commands
+18:38:36.404 INFO   tofu: should now work.
+18:38:36.404 INFO   tofu: If you ever set or change modules or backend configuration for OpenTofu,
+18:38:36.404 INFO   tofu: rerun this command to reinitialize your working directory. If you forget, other
+18:38:36.404 INFO   tofu: commands will detect it and remind you to do so if necessary.
+18:38:36.407 DEBUG  Running command: tofu plan
+18:38:36.446 STDOUT tofu: Changes to Outputs:
+18:38:36.446 STDOUT tofu:   + oci_works = "cas-evidence-1784313515-3891279"
+18:38:36.446 STDOUT tofu: You can apply this plan to save these new output values to the OpenTofu
+18:38:36.446 STDOUT tofu: state, without changing any real infrastructure.
+18:38:36.446 STDOUT tofu: 
+18:38:36.446 STDOUT tofu: ─────────────────────────────────────────────────────────────────────────────
+18:38:36.446 STDOUT tofu: Note: You didn't use the -out option to save this plan, so OpenTofu can't
+18:38:36.446 STDOUT tofu: guarantee to take exactly these actions if you run "tofu apply" now.
+18:38:36.450 DEBUG  Ending report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work with result succeeded
+[18:38:36] pushed blob sha256:676a60c54ee90b6a8eabdb4d2af6da3f22d8e77173530121afcfd9b6482ccbfc (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[18:38:37] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[18:38:37] pushed manifest 1.0.0 (sha256:594ae5ac4e50f61b85fc1a88896c204e87fb6ec17757788e3139a352a568588c) to modules/vpc
+[18:38:37] cas evidence PASSED: OCI layers are served from CAS on warm runs
+[18:41:56] registry registry:2.8.3 up on https://127.0.0.1:5443 (ping: 200)
+[18:41:56] pushed blob sha256:6a0140f608a807f8d0b7a9ed1c2a44f5ed386027946474c8599d9947f0097564 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[18:41:56] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[18:41:56] pushed manifest 1.0.0 (sha256:7da0ee0f9600c3dcda618a307034956cab6f8ede553efa88642338dbf5faea8b) to modules/vpc
+[18:41:56] building terragrunt from /projects/gruntwork/terragrunt-2
+[18:42:24] plan in /projects/gruntwork/terragrunt-tests/oci-e2e
+[90m18:42:25.274[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/tMalKAdUEw_HdC0p6WXRnTre4FY/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m18:42:25.673[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m18:42:25.674[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m18:42:25.674[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m18:42:25.674[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m18:42:25.674[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m18:42:25.674[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m18:42:25.674[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m18:42:25.674[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m18:42:25.674[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m18:42:25.674[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m18:42:25.714[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m18:42:25.715[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-from-docker-registry"[0m
+[90m18:42:25.715[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m18:42:25.715[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m18:42:25.715[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m18:42:25.715[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m18:42:25.715[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m18:42:25.715[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[18:42:25] OK: /projects/gruntwork/terragrunt-tests/oci-e2e produced: oci_works = "hello-from-docker-registry"
+[18:42:25] plan in /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test
+[90m18:42:25.915[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/4RUuRluHQDBaqENXvFRBnS1f0VU/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m18:42:25.985[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m18:42:25.985[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m18:42:25.985[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m18:42:25.985[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m18:42:25.985[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m18:42:25.985[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m18:42:25.985[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m18:42:25.985[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m18:42:25.985[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m18:42:25.986[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m18:42:26.052[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m18:42:26.052[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m sub = "sub"[0m
+[90m18:42:26.052[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m18:42:26.052[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m18:42:26.052[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m18:42:26.052[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m18:42:26.052[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m18:42:26.052[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[18:42:26] OK: /projects/gruntwork/terragrunt-tests/oci-e2e/subdir-test produced: sub = "sub"
+[18:42:26] e2e PASSED
+[18:42:26] build sanity: --version and --help must run
+terragrunt version latest
+[18:42:26] OK: binary executes
+[18:42:26] pushing unique content for a cold start
+[18:42:26] pushed blob sha256:78ddbdf7129f28f6bc473fcfed01af15034498b06cbee9b44e82fb74a67124cc (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[18:42:26] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[18:42:26] pushed manifest 1.0.0 (sha256:492f8ea5f6bec8575219e8910f9da39dba994d7c18071ee4775eac24fad09ea1) to modules/vpc
+[90m18:42:26.878[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m18:42:26.972[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m18:42:26.972[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m18:42:26.972[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m18:42:26.972[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m18:42:26.972[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m18:42:26.972[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m18:42:26.972[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m18:42:26.972[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m18:42:26.972[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m18:42:26.972[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m18:42:27.018[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m18:42:27.019[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-cold-1784313746-3906840"[0m
+[90m18:42:27.019[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m18:42:27.019[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m18:42:27.019[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m18:42:27.019[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m18:42:27.019[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m18:42:27.019[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[18:42:27] OK: cold run fetched the module (1 blob GET)
+[90m18:42:27.223[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m18:42:27.278[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m18:42:27.279[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m18:42:27.279[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m18:42:27.279[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m18:42:27.279[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m18:42:27.279[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m18:42:27.279[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m18:42:27.279[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m18:42:27.279[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m18:42:27.279[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m18:42:27.317[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m18:42:27.317[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-cold-1784313746-3906840"[0m
+[90m18:42:27.317[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m18:42:27.317[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m18:42:27.317[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m18:42:27.317[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m18:42:27.317[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m18:42:27.318[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[18:42:27] OK: warm run served from CAS (zero blob GETs, tag re-probed)
+[18:42:27] re-pushing tag 1.0.0 with new content
+[18:42:27] pushed blob sha256:11ea7744a9bc576f1e028f06ee58f191862580d78f3ab08dfcf67cb135fc37f0 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[18:42:27] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[18:42:27] pushed manifest 1.0.0 (sha256:d1257effd8d64d67c63b8bd8e9eee27f5f23710b2070c65d1c459e351cffd453) to modules/vpc
+[90m18:42:27.769[m [32mINFO  [m Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/XGKMEc8vl3qOrKBJHebPi9eBaVk/IXvEW__lM3hc1Xoz1H106KSg7xY
+[90m18:42:27.831[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing the backend...[0m[0m
+[90m18:42:27.832[m [32mINFO  [m [36mtofu: [m[0m[1mInitializing provider plugins...[0m[0m
+[90m18:42:27.832[m [32mINFO  [m [36mtofu: [m[0m[1m[32mOpenTofu has been successfully initialized![0m[32m[0m[0m
+[90m18:42:27.832[m [32mINFO  [m [36mtofu: [m[0m[32m[0m
+[90m18:42:27.832[m [32mINFO  [m [36mtofu: [mYou may now begin working with OpenTofu. Try running "tofu plan" to see
+[90m18:42:27.832[m [32mINFO  [m [36mtofu: [many changes that are required for your infrastructure. All OpenTofu commands
+[90m18:42:27.833[m [32mINFO  [m [36mtofu: [mshould now work.
+[90m18:42:27.833[m [32mINFO  [m [36mtofu: [mIf you ever set or change modules or backend configuration for OpenTofu,
+[90m18:42:27.833[m [32mINFO  [m [36mtofu: [mrerun this command to reinitialize your working directory. If you forget, other
+[90m18:42:27.833[m [32mINFO  [m [36mtofu: [mcommands will detect it and remind you to do so if necessary.[0m[0m
+[90m18:42:27.878[m [37mSTDOUT[m [36mtofu: [mChanges to Outputs:
+[90m18:42:27.879[m [37mSTDOUT[m [36mtofu: [m  [32m+[0m[0m oci_works = "hello-repush-1784313746-3906840"[0m
+[90m18:42:27.879[m [37mSTDOUT[m [36mtofu: [mYou can apply this plan to save these new output values to the OpenTofu
+[90m18:42:27.879[m [37mSTDOUT[m [36mtofu: [mstate, without changing any real infrastructure.
+[90m18:42:27.879[m [37mSTDOUT[m [36mtofu: [m[90m[0m
+[90m18:42:27.879[m [37mSTDOUT[m [36mtofu: [m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[90m18:42:27.879[m [37mSTDOUT[m [36mtofu: [mNote: You didn't use the -out option to save this plan, so OpenTofu can't
+[90m18:42:27.879[m [37mSTDOUT[m [36mtofu: [mguarantee to take exactly these actions if you run "tofu apply" now.
+[18:42:27] OK: re-pushed tag invalidated the cache and fetched the new content
+[18:42:28] pushed blob sha256:33e550841aa62c788f8b3790adffba1a0a2ec203ba131da32536e08fefeb10c4 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[18:42:28] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[18:42:28] pushed manifest 1.0.0 (sha256:01a9a47abfeb18170c8015b4e5daf065266de13ae570d06561c443c072293b2a) to modules/vpc
+[18:42:28] cas validation PASSED
+[18:42:28] publishing unique module content (cold start)
+[18:42:28] pushed blob sha256:4c98ec93ba743b93db46a4ba80703728637b1a0bb763b516528eb82112328edc (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[18:42:28] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[18:42:28] pushed manifest 1.0.0 (sha256:1d5f9c7365d52c3c421c4039d2c98df5eae329f03d419641e174c802bf8dc61a) to modules/vpc
+18:42:28.521 DEBUG  Terragrunt Version: 0.0.0
+18:42:28.522 DEBUG  using cache key for version files: H2PcpB8dh-BE5Dz-LiSD1hykSfk
+18:42:28.522 DEBUG  Running command: tofu -version
+18:42:28.563 DEBUG  tofu version: 1.12.2
+18:42:28.563 DEBUG  Auto provider cache dir enabled: TF_PLUGIN_CACHE_DIR=/home/denis256/.cache/terragrunt/providers
+18:42:28.564 DEBUG  Did not find any locals block: skipping evaluation.
+18:42:28.564 DEBUG  using cache key for version files: H2PcpB8dh-BE5Dz-LiSD1hykSfk
+18:42:28.564 DEBUG  Reading Terragrunt config file at ./terragrunt.hcl
+18:42:28.565 DEBUG  Did not find any locals block: skipping evaluation.
+18:42:28.565 DEBUG  Did not find any locals block: skipping evaluation.
+18:42:28.565 DEBUG  Report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work not found, creating new run
+18:42:28.565 DEBUG  Adding report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work
+18:42:28.565 INFO   Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:42:28.565 DEBUG  CAS enabled: attempting to use Content Addressable Storage for source: oci://127.0.0.1:5443/modules/vpc?tag=1.0.0
+18:42:28.592 DEBUG  Successfully downloaded source using CAS: oci://127.0.0.1:5443/modules/vpc?tag=1.0.0
+18:42:28.592 DEBUG  Copying files from /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work into ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:42:28.593 DEBUG  Setting working directory to ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:42:28.593 DEBUG  Running command: tofu init
+18:42:28.622 INFO   tofu: Initializing the backend...
+18:42:28.623 INFO   tofu: Initializing provider plugins...
+18:42:28.623 INFO   tofu: OpenTofu has been successfully initialized!
+18:42:28.623 INFO   tofu: 
+18:42:28.623 INFO   tofu: You may now begin working with OpenTofu. Try running "tofu plan" to see
+18:42:28.623 INFO   tofu: any changes that are required for your infrastructure. All OpenTofu commands
+18:42:28.623 INFO   tofu: should now work.
+18:42:28.623 INFO   tofu: If you ever set or change modules or backend configuration for OpenTofu,
+18:42:28.623 INFO   tofu: rerun this command to reinitialize your working directory. If you forget, other
+18:42:28.623 INFO   tofu: commands will detect it and remind you to do so if necessary.
+18:42:28.629 DEBUG  Running command: tofu plan
+18:42:28.676 STDOUT tofu: Changes to Outputs:
+18:42:28.677 STDOUT tofu:   + oci_works = "cas-evidence-1784313748-3907514"
+18:42:28.677 STDOUT tofu: You can apply this plan to save these new output values to the OpenTofu
+18:42:28.677 STDOUT tofu: state, without changing any real infrastructure.
+18:42:28.677 STDOUT tofu: 
+18:42:28.677 STDOUT tofu: ─────────────────────────────────────────────────────────────────────────────
+18:42:28.677 STDOUT tofu: Note: You didn't use the -out option to save this plan, so OpenTofu can't
+18:42:28.677 STDOUT tofu: guarantee to take exactly these actions if you run "tofu apply" now.
+18:42:28.681 DEBUG  Ending report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work with result succeeded
+18:42:28.862 DEBUG  Terragrunt Version: 0.0.0
+18:42:28.862 DEBUG  using cache key for version files: H2PcpB8dh-BE5Dz-LiSD1hykSfk
+18:42:28.862 DEBUG  Running command: tofu -version
+18:42:28.895 DEBUG  tofu version: 1.12.2
+18:42:28.895 DEBUG  Auto provider cache dir enabled: TF_PLUGIN_CACHE_DIR=/home/denis256/.cache/terragrunt/providers
+18:42:28.896 DEBUG  Did not find any locals block: skipping evaluation.
+18:42:28.896 DEBUG  using cache key for version files: H2PcpB8dh-BE5Dz-LiSD1hykSfk
+18:42:28.896 DEBUG  Reading Terragrunt config file at ./terragrunt.hcl
+18:42:28.897 DEBUG  Did not find any locals block: skipping evaluation.
+18:42:28.897 DEBUG  Did not find any locals block: skipping evaluation.
+18:42:28.897 DEBUG  Report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work not found, creating new run
+18:42:28.897 DEBUG  Adding report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work
+18:42:28.898 INFO   Downloading Terraform configurations from oci://127.0.0.1:5443/modules/vpc?tag=1.0.0 into ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:42:28.898 DEBUG  CAS enabled: attempting to use Content Addressable Storage for source: oci://127.0.0.1:5443/modules/vpc?tag=1.0.0
+18:42:28.911 DEBUG  Successfully downloaded source using CAS: oci://127.0.0.1:5443/modules/vpc?tag=1.0.0
+18:42:28.911 DEBUG  Copying files from /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work into ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:42:28.912 DEBUG  Setting working directory to ./.terragrunt-cache/QwXyezVEWDTo8V89gZ2SX2PL0y4/IXvEW__lM3hc1Xoz1H106KSg7xY
+18:42:28.912 DEBUG  Running command: tofu init
+18:42:28.956 INFO   tofu: Initializing the backend...
+18:42:28.957 INFO   tofu: Initializing provider plugins...
+18:42:28.957 INFO   tofu: OpenTofu has been successfully initialized!
+18:42:28.957 INFO   tofu: 
+18:42:28.957 INFO   tofu: You may now begin working with OpenTofu. Try running "tofu plan" to see
+18:42:28.957 INFO   tofu: any changes that are required for your infrastructure. All OpenTofu commands
+18:42:28.958 INFO   tofu: should now work.
+18:42:28.958 INFO   tofu: If you ever set or change modules or backend configuration for OpenTofu,
+18:42:28.958 INFO   tofu: rerun this command to reinitialize your working directory. If you forget, other
+18:42:28.958 INFO   tofu: commands will detect it and remind you to do so if necessary.
+18:42:28.962 DEBUG  Running command: tofu plan
+18:42:29.001 STDOUT tofu: Changes to Outputs:
+18:42:29.001 STDOUT tofu:   + oci_works = "cas-evidence-1784313748-3907514"
+18:42:29.001 STDOUT tofu: You can apply this plan to save these new output values to the OpenTofu
+18:42:29.001 STDOUT tofu: state, without changing any real infrastructure.
+18:42:29.001 STDOUT tofu: 
+18:42:29.001 STDOUT tofu: ─────────────────────────────────────────────────────────────────────────────
+18:42:29.001 STDOUT tofu: Note: You didn't use the -out option to save this plan, so OpenTofu can't
+18:42:29.001 STDOUT tofu: guarantee to take exactly these actions if you run "tofu apply" now.
+18:42:29.008 DEBUG  Ending report run /projects/gruntwork/terragrunt-tests/oci-e2e/cas-evidence-work with result succeeded
+[18:42:29] pushed blob sha256:c0b48dd2f001ce53896c3f18cb3d5ea173ebccd295d9ced5856e02d8c9392818 (/projects/gruntwork/terragrunt-tests/oci-e2e/module.zip)
+[18:42:29] pushed blob sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a (/projects/gruntwork/terragrunt-tests/oci-e2e/config.json)
+[18:42:29] pushed manifest 1.0.0 (sha256:1b36c80b39cea2e44b10dfa1403ec1992ed5b4d17a98dd4ec229294c7e57871a) to modules/vpc
+[18:42:29] cas evidence PASSED: OCI layers are served from CAS on warm runs
