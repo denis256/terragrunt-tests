@@ -1,0 +1,49 @@
+### Binary: /home/denis256/tmp/bin-tg-main
+## Command 1 (discovery path): terragrunt run --all plan  [from parent dir]
+17:53:30.003 INFO   The following units will be run, starting with dependencies and then their dependents:
+.
+╰── my-unit
+17:53:30.007 INFO   [my-unit] Downloading Terraform configurations from ./my-unit into ./my-unit/.terragrunt-cache/6LBgJwK5_Qr3RQV8r4bGu_SMU2k/9R0FhOYiHXONTxgZkF_7x7godtw
+17:53:30.040 INFO   [my-unit] tofu: Initializing the backend...
+17:53:30.040 INFO   [my-unit] tofu: Initializing provider plugins...
+17:53:30.040 INFO   [my-unit] tofu: OpenTofu has been successfully initialized!
+17:53:30.040 INFO   [my-unit] tofu: 
+17:53:30.040 INFO   [my-unit] tofu: You may now begin working with OpenTofu. Try running "tofu plan" to see
+17:53:30.040 INFO   [my-unit] tofu: any changes that are required for your infrastructure. All OpenTofu commands
+17:53:30.040 INFO   [my-unit] tofu: should now work.
+17:53:30.040 INFO   [my-unit] tofu: If you ever set or change modules or backend configuration for OpenTofu,
+17:53:30.040 INFO   [my-unit] tofu: rerun this command to reinitialize your working directory. If you forget, other
+17:53:30.040 INFO   [my-unit] tofu: commands will detect it and remind you to do so if necessary.
+17:53:30.070 STDOUT [my-unit] tofu: Changes to Outputs:
+17:53:30.071 STDOUT [my-unit] tofu:   + env = "hcl"
+17:53:30.071 STDOUT [my-unit] tofu: You can apply this plan to save these new output values to the OpenTofu
+17:53:30.071 STDOUT [my-unit] tofu: state, without changing any real infrastructure.
+17:53:30.071 STDOUT [my-unit] tofu: 
+17:53:30.071 STDOUT [my-unit] tofu: ─────────────────────────────────────────────────────────────────────────────
+17:53:30.071 STDOUT [my-unit] tofu: Note: You didn't use the -out option to save this plan, so OpenTofu can't
+17:53:30.071 STDOUT [my-unit] tofu: guarantee to take exactly these actions if you run "tofu apply" now.
+
+❯❯ Run Summary  1 units  68ms
+   ────────────────────────────
+   Succeeded    1
+
+
+## Command 2 (single-dir path): terragrunt plan  [inside my-unit]
+17:53:30.173 INFO   tofu: Initializing the backend...
+17:53:30.174 INFO   tofu: Initializing provider plugins...
+17:53:30.174 INFO   tofu: OpenTofu has been successfully initialized!
+17:53:30.174 INFO   tofu: 
+17:53:30.174 INFO   tofu: You may now begin working with OpenTofu. Try running "tofu plan" to see
+17:53:30.174 INFO   tofu: any changes that are required for your infrastructure. All OpenTofu commands
+17:53:30.174 INFO   tofu: should now work.
+17:53:30.174 INFO   tofu: If you ever set or change modules or backend configuration for OpenTofu,
+17:53:30.174 INFO   tofu: rerun this command to reinitialize your working directory. If you forget, other
+17:53:30.174 INFO   tofu: commands will detect it and remind you to do so if necessary.
+17:53:30.210 STDOUT tofu: Changes to Outputs:
+17:53:30.210 STDOUT tofu:   + env = "json"
+17:53:30.210 STDOUT tofu: You can apply this plan to save these new output values to the OpenTofu
+17:53:30.210 STDOUT tofu: state, without changing any real infrastructure.
+17:53:30.210 STDOUT tofu: 
+17:53:30.210 STDOUT tofu: ─────────────────────────────────────────────────────────────────────────────
+17:53:30.210 STDOUT tofu: Note: You didn't use the -out option to save this plan, so OpenTofu can't
+17:53:30.210 STDOUT tofu: guarantee to take exactly these actions if you run "tofu apply" now.
